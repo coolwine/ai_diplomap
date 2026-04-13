@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "242",
+    "name": "Fiji",
+    "iso2": "FJ",
+    "filename": "countries/242.json"
+  },
+  {
+    "id": "834",
+    "name": "Tanzania",
+    "iso2": "TZ",
+    "filename": "countries/834.json"
+  },
+  {
+    "id": "732",
+    "name": "W. Sahara",
+    "iso2": "EH",
+    "filename": "countries/732.json"
+  },
+  {
+    "id": "124",
+    "name": "Canada",
+    "iso2": "CA",
+    "filename": "countries/124.json"
+  },
+  {
+    "id": "840",
+    "name": "United States of America",
+    "iso2": "US",
+    "filename": "countries/840.json"
+  },
+  {
+    "id": "398",
+    "name": "Kazakhstan",
+    "iso2": "KZ",
+    "filename": "countries/398.json"
+  },
+  {
+    "id": "860",
+    "name": "Uzbekistan",
+    "iso2": "UZ",
+    "filename": "countries/860.json"
+  },
+  {
+    "id": "598",
+    "name": "Papua New Guinea",
+    "iso2": "PG",
+    "filename": "countries/598.json"
+  },
+  {
+    "id": "360",
+    "name": "Indonesia",
+    "iso2": "ID",
+    "filename": "countries/360.json"
+  },
+  {
+    "id": "032",
+    "name": "Argentina",
+    "iso2": "AR",
+    "filename": "countries/032.json"
+  },
+  {
+    "id": "152",
+    "name": "Chile",
+    "iso2": "CL",
+    "filename": "countries/152.json"
+  },
+  {
+    "id": "180",
+    "name": "Dem. Rep. Congo",
+    "iso2": "CD",
+    "filename": "countries/180.json"
+  },
+  {
+    "id": "706",
+    "name": "Somalia",
+    "iso2": "SO",
+    "filename": "countries/706.json"
+  },
+  {
+    "id": "404",
+    "name": "Kenya",
+    "iso2": "KE",
+    "filename": "countries/404.json"
+  },
+  {
+    "id": "729",
+    "name": "Sudan",
+    "iso2": "SD",
+    "filename": "countries/729.json"
+  },
+  {
+    "id": "148",
+    "name": "Chad",
+    "iso2": "TD",
+    "filename": "countries/148.json"
+  },
+  {
+    "id": "332",
+    "name": "Haiti",
+    "iso2": "HT",
+    "filename": "countries/332.json"
+  },
+  {
+    "id": "214",
+    "name": "Dominican Rep.",
+    "iso2": "DO",
+    "filename": "countries/214.json"
+  },
+  {
+    "id": "643",
+    "name": "Russia",
+    "iso2": "RU",
+    "filename": "countries/643.json"
+  },
+  {
+    "id": "044",
+    "name": "Bahamas",
+    "iso2": "BS",
+    "filename": "countries/044.json"
+  },
+  {
+    "id": "238",
+    "name": "Falkland Is.",
+    "iso2": "FK",
+    "filename": "countries/238.json"
+  },
+  {
+    "id": "578",
+    "name": "Norway",
+    "iso2": "-99",
+    "filename": "countries/578.json"
+  },
+  {
+    "id": "304",
+    "name": "Greenland",
+    "iso2": "GL",
+    "filename": "countries/304.json"
+  },
+  {
+    "id": "260",
+    "name": "Fr. S. Antarctic Lands",
+    "iso2": "TF",
+    "filename": "countries/260.json"
+  },
+  {
+    "id": "626",
+    "name": "Timor-Leste",
+    "iso2": "TL",
+    "filename": "countries/626.json"
+  },
+  {
+    "id": "710",
+    "name": "South Africa",
+    "iso2": "ZA",
+    "filename": "countries/710.json"
+  },
+  {
+    "id": "426",
+    "name": "Lesotho",
+    "iso2": "LS",
+    "filename": "countries/426.json"
+  },
+  {
+    "id": "484",
+    "name": "Mexico",
+    "iso2": "MX",
+    "filename": "countries/484.json"
+  },
+  {
+    "id": "858",
+    "name": "Uruguay",
+    "iso2": "UY",
+    "filename": "countries/858.json"
+  },
+  {
+    "id": "076",
+    "name": "Brazil",
+    "iso2": "BR",
+    "filename": "countries/076.json"
+  },
+  {
+    "id": "068",
+    "name": "Bolivia",
+    "iso2": "BO",
+    "filename": "countries/068.json"
+  },
+  {
+    "id": "604",
+    "name": "Peru",
+    "iso2": "PE",
+    "filename": "countries/604.json"
+  },
+  {
+    "id": "170",
+    "name": "Colombia",
+    "iso2": "CO",
+    "filename": "countries/170.json"
+  },
+  {
+    "id": "591",
+    "name": "Panama",
+    "iso2": "PA",
+    "filename": "countries/591.json"
+  },
+  {
+    "id": "188",
+    "name": "Costa Rica",
+    "iso2": "CR",
+    "filename": "countries/188.json"
+  },
+  {
+    "id": "558",
+    "name": "Nicaragua",
+    "iso2": "NI",
+    "filename": "countries/558.json"
+  },
+  {
+    "id": "340",
+    "name": "Honduras",
+    "iso2": "HN",
+    "filename": "countries/340.json"
+  },
+  {
+    "id": "222",
+    "name": "El Salvador",
+    "iso2": "SV",
+    "filename": "countries/222.json"
+  },
+  {
+    "id": "320",
+    "name": "Guatemala",
+    "iso2": "GT",
+    "filename": "countries/320.json"
+  },
+  {
+    "id": "084",
+    "name": "Belize",
+    "iso2": "BZ",
+    "filename": "countries/084.json"
+  },
+  {
+    "id": "862",
+    "name": "Venezuela",
+    "iso2": "VE",
+    "filename": "countries/862.json"
+  },
+  {
+    "id": "328",
+    "name": "Guyana",
+    "iso2": "GY",
+    "filename": "countries/328.json"
+  },
+  {
+    "id": "740",
+    "name": "Suriname",
+    "iso2": "SR",
+    "filename": "countries/740.json"
+  },
+  {
+    "id": "250",
+    "name": "France",
+    "iso2": "-99",
+    "filename": "countries/250.json"
+  },
+  {
+    "id": "218",
+    "name": "Ecuador",
+    "iso2": "EC",
+    "filename": "countries/218.json"
+  },
+  {
+    "id": "630",
+    "name": "Puerto Rico",
+    "iso2": "PR",
+    "filename": "countries/630.json"
+  },
+  {
+    "id": "388",
+    "name": "Jamaica",
+    "iso2": "JM",
+    "filename": "countries/388.json"
+  },
+  {
+    "id": "192",
+    "name": "Cuba",
+    "iso2": "CU",
+    "filename": "countries/192.json"
+  },
+  {
+    "id": "716",
+    "name": "Zimbabwe",
+    "iso2": "ZW",
+    "filename": "countries/716.json"
+  },
+  {
+    "id": "072",
+    "name": "Botswana",
+    "iso2": "BW",
+    "filename": "countries/072.json"
+  },
+  {
+    "id": "516",
+    "name": "Namibia",
+    "iso2": "NA",
+    "filename": "countries/516.json"
+  },
+  {
+    "id": "686",
+    "name": "Senegal",
+    "iso2": "SN",
+    "filename": "countries/686.json"
+  },
+  {
+    "id": "466",
+    "name": "Mali",
+    "iso2": "ML",
+    "filename": "countries/466.json"
+  },
+  {
+    "id": "478",
+    "name": "Mauritania",
+    "iso2": "MR",
+    "filename": "countries/478.json"
+  },
+  {
+    "id": "204",
+    "name": "Benin",
+    "iso2": "BJ",
+    "filename": "countries/204.json"
+  },
+  {
+    "id": "562",
+    "name": "Niger",
+    "iso2": "NE",
+    "filename": "countries/562.json"
+  },
+  {
+    "id": "566",
+    "name": "Nigeria",
+    "iso2": "NG",
+    "filename": "countries/566.json"
+  },
+  {
+    "id": "120",
+    "name": "Cameroon",
+    "iso2": "CM",
+    "filename": "countries/120.json"
+  },
+  {
+    "id": "768",
+    "name": "Togo",
+    "iso2": "TG",
+    "filename": "countries/768.json"
+  },
+  {
+    "id": "288",
+    "name": "Ghana",
+    "iso2": "GH",
+    "filename": "countries/288.json"
+  },
+  {
+    "id": "384",
+    "name": "Côte d'Ivoire",
+    "iso2": "CI",
+    "filename": "countries/384.json"
+  },
+  {
+    "id": "324",
+    "name": "Guinea",
+    "iso2": "GN",
+    "filename": "countries/324.json"
+  },
+  {
+    "id": "624",
+    "name": "Guinea-Bissau",
+    "iso2": "GW",
+    "filename": "countries/624.json"
+  },
+  {
+    "id": "430",
+    "name": "Liberia",
+    "iso2": "LR",
+    "filename": "countries/430.json"
+  },
+  {
+    "id": "694",
+    "name": "Sierra Leone",
+    "iso2": "SL",
+    "filename": "countries/694.json"
+  },
+  {
+    "id": "854",
+    "name": "Burkina Faso",
+    "iso2": "BF",
+    "filename": "countries/854.json"
+  },
+  {
+    "id": "140",
+    "name": "Central African Rep.",
+    "iso2": "CF",
+    "filename": "countries/140.json"
+  },
+  {
+    "id": "178",
+    "name": "Congo",
+    "iso2": "CG",
+    "filename": "countries/178.json"
+  },
+  {
+    "id": "266",
+    "name": "Gabon",
+    "iso2": "GA",
+    "filename": "countries/266.json"
+  },
+  {
+    "id": "226",
+    "name": "Eq. Guinea",
+    "iso2": "GQ",
+    "filename": "countries/226.json"
+  },
+  {
+    "id": "894",
+    "name": "Zambia",
+    "iso2": "ZM",
+    "filename": "countries/894.json"
+  },
+  {
+    "id": "454",
+    "name": "Malawi",
+    "iso2": "MW",
+    "filename": "countries/454.json"
+  },
+  {
+    "id": "508",
+    "name": "Mozambique",
+    "iso2": "MZ",
+    "filename": "countries/508.json"
+  },
+  {
+    "id": "748",
+    "name": "eSwatini",
+    "iso2": "SZ",
+    "filename": "countries/748.json"
+  },
+  {
+    "id": "024",
+    "name": "Angola",
+    "iso2": "AO",
+    "filename": "countries/024.json"
+  },
+  {
+    "id": "108",
+    "name": "Burundi",
+    "iso2": "BI",
+    "filename": "countries/108.json"
+  },
+  {
+    "id": "376",
+    "name": "Israel",
+    "iso2": "IL",
+    "filename": "countries/376.json"
+  },
+  {
+    "id": "422",
+    "name": "Lebanon",
+    "iso2": "LB",
+    "filename": "countries/422.json"
+  },
+  {
+    "id": "450",
+    "name": "Madagascar",
+    "iso2": "MG",
+    "filename": "countries/450.json"
+  },
+  {
+    "id": "275",
+    "name": "Palestine",
+    "iso2": "PS",
+    "filename": "countries/275.json"
+  },
+  {
+    "id": "270",
+    "name": "Gambia",
+    "iso2": "GM",
+    "filename": "countries/270.json"
+  },
+  {
+    "id": "788",
+    "name": "Tunisia",
+    "iso2": "TN",
+    "filename": "countries/788.json"
+  },
+  {
+    "id": "012",
+    "name": "Algeria",
+    "iso2": "DZ",
+    "filename": "countries/012.json"
+  },
+  {
+    "id": "400",
+    "name": "Jordan",
+    "iso2": "JO",
+    "filename": "countries/400.json"
+  },
+  {
+    "id": "784",
+    "name": "United Arab Emirates",
+    "iso2": "AE",
+    "filename": "countries/784.json"
+  },
+  {
+    "id": "634",
+    "name": "Qatar",
+    "iso2": "QA",
+    "filename": "countries/634.json"
+  },
+  {
+    "id": "414",
+    "name": "Kuwait",
+    "iso2": "KW",
+    "filename": "countries/414.json"
+  },
+  {
+    "id": "368",
+    "name": "Iraq",
+    "iso2": "IQ",
+    "filename": "countries/368.json"
+  },
+  {
+    "id": "512",
+    "name": "Oman",
+    "iso2": "OM",
+    "filename": "countries/512.json"
+  },
+  {
+    "id": "548",
+    "name": "Vanuatu",
+    "iso2": "VU",
+    "filename": "countries/548.json"
+  },
+  {
+    "id": "116",
+    "name": "Cambodia",
+    "iso2": "KH",
+    "filename": "countries/116.json"
+  },
+  {
+    "id": "764",
+    "name": "Thailand",
+    "iso2": "TH",
+    "filename": "countries/764.json"
+  },
+  {
+    "id": "418",
+    "name": "Laos",
+    "iso2": "LA",
+    "filename": "countries/418.json"
+  },
+  {
+    "id": "104",
+    "name": "Myanmar",
+    "iso2": "MM",
+    "filename": "countries/104.json"
+  },
+  {
+    "id": "704",
+    "name": "Vietnam",
+    "iso2": "VN",
+    "filename": "countries/704.json"
+  },
+  {
+    "id": "408",
+    "name": "North Korea",
+    "iso2": "KP",
+    "filename": "countries/408.json"
+  },
+  {
+    "id": "410",
+    "name": "South Korea",
+    "iso2": "KR",
+    "filename": "countries/410.json"
+  },
+  {
+    "id": "496",
+    "name": "Mongolia",
+    "iso2": "MN",
+    "filename": "countries/496.json"
+  },
+  {
+    "id": "356",
+    "name": "India",
+    "iso2": "IN",
+    "filename": "countries/356.json"
+  },
+  {
+    "id": "050",
+    "name": "Bangladesh",
+    "iso2": "BD",
+    "filename": "countries/050.json"
+  },
+  {
+    "id": "064",
+    "name": "Bhutan",
+    "iso2": "BT",
+    "filename": "countries/064.json"
+  },
+  {
+    "id": "524",
+    "name": "Nepal",
+    "iso2": "NP",
+    "filename": "countries/524.json"
+  },
+  {
+    "id": "586",
+    "name": "Pakistan",
+    "iso2": "PK",
+    "filename": "countries/586.json"
+  },
+  {
+    "id": "004",
+    "name": "Afghanistan",
+    "iso2": "AF",
+    "filename": "countries/004.json"
+  },
+  {
+    "id": "762",
+    "name": "Tajikistan",
+    "iso2": "TJ",
+    "filename": "countries/762.json"
+  },
+  {
+    "id": "417",
+    "name": "Kyrgyzstan",
+    "iso2": "KG",
+    "filename": "countries/417.json"
+  },
+  {
+    "id": "795",
+    "name": "Turkmenistan",
+    "iso2": "TM",
+    "filename": "countries/795.json"
+  },
+  {
+    "id": "364",
+    "name": "Iran",
+    "iso2": "IR",
+    "filename": "countries/364.json"
+  },
+  {
+    "id": "760",
+    "name": "Syria",
+    "iso2": "SY",
+    "filename": "countries/760.json"
+  },
+  {
+    "id": "051",
+    "name": "Armenia",
+    "iso2": "AM",
+    "filename": "countries/051.json"
+  },
+  {
+    "id": "752",
+    "name": "Sweden",
+    "iso2": "SE",
+    "filename": "countries/752.json"
+  },
+  {
+    "id": "112",
+    "name": "Belarus",
+    "iso2": "BY",
+    "filename": "countries/112.json"
+  },
+  {
+    "id": "804",
+    "name": "Ukraine",
+    "iso2": "UA",
+    "filename": "countries/804.json"
+  },
+  {
+    "id": "616",
+    "name": "Poland",
+    "iso2": "PL",
+    "filename": "countries/616.json"
+  },
+  {
+    "id": "040",
+    "name": "Austria",
+    "iso2": "AT",
+    "filename": "countries/040.json"
+  },
+  {
+    "id": "348",
+    "name": "Hungary",
+    "iso2": "HU",
+    "filename": "countries/348.json"
+  },
+  {
+    "id": "498",
+    "name": "Moldova",
+    "iso2": "MD",
+    "filename": "countries/498.json"
+  },
+  {
+    "id": "642",
+    "name": "Romania",
+    "iso2": "RO",
+    "filename": "countries/642.json"
+  },
+  {
+    "id": "440",
+    "name": "Lithuania",
+    "iso2": "LT",
+    "filename": "countries/440.json"
+  },
+  {
+    "id": "428",
+    "name": "Latvia",
+    "iso2": "LV",
+    "filename": "countries/428.json"
+  },
+  {
+    "id": "233",
+    "name": "Estonia",
+    "iso2": "EE",
+    "filename": "countries/233.json"
+  },
+  {
+    "id": "276",
+    "name": "Germany",
+    "iso2": "DE",
+    "filename": "countries/276.json"
+  },
+  {
+    "id": "100",
+    "name": "Bulgaria",
+    "iso2": "BG",
+    "filename": "countries/100.json"
+  },
+  {
+    "id": "300",
+    "name": "Greece",
+    "iso2": "GR",
+    "filename": "countries/300.json"
+  },
+  {
+    "id": "792",
+    "name": "Turkey",
+    "iso2": "TR",
+    "filename": "countries/792.json"
+  },
+  {
+    "id": "008",
+    "name": "Albania",
+    "iso2": "AL",
+    "filename": "countries/008.json"
+  },
+  {
+    "id": "191",
+    "name": "Croatia",
+    "iso2": "HR",
+    "filename": "countries/191.json"
+  },
+  {
+    "id": "756",
+    "name": "Switzerland",
+    "iso2": "CH",
+    "filename": "countries/756.json"
+  },
+  {
+    "id": "442",
+    "name": "Luxembourg",
+    "iso2": "LU",
+    "filename": "countries/442.json"
+  },
+  {
+    "id": "056",
+    "name": "Belgium",
+    "iso2": "BE",
+    "filename": "countries/056.json"
+  },
+  {
+    "id": "528",
+    "name": "Netherlands",
+    "iso2": "NL",
+    "filename": "countries/528.json"
+  },
+  {
+    "id": "620",
+    "name": "Portugal",
+    "iso2": "PT",
+    "filename": "countries/620.json"
+  },
+  {
+    "id": "724",
+    "name": "Spain",
+    "iso2": "ES",
+    "filename": "countries/724.json"
+  },
+  {
+    "id": "372",
+    "name": "Ireland",
+    "iso2": "IE",
+    "filename": "countries/372.json"
+  },
+  {
+    "id": "540",
+    "name": "New Caledonia",
+    "iso2": "NC",
+    "filename": "countries/540.json"
+  },
+  {
+    "id": "090",
+    "name": "Solomon Is.",
+    "iso2": "SB",
+    "filename": "countries/090.json"
+  },
+  {
+    "id": "554",
+    "name": "New Zealand",
+    "iso2": "NZ",
+    "filename": "countries/554.json"
+  },
+  {
+    "id": "036",
+    "name": "Australia",
+    "iso2": "AU",
+    "filename": "countries/036.json"
+  },
+  {
+    "id": "144",
+    "name": "Sri Lanka",
+    "iso2": "LK",
+    "filename": "countries/144.json"
+  },
+  {
+    "id": "156",
+    "name": "China",
+    "iso2": "CN",
+    "filename": "countries/156.json"
+  },
+  {
+    "id": "158",
+    "name": "Taiwan",
+    "iso2": "TW",
+    "filename": "countries/158.json"
+  },
+  {
+    "id": "380",
+    "name": "Italy",
+    "iso2": "IT",
+    "filename": "countries/380.json"
+  },
+  {
+    "id": "208",
+    "name": "Denmark",
+    "iso2": "DK",
+    "filename": "countries/208.json"
+  },
+  {
+    "id": "826",
+    "name": "United Kingdom",
+    "iso2": "GB",
+    "filename": "countries/826.json"
+  },
+  {
+    "id": "352",
+    "name": "Iceland",
+    "iso2": "IS",
+    "filename": "countries/352.json"
+  },
+  {
+    "id": "031",
+    "name": "Azerbaijan",
+    "iso2": "AZ",
+    "filename": "countries/031.json"
+  },
+  {
+    "id": "268",
+    "name": "Georgia",
+    "iso2": "GE",
+    "filename": "countries/268.json"
+  },
+  {
+    "id": "608",
+    "name": "Philippines",
+    "iso2": "PH",
+    "filename": "countries/608.json"
+  },
+  {
+    "id": "458",
+    "name": "Malaysia",
+    "iso2": "MY",
+    "filename": "countries/458.json"
+  },
+  {
+    "id": "096",
+    "name": "Brunei",
+    "iso2": "BN",
+    "filename": "countries/096.json"
+  },
+  {
+    "id": "705",
+    "name": "Slovenia",
+    "iso2": "SI",
+    "filename": "countries/705.json"
+  },
+  {
+    "id": "246",
+    "name": "Finland",
+    "iso2": "FI",
+    "filename": "countries/246.json"
+  },
+  {
+    "id": "703",
+    "name": "Slovakia",
+    "iso2": "SK",
+    "filename": "countries/703.json"
+  },
+  {
+    "id": "203",
+    "name": "Czechia",
+    "iso2": "CZ",
+    "filename": "countries/203.json"
+  },
+  {
+    "id": "232",
+    "name": "Eritrea",
+    "iso2": "ER",
+    "filename": "countries/232.json"
+  },
+  {
+    "id": "392",
+    "name": "Japan",
+    "iso2": "JP",
+    "filename": "countries/392.json"
+  },
+  {
+    "id": "600",
+    "name": "Paraguay",
+    "iso2": "PY",
+    "filename": "countries/600.json"
+  },
+  {
+    "id": "887",
+    "name": "Yemen",
+    "iso2": "YE",
+    "filename": "countries/887.json"
+  },
+  {
+    "id": "682",
+    "name": "Saudi Arabia",
+    "iso2": "SA",
+    "filename": "countries/682.json"
+  },
+  {
+    "id": "010",
+    "name": "Antarctica",
+    "iso2": "AQ",
+    "filename": "countries/010.json"
+  },
+  {
+    "id": "-1",
+    "name": "N. Cyprus",
+    "iso2": "-99",
+    "filename": "countries/-1.json"
+  },
+  {
+    "id": "196",
+    "name": "Cyprus",
+    "iso2": "CY",
+    "filename": "countries/196.json"
+  },
+  {
+    "id": "504",
+    "name": "Morocco",
+    "iso2": "MA",
+    "filename": "countries/504.json"
+  },
+  {
+    "id": "818",
+    "name": "Egypt",
+    "iso2": "EG",
+    "filename": "countries/818.json"
+  },
+  {
+    "id": "434",
+    "name": "Libya",
+    "iso2": "LY",
+    "filename": "countries/434.json"
+  },
+  {
+    "id": "231",
+    "name": "Ethiopia",
+    "iso2": "ET",
+    "filename": "countries/231.json"
+  },
+  {
+    "id": "262",
+    "name": "Djibouti",
+    "iso2": "DJ",
+    "filename": "countries/262.json"
+  },
+  {
+    "id": "-3",
+    "name": "Somaliland",
+    "iso2": "-99",
+    "filename": "countries/-3.json"
+  },
+  {
+    "id": "800",
+    "name": "Uganda",
+    "iso2": "UG",
+    "filename": "countries/800.json"
+  },
+  {
+    "id": "646",
+    "name": "Rwanda",
+    "iso2": "RW",
+    "filename": "countries/646.json"
+  },
+  {
+    "id": "070",
+    "name": "Bosnia and Herz.",
+    "iso2": "BA",
+    "filename": "countries/070.json"
+  },
+  {
+    "id": "807",
+    "name": "Macedonia",
+    "iso2": "MK",
+    "filename": "countries/807.json"
+  },
+  {
+    "id": "688",
+    "name": "Serbia",
+    "iso2": "RS",
+    "filename": "countries/688.json"
+  },
+  {
+    "id": "499",
+    "name": "Montenegro",
+    "iso2": "ME",
+    "filename": "countries/499.json"
+  },
+  {
+    "id": "-2",
+    "name": "Kosovo",
+    "iso2": "XK",
+    "filename": "countries/-2.json"
+  },
+  {
+    "id": "780",
+    "name": "Trinidad and Tobago",
+    "iso2": "TT",
+    "filename": "countries/780.json"
+  },
+  {
+    "id": "728",
+    "name": "S. Sudan",
+    "iso2": "SS",
+    "filename": "countries/728.json"
+  }
+]
