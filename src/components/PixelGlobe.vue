@@ -32,7 +32,6 @@ type WorldTexture = {
   ownerByPixel: Int32Array;
 };
 
-
 const OCEAN_PALETTE: Rgb[] = [
   [6, 17, 29],
   [12, 33, 59],
@@ -96,9 +95,7 @@ const selectedCountry = computed(
 const searchVisible = computed(() => zoom.value < SEARCH_HIDE_ZOOM);
 const hologramPos = computed(() => {
   if (!selectedCountryName.value) return null;
-  const label = visibleLabels.value.find(
-    (l) => l.countryName === selectedCountryName.value,
-  );
+  const label = visibleLabels.value.find((l) => l.countryName === selectedCountryName.value);
   if (!label) return null;
   return { x: label.x, y: label.y };
 });
@@ -223,10 +220,30 @@ function wrapLongitude(value: number) {
 
 function getCountryPalette(index: number) {
   const palettes: Rgb[][] = [
-    [[55, 90, 49], [77, 119, 66], [115, 165, 95], [155, 204, 130]],
-    [[52, 87, 48], [73, 111, 64], [109, 156, 88], [151, 201, 124]],
-    [[62, 95, 43], [85, 121, 60], [121, 169, 82], [163, 208, 113]],
-    [[53, 91, 60], [75, 120, 83], [112, 162, 111], [151, 196, 145]],
+    [
+      [55, 90, 49],
+      [77, 119, 66],
+      [115, 165, 95],
+      [155, 204, 130],
+    ],
+    [
+      [52, 87, 48],
+      [73, 111, 64],
+      [109, 156, 88],
+      [151, 201, 124],
+    ],
+    [
+      [62, 95, 43],
+      [85, 121, 60],
+      [121, 169, 82],
+      [163, 208, 113],
+    ],
+    [
+      [53, 91, 60],
+      [75, 120, 83],
+      [112, 162, 111],
+      [151, 196, 145],
+    ],
   ];
 
   return palettes[index % palettes.length];
@@ -333,7 +350,8 @@ function createWorldTexture(countries: CountryFeature[]) {
       continue;
     }
 
-    const ownerId = ownerData[offset] + (ownerData[offset + 1] << 8) + (ownerData[offset + 2] << 16);
+    const ownerId =
+      ownerData[offset] + (ownerData[offset + 1] << 8) + (ownerData[offset + 2] << 16);
     ownerByPixel[pixelIndex] = ownerId - 1;
   }
 
@@ -365,10 +383,7 @@ function projectToGeo(x: number, y: number) {
   );
   const longitude =
     centerLon +
-    Math.atan2(
-      x * sinC,
-      clampedRho * Math.cos(centerLat) * cosC - y * Math.sin(centerLat) * sinC,
-    );
+    Math.atan2(x * sinC, clampedRho * Math.cos(centerLat) * cosC - y * Math.sin(centerLat) * sinC);
 
   return {
     lat: (latitude * 180) / Math.PI,
@@ -376,7 +391,12 @@ function projectToGeo(x: number, y: number) {
   };
 }
 
-function projectGeoToScreen(point: Coordinate, radiusInPixels: number, width: number, height: number) {
+function projectGeoToScreen(
+  point: Coordinate,
+  radiusInPixels: number,
+  width: number,
+  height: number,
+) {
   const latitude = degreesToRadians(point.lat);
   const longitude = degreesToRadians(point.lon);
   const centerLat = degreesToRadians(centerLatitude.value);
@@ -395,8 +415,7 @@ function projectGeoToScreen(point: Coordinate, radiusInPixels: number, width: nu
 
   const x = radiusInPixels * cosLatitude * Math.sin(deltaLon);
   const y =
-    radiusInPixels *
-    (cosCenterLat * sinLatitude - sinCenterLat * cosLatitude * cosDeltaLon);
+    radiusInPixels * (cosCenterLat * sinLatitude - sinCenterLat * cosLatitude * cosDeltaLon);
 
   return {
     depth: visible,
@@ -428,8 +447,7 @@ function projectGeoToScreenOrHorizon(
   const sinCenterLat = Math.sin(centerLat);
   let x = radiusInPixels * cosLatitude * Math.sin(deltaLon);
   let y =
-    radiusInPixels *
-    (cosCenterLat * sinLatitude - sinCenterLat * cosLatitude * Math.cos(deltaLon));
+    radiusInPixels * (cosCenterLat * sinLatitude - sinCenterLat * cosLatitude * Math.cos(deltaLon));
   let length = Math.hypot(x, y);
 
   if (length < 1e-6) {
@@ -453,7 +471,12 @@ function buildRelationPath(sourceX: number, sourceY: number, targetX: number, ta
   return `M ${sourceX} ${sourceY} Q ${geometry.controlX} ${geometry.controlY} ${targetX} ${targetY}`;
 }
 
-function getRelationCurveGeometry(sourceX: number, sourceY: number, targetX: number, targetY: number) {
+function getRelationCurveGeometry(
+  sourceX: number,
+  sourceY: number,
+  targetX: number,
+  targetY: number,
+) {
   const midX = (sourceX + targetX) / 2;
   const midY = (sourceY + targetY) / 2;
   const dx = targetX - sourceX;
@@ -554,8 +577,7 @@ function buildVisibleLabels(
   radiusInPixels: number,
   activeCountryRelationMap: Map<string, string> | null,
 ) {
-  const primaryFontFamily = "\"Segoe UI Emoji\", \"Apple Color Emoji\", \"Noto Color Emoji\", \"Courier New\", monospace";
-  const secondaryFontFamily = "\"Courier New\", monospace";
+  const secondaryFontFamily = '"Courier New", monospace';
   const primaryFontSize = Math.round(clamp(9 + zoom.value * 2, 9, 15));
   const secondaryFontSize = Math.max(8, primaryFontSize - 2);
   const lineGap = 2;
@@ -617,7 +639,9 @@ function buildVisibleLabels(
     context.font = `700 ${primaryFontSize}px ${secondaryFontFamily}`;
     const primaryWidth = context.measureText(primaryText).width;
     context.font = `600 ${secondaryFontSize}px ${secondaryFontFamily}`;
-    const secondaryWidth = context.measureText(`${candidate.englishName} · ${candidate.displayGroupEn}`).width;
+    const secondaryWidth = context.measureText(
+      `${candidate.englishName} · ${candidate.displayGroupEn}`,
+    ).width;
     const textWidth = Math.max(primaryWidth + iconPadding, secondaryWidth);
     const textHeight = primaryFontSize + secondaryFontSize + lineGap;
     const rect = new DOMRect(
@@ -673,7 +697,8 @@ function buildVisibleRelations(width: number, height: number, radiusInPixels: nu
 
   const relations = getAllRelations().filter(
     (relation) =>
-      relation.source === selectedCountry.value?.iso2 || relation.target === selectedCountry.value?.iso2,
+      relation.source === selectedCountry.value?.iso2 ||
+      relation.target === selectedCountry.value?.iso2,
   );
   const pairMap = new Map<string, ReturnType<typeof getAllRelations>[number]>();
 
@@ -910,9 +935,12 @@ function render() {
         : 0.58 + ((lighting + 1) / 2) * 0.72;
       const coastlineBoost = distance > 0.985 ? 1.08 : 1;
       const countryName =
-        sampledColor.countryIndex >= 0 ? (worldCountries[sampledColor.countryIndex]?.name ?? null) : null;
+        sampledColor.countryIndex >= 0
+          ? (worldCountries[sampledColor.countryIndex]?.name ?? null)
+          : null;
       const isSelected = countryName !== null && countryName === selectedCountryName.value;
-      const relationLevel = countryName !== null ? activeCountryRelationMap?.get(countryName) : null;
+      const relationLevel =
+        countryName !== null ? activeCountryRelationMap?.get(countryName) : null;
       const isActive = isSelected || !!relationLevel || !activeCountryRelationMap;
       const isFocusTarget =
         !focusedRelationCountries.value ||
@@ -1181,10 +1209,7 @@ function handleCanvasClick(event: MouseEvent) {
 </script>
 
 <template>
-  <div
-    ref="stageRef"
-    class="globe-stage"
-  >
+  <div ref="stageRef" class="globe-stage">
     <canvas
       ref="canvasRef"
       class="globe-canvas"
@@ -1203,7 +1228,7 @@ function handleCanvasClick(event: MouseEvent) {
       @focus-relation="handleFocusRelation"
     />
     <PixelGlobeHologramLayer
-      :selected-country-name="selectedCountryName"
+      :selected-country-iso2="selectedCountryInfo?.iso2 ?? null"
       :x="hologramPos?.x ?? 0"
       :y="hologramPos?.y ?? 0"
       :visible="hologramPos !== null"

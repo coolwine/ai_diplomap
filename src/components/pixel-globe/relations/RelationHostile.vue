@@ -27,13 +27,19 @@ defineProps<{
     />
 
     <!-- Hostile: danger pulse rings at source -->
-    <g class="relation-hostile-pulse" :transform="`translate(${relation.sourceX} ${relation.sourceY})`">
+    <g
+      class="relation-hostile-pulse"
+      :transform="`translate(${relation.sourceX} ${relation.sourceY})`"
+    >
       <circle class="relation-hostile-pulse-ring relation-hostile-pulse-ring--1" r="4" />
       <circle class="relation-hostile-pulse-ring relation-hostile-pulse-ring--2" r="4" />
     </g>
 
     <!-- Hostile: danger pulse rings at target -->
-    <g class="relation-hostile-pulse" :transform="`translate(${relation.targetX} ${relation.targetY})`">
+    <g
+      class="relation-hostile-pulse"
+      :transform="`translate(${relation.targetX} ${relation.targetY})`"
+    >
       <circle class="relation-hostile-pulse-ring relation-hostile-pulse-ring--1" r="4" />
       <circle class="relation-hostile-pulse-ring relation-hostile-pulse-ring--2" r="4" />
     </g>
@@ -41,7 +47,10 @@ defineProps<{
     <!-- Hostile: warning bolt traveling along path -->
     <g class="relation-hostile-bolt">
       <g class="relation-hostile-bolt-shape">
-        <path class="relation-hostile-bolt-icon" d="M 1.5 -7 L -2 -0.5 L 1 -0.5 L -1.5 7 L 5 -1.5 L 1.5 -1.5 Z" />
+        <path
+          class="relation-hostile-bolt-icon"
+          d="M 1.5 -7 L -2 -0.5 L 1 -0.5 L -1.5 7 L 5 -1.5 L 1.5 -1.5 Z"
+        />
       </g>
       <animateMotion
         :dur="relation.motionDuration"
@@ -66,8 +75,19 @@ defineProps<{
     </g>
 
     <!-- Hostile: target tag -->
-    <g class="relation-hostile-tag" :transform="`translate(${relation.targetX + 14} ${relation.targetY - 20})`">
-      <rect class="relation-hostile-tag-bg" rx="8" ry="8" x="0" y="-10" :width="relation.targetBadgeWidth + 16" height="20" />
+    <g
+      class="relation-hostile-tag"
+      :transform="`translate(${relation.targetX + 14} ${relation.targetY - 20})`"
+    >
+      <rect
+        class="relation-hostile-tag-bg"
+        rx="8"
+        ry="8"
+        x="0"
+        y="-10"
+        :width="relation.targetBadgeWidth + 16"
+        height="20"
+      />
       <text class="relation-hostile-tag-icon" x="8" y="5">&#9889;</text>
       <text class="relation-hostile-tag-text" x="20" y="4">{{ relation.targetKoreanName }}</text>
     </g>

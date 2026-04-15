@@ -4,7 +4,10 @@ import { computed } from "vue";
 import { LEADERS } from "../../data/leaders";
 import {
   RELATION_LEVELS,
-  getAllRelations,
+  getAllNationRelations,
+  getRepresentativeLevel,
+  parseNationKey,
+  type AiOpinion,
   type RelationLevel,
 } from "../../data/relations";
 
@@ -22,12 +25,15 @@ export type CountryInfo = {
 };
 
 type RelationEntry = {
-  level: RelationLevel;
+  representativeLevel: RelationLevel;
   color: string;
   label: string;
   targetName: string;
   targetLocalizedName: string;
   targetFlagClass: string | null;
+  opinions: AiOpinion[];
+  hasDivergence: boolean;
+  majorityLevel: RelationLevel;
 };
 
 const props = defineProps<{
@@ -46,60 +52,71 @@ const emit = defineEmits<{
 
 const LEVEL_ORDER: RelationLevel[] = ["allied", "friendly", "neutral", "hostile", "war"];
 
+function checkDivergence(opinions: AiOpinion[]): boolean {
+  if (opinions.length <= 1) return false;
+  return !opinions.every((o) => o.level === opinions[0].level);
+}
+
+function getMajorityLevel(opinions: AiOpinion[]): RelationLevel {
+  const counts = new Map<RelationLevel, number>();
+  for (const o of opinions) {
+    counts.set(o.level, (counts.get(o.level) ?? 0) + 1);
+  }
+  let maxLevel = opinions[0].level;
+  let maxCount = 0;
+  for (const [level, count] of counts) {
+    if (count > maxCount) {
+      maxCount = count;
+      maxLevel = level;
+    }
+  }
+  return maxLevel;
+}
+
 const relations = computed<RelationEntry[]>(() => {
   if (!props.country?.iso2) return [];
   const iso2 = props.country.iso2;
-  const all = getAllRelations();
+  const all = getAllNationRelations();
   const entries: RelationEntry[] = [];
 
   for (const rel of all) {
-    let counterpartIso2: string | null = null;
-    if (rel.source === iso2) counterpartIso2 = rel.target;
-    else if (rel.target === iso2) counterpartIso2 = rel.source;
-    else continue;
+    const [a, b] = parseNationKey(rel.nationKey);
+    const counterpartIso2 = a === iso2 ? b : b === iso2 ? a : null;
+    if (!counterpartIso2) continue;
 
     const resolved = props.resolveCountry(counterpartIso2);
     if (!resolved) continue;
 
-    const meta = RELATION_LEVELS[rel.level];
+    const level = getRepresentativeLevel(rel.opinions);
+    const meta = RELATION_LEVELS[level];
+    const hasDivergence = checkDivergence(rel.opinions);
     entries.push({
-      level: rel.level,
+      representativeLevel: level,
       color: meta.color,
       label: meta.label,
       targetName: resolved.name,
       targetLocalizedName: resolved.localizedName,
       targetFlagClass: resolved.flagClass,
+      opinions: rel.opinions,
+      hasDivergence,
+      majorityLevel: getMajorityLevel(rel.opinions),
     });
   }
 
-  entries.sort(
-    (a, b) => LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level),
-  );
+  // Divergent opinions first, then by level order
+  entries.sort((a, b) => {
+    if (a.hasDivergence !== b.hasDivergence) return a.hasDivergence ? -1 : 1;
+    return LEVEL_ORDER.indexOf(a.representativeLevel) - LEVEL_ORDER.indexOf(b.representativeLevel);
+  });
   return entries;
 });
 
-const groupedRelations = computed(() => {
-  const groups: { level: RelationLevel; label: string; color: string; items: RelationEntry[] }[] = [];
-  const map = new Map<RelationLevel, RelationEntry[]>();
-
-  for (const entry of relations.value) {
-    if (!map.has(entry.level)) map.set(entry.level, []);
-    map.get(entry.level)!.push(entry);
-  }
-
-  for (const level of LEVEL_ORDER) {
-    const items = map.get(level);
-    if (!items) continue;
-    const meta = RELATION_LEVELS[level];
-    groups.push({ level, label: meta.label, color: meta.color, items });
-  }
-
-  return groups;
-});
+const divergentRelations = computed(() => relations.value.filter((r) => r.hasDivergence));
+const consensusRelations = computed(() => relations.value.filter((r) => !r.hasDivergence));
 
 const leader = computed(() => {
   if (!props.country) return null;
-  return LEADERS[props.country.name] ?? null;
+  return LEADERS[props.country.iso2 ?? ""] ?? null;
 });
 
 function handleCountryClick(countryName: string) {
@@ -109,38 +126,19 @@ function handleCountryClick(countryName: string) {
 
 <template>
   <Transition name="panel">
-    <div
-      v-if="country"
-      class="info-panel"
-    >
-      <button
-        class="info-panel-close"
-        @click="emit('close')"
-      >
-        &times;
-      </button>
+    <div v-if="country" class="info-panel">
+      <button class="info-panel-close" @click="emit('close')">&times;</button>
 
       <div class="info-panel-header">
-        <span
-          v-if="country.flagClass"
-          class="info-panel-flag"
-          :class="country.flagClass"
-        />
+        <span v-if="country.flagClass" class="info-panel-flag" :class="country.flagClass" />
         <div class="info-panel-titles">
           <div class="info-panel-name">{{ country.localizedName }}</div>
           <div class="info-panel-name-en">{{ country.name }}</div>
         </div>
       </div>
 
-      <div
-        v-if="leader"
-        class="info-panel-leader"
-      >
-        <img
-          :src="leader.image"
-          :alt="leader.name"
-          class="info-panel-leader-photo"
-        >
+      <div v-if="leader" class="info-panel-leader">
+        <img :src="leader.image" :alt="leader.name" class="info-panel-leader-photo" />
         <div class="info-panel-leader-info">
           <div class="info-panel-leader-name">{{ leader.name }}</div>
           <div class="info-panel-leader-title">{{ leader.title }}</div>
@@ -152,59 +150,120 @@ function handleCountryClick(countryName: string) {
           <span class="info-panel-meta-label">Region</span>
           <span class="info-panel-meta-value">{{ country.localizedGroup }}</span>
         </div>
-        <div
-          v-if="country.iso2"
-          class="info-panel-meta-row"
-        >
+        <div v-if="country.iso2" class="info-panel-meta-row">
           <span class="info-panel-meta-label">ISO</span>
           <span class="info-panel-meta-value info-panel-iso">{{ country.iso2 }}</span>
         </div>
       </div>
 
-      <div
-        v-if="groupedRelations.length > 0"
-        class="info-panel-relations"
-      >
-        <div class="info-panel-section-title">Relations</div>
-        <div
-          v-for="group in groupedRelations"
-          :key="group.level"
-          class="info-panel-relation-group"
-        >
-          <div
-            class="info-panel-relation-level"
-            :style="{ color: group.color }"
-          >
-            <span
-              class="info-panel-relation-dot"
-              :style="{ background: group.color }"
-            />
-            {{ group.label }}
+      <div v-if="relations.length > 0" class="info-panel-relations">
+        <!-- Divergent section -->
+        <template v-if="divergentRelations.length > 0">
+          <div class="info-panel-section-title info-panel-section-divergent">
+            <span class="info-panel-section-icon">&#9888;</span>
+            AI 의견 차이
+            <span class="info-panel-divergent-count">{{ divergentRelations.length }}</span>
           </div>
           <div class="info-panel-relation-list">
-            <button
-              v-for="item in group.items"
+            <div
+              v-for="item in divergentRelations"
               :key="item.targetName"
-              class="info-panel-relation-item"
-              @click="handleCountryClick(item.targetName)"
+              class="info-panel-relation-card is-divergent"
             >
-              <span
-                v-if="item.targetFlagClass"
-                class="info-panel-relation-flag"
-                :class="item.targetFlagClass"
-              />
-              <span>{{ item.targetLocalizedName }}</span>
-            </button>
+              <div class="info-panel-relation-header">
+                <button
+                  class="info-panel-relation-item"
+                  @click="handleCountryClick(item.targetName)"
+                >
+                  <span
+                    v-if="item.targetFlagClass"
+                    class="info-panel-relation-flag"
+                    :class="item.targetFlagClass"
+                  />
+                  <span>{{ item.targetLocalizedName }}</span>
+                </button>
+              </div>
+              <div class="info-panel-ai-opinions">
+                <div
+                  v-for="opinion in item.opinions"
+                  :key="opinion.ai"
+                  class="info-panel-ai-row"
+                  :class="{ 'is-minority': opinion.level !== item.majorityLevel }"
+                >
+                  <span
+                    class="info-panel-ai-badge"
+                    :style="{ borderColor: RELATION_LEVELS[opinion.level].color }"
+                  >
+                    <span
+                      class="info-panel-ai-dot"
+                      :style="{ background: RELATION_LEVELS[opinion.level].color }"
+                    />
+                    <span class="info-panel-ai-name">{{ opinion.ai }}</span>
+                    <span
+                      class="info-panel-ai-level"
+                      :style="{ color: RELATION_LEVELS[opinion.level].color }"
+                      >{{ RELATION_LEVELS[opinion.level].label }}</span
+                    >
+                  </span>
+                  <span v-if="opinion.comment" class="info-panel-ai-comment">{{
+                    opinion.comment
+                  }}</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </template>
+
+        <!-- Consensus section -->
+        <template v-if="consensusRelations.length > 0">
+          <div class="info-panel-section-title">AI 의견 일치</div>
+          <div class="info-panel-relation-list">
+            <div
+              v-for="item in consensusRelations"
+              :key="item.targetName"
+              class="info-panel-relation-card is-consensus"
+            >
+              <div class="info-panel-relation-header">
+                <button
+                  class="info-panel-relation-item"
+                  @click="handleCountryClick(item.targetName)"
+                >
+                  <span
+                    v-if="item.targetFlagClass"
+                    class="info-panel-relation-flag"
+                    :class="item.targetFlagClass"
+                  />
+                  <span>{{ item.targetLocalizedName }}</span>
+                </button>
+              </div>
+              <div class="info-panel-ai-opinions">
+                <div v-for="opinion in item.opinions" :key="opinion.ai" class="info-panel-ai-row">
+                  <span
+                    class="info-panel-ai-badge"
+                    :style="{ borderColor: RELATION_LEVELS[opinion.level].color }"
+                  >
+                    <span
+                      class="info-panel-ai-dot"
+                      :style="{ background: RELATION_LEVELS[opinion.level].color }"
+                    />
+                    <span class="info-panel-ai-name">{{ opinion.ai }}</span>
+                    <span
+                      class="info-panel-ai-level"
+                      :style="{ color: RELATION_LEVELS[opinion.level].color }"
+                      >{{ RELATION_LEVELS[opinion.level].label }}</span
+                    >
+                  </span>
+                  <span v-if="opinion.comment" class="info-panel-ai-comment">{{
+                    opinion.comment
+                  }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
       </div>
 
-      <div
-        v-else
-        class="info-panel-no-relations"
-      >
-        No relation data
-      </div>
+      <div v-else class="info-panel-no-relations">No relation data</div>
     </div>
   </Transition>
 </template>
@@ -364,7 +423,7 @@ function handleCountryClick(countryName: string) {
 .info-panel-relations {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .info-panel-section-title {
@@ -375,54 +434,176 @@ function handleCountryClick(countryName: string) {
   color: rgba(138, 171, 138, 0.5);
   border-bottom: 1px solid rgba(126, 240, 184, 0.08);
   padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.info-panel-relation-group {
+.info-panel-section-divergent {
+  color: rgba(255, 200, 100, 0.8);
+  border-bottom-color: rgba(255, 200, 100, 0.15);
+}
+
+.info-panel-section-icon {
+  font-size: 12px;
+}
+
+.info-panel-divergent-count {
+  margin-left: auto;
+  background: rgba(255, 200, 100, 0.15);
+  color: rgba(255, 200, 100, 0.9);
+  padding: 0 6px;
+  border-radius: 8px;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.info-panel-relation-list {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.info-panel-relation-level {
+.info-panel-relation-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 10px;
+  background: rgba(42, 60, 42, 0.15);
+  border: 1px solid rgba(126, 240, 184, 0.06);
+  border-radius: 6px;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
+}
+
+.info-panel-relation-card.is-divergent {
+  background: rgba(255, 200, 100, 0.04);
+  border-color: rgba(255, 200, 100, 0.18);
+}
+
+.info-panel-relation-card.is-consensus {
+  padding: 8px 10px;
+}
+
+.info-panel-relation-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 6px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.info-panel-relation-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.info-panel-relation-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  padding-left: 12px;
 }
 
 .info-panel-relation-item {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 3px 8px;
+  padding: 0;
   font-size: 11px;
   color: #c8e0c8;
-  background: rgba(42, 60, 42, 0.25);
-  border: 1px solid rgba(126, 240, 184, 0.1);
-  border-radius: 4px;
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: color 0.2s;
   font-family: inherit;
+  text-align: left;
 }
 
 .info-panel-relation-item:hover {
-  background: rgba(42, 80, 42, 0.45);
-  border-color: rgba(126, 240, 184, 0.25);
+  color: #d1efaa;
+}
+
+.info-panel-consensus-badge {
+  font-size: 9px;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 1px 7px;
+  border: 1px solid;
+  border-radius: 3px;
+  opacity: 0.6;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.info-panel-ai-opinions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-panel-ai-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-panel-ai-row.is-minority {
+  background: rgba(255, 200, 100, 0.04);
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: 0 -4px;
+}
+
+.info-panel-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 6px;
+  font-size: 9px;
+  background: rgba(20, 30, 20, 0.5);
+  border: 1px solid rgba(126, 240, 184, 0.12);
+  border-radius: 3px;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+
+.is-minority > .info-panel-ai-badge {
+  background: rgba(255, 200, 100, 0.08);
+  border-width: 2px;
+  box-shadow: 0 0 6px rgba(255, 200, 100, 0.15);
+}
+
+.info-panel-ai-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.is-minority > .info-panel-ai-badge .info-panel-ai-dot {
+  width: 6px;
+  height: 6px;
+  box-shadow: 0 0 4px currentColor;
+}
+
+.info-panel-ai-name {
+  color: rgba(200, 224, 200, 0.5);
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.is-minority > .info-panel-ai-badge .info-panel-ai-name {
+  color: rgba(255, 220, 150, 0.8);
+}
+
+.info-panel-ai-level {
+  font-weight: 600;
+}
+
+.is-minority > .info-panel-ai-badge .info-panel-ai-level {
+  font-weight: 700;
+}
+
+.info-panel-ai-comment {
+  font-size: 10px;
+  color: rgba(200, 224, 200, 0.55);
+  line-height: 1.4;
+  padding-left: 14px;
+}
+
+.is-minority > .info-panel-ai-comment {
+  color: rgba(255, 220, 150, 0.65);
 }
 
 .info-panel-relation-flag {
@@ -443,11 +624,15 @@ function handleCountryClick(countryName: string) {
 
 /* Transition */
 .panel-enter-active {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .panel-leave-active {
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .panel-enter-from {

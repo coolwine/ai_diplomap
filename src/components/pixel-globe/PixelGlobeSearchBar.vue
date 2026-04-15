@@ -105,10 +105,7 @@ function getFlagClass(iso2: string | null) {
 
 <template>
   <Transition name="search-bar">
-    <div
-      v-if="visible"
-      class="search-panel"
-    >
+    <div v-if="visible" class="search-panel">
       <div class="locale-selector">
         <button
           v-for="loc in SUPPORTED_LOCALES"
@@ -122,7 +119,7 @@ function getFlagClass(iso2: string | null) {
       </div>
       <div class="search-title">
         <span class="search-title-icon">&#9670;</span>
-        <span class="search-title-text">DIPLOMAP</span>
+        <span class="search-title-text">AI DIPLOMAP</span>
         <span class="search-title-icon">&#9670;</span>
       </div>
       <div class="search-box">
@@ -142,10 +139,7 @@ function getFlagClass(iso2: string | null) {
           />
         </div>
         <Transition name="search-dropdown">
-          <div
-            v-if="showDropdown"
-            class="search-dropdown"
-          >
+          <div v-if="showDropdown" class="search-dropdown">
             <div
               v-for="(country, index) in results"
               :key="country.name"

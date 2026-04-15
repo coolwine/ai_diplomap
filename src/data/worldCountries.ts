@@ -147,9 +147,7 @@ function getDisplayGroup(continent: string, subregion?: string) {
 }
 
 const koreanDisplayNames =
-  typeof Intl !== "undefined"
-    ? new Intl.DisplayNames(["ko"], { type: "region" })
-    : null;
+  typeof Intl !== "undefined" ? new Intl.DisplayNames(["ko"], { type: "region" }) : null;
 
 function normalizeIso2(iso2?: string) {
   if (!iso2 || iso2 === "-99") {
@@ -164,9 +162,7 @@ function getFlagEmoji(iso2: string | null) {
     return "🌍";
   }
 
-  return String.fromCodePoint(
-    ...iso2.split("").map((char) => 127397 + char.charCodeAt(0)),
-  );
+  return String.fromCodePoint(...iso2.split("").map((char) => 127397 + char.charCodeAt(0)));
 }
 
 function getKoreanName(name: string, iso2: string | null) {
@@ -230,7 +226,8 @@ function pointInRing(point: Coordinate, ring: Coordinate[]) {
     const intersects =
       current.lat > point.lat !== last.lat > point.lat &&
       normalizedLon <
-        ((previousLon - currentLon) * (point.lat - current.lat)) / (last.lat - current.lat) + currentLon;
+        ((previousLon - currentLon) * (point.lat - current.lat)) / (last.lat - current.lat) +
+          currentLon;
 
     if (intersects) {
       isInside = !isInside;
@@ -393,13 +390,12 @@ export function loadWorldCountries() {
       })
       .then((indexEntries) => {
         const fetchPromises = indexEntries.map((entry) =>
-          fetch(`/data/${entry.filename}`)
-            .then((res) => {
-              if (!res.ok) {
-                throw new Error(`Failed to load country data for ${entry.id}: ${res.status}`);
-              }
-              return res.json() as Promise<RawFeature>;
-            })
+          fetch(`/data/${entry.filename}`).then((res) => {
+            if (!res.ok) {
+              throw new Error(`Failed to load country data for ${entry.id}: ${res.status}`);
+            }
+            return res.json() as Promise<RawFeature>;
+          }),
         );
         return Promise.all(fetchPromises);
       })

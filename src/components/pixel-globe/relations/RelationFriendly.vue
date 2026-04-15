@@ -35,7 +35,11 @@ defineProps<{
     </g>
 
     <!-- Friendly: heart particles -->
-    <g v-for="heartIndex in 3" :key="`friendly-heart-${heartIndex}`" class="relation-heart-particle">
+    <g
+      v-for="heartIndex in 3"
+      :key="`friendly-heart-${heartIndex}`"
+      class="relation-heart-particle"
+    >
       <path
         class="relation-heart-icon-small"
         d="M 0 2 C -1 1 -3 1 -3 -1 C -3 -3 -1 -3 0 -1.5 C 1 -3 3 -3 3 -1 C 3 1 1 1 0 2 Z"

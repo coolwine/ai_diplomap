@@ -36,9 +36,7 @@ select {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background:
-    radial-gradient(circle at center, rgba(28, 54, 92, 0.34), transparent 34%),
-    #020611;
+  background: radial-gradient(circle at center, rgba(28, 54, 92, 0.34), transparent 34%), #020611;
 }
 
 .globe-canvas {
@@ -119,7 +117,9 @@ select {
 .relation-group {
   pointer-events: auto;
   cursor: pointer;
-  transition: all 0.35s ease, filter 0.35s ease;
+  transition:
+    all 0.35s ease,
+    filter 0.35s ease;
 }
 
 .relation-group--dimmed {
@@ -328,8 +328,13 @@ select {
 }
 
 @keyframes heart-pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.18); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
 }
 
 /* Friendly relation styles */
@@ -365,8 +370,14 @@ select {
 }
 
 @keyframes heart-twinkle {
-  0% { opacity: 0.4; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1.2); }
+  0% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
 /* Hostile relation styles */
@@ -700,7 +711,10 @@ select {
   letter-spacing: 0.02em;
   line-height: 1.4;
   cursor: pointer;
-  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    background 0.15s;
   white-space: nowrap;
 }
 
@@ -774,7 +788,9 @@ select {
     0 0 12px rgba(42, 60, 42, 0.15),
     4px 4px 0 rgba(2, 6, 17, 0.5);
   image-rendering: pixelated;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .search-box-inner:focus-within {
@@ -874,7 +890,9 @@ select {
 /* Search panel transitions */
 .search-bar-enter-active,
 .search-bar-leave-active {
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
 }
 
 .search-bar-enter-from,
@@ -885,7 +903,9 @@ select {
 
 .search-dropdown-enter-active,
 .search-dropdown-leave-active {
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
 }
 
 .search-dropdown-enter-from,

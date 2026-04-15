@@ -4,7 +4,7 @@ import { computed, ref, watch } from "vue";
 import { LEADERS } from "../../data/leaders";
 
 const props = defineProps<{
-  selectedCountryName: string | null;
+  selectedCountryIso2: string | null;
   x: number;
   y: number;
   visible: boolean;
@@ -14,16 +14,16 @@ const show = ref(false);
 const imageLoaded = ref(false);
 
 const leaderImage = computed(() => {
-  if (!props.selectedCountryName) return null;
-  return LEADERS[props.selectedCountryName]?.image ?? null;
+  if (!props.selectedCountryIso2) return null;
+  return LEADERS[props.selectedCountryIso2]?.image ?? null;
 });
 
 watch(
-  () => props.selectedCountryName,
-  (name) => {
+  () => props.selectedCountryIso2,
+  (iso2) => {
     show.value = false;
     imageLoaded.value = false;
-    if (name && LEADERS[name]) {
+    if (iso2 && LEADERS[iso2]) {
       show.value = true;
     }
   },
@@ -47,12 +47,7 @@ function onImageLoad() {
     <div class="hologram-body">
       <div class="hologram-glow" />
       <div class="hologram-image-wrapper">
-        <img
-          :src="leaderImage"
-          class="hologram-image"
-          alt="Leader"
-          @load="onImageLoad"
-        >
+        <img :src="leaderImage" class="hologram-image" alt="Leader" @load="onImageLoad" />
       </div>
       <div class="hologram-scanlines" />
       <div class="hologram-flicker" />
@@ -102,13 +97,7 @@ function onImageLoad() {
   height: 120px;
   overflow: hidden;
   border-radius: 6px;
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    white 6%,
-    white 88%,
-    transparent 100%
-  );
+  mask-image: linear-gradient(to bottom, transparent 0%, white 6%, white 88%, transparent 100%);
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
@@ -123,7 +112,8 @@ function onImageLoad() {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  filter: brightness(1.4) contrast(1.2) saturate(0.15) sepia(0.3) hue-rotate(160deg) drop-shadow(0 0 4px rgba(0, 255, 255, 0.5));
+  filter: brightness(1.4) contrast(1.2) saturate(0.15) sepia(0.3) hue-rotate(160deg)
+    drop-shadow(0 0 4px rgba(0, 255, 255, 0.5));
   opacity: 0.85;
 }
 
@@ -185,11 +175,7 @@ function onImageLoad() {
 .hologram-beam-inner {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 255, 255, 0.18),
-    rgba(0, 255, 255, 0.02)
-  );
+  background: linear-gradient(to bottom, rgba(0, 255, 255, 0.18), rgba(0, 255, 255, 0.02));
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   filter: blur(3px);
   animation: beam-pulse 2s ease-in-out infinite;
@@ -212,7 +198,8 @@ function onImageLoad() {
 }
 
 @keyframes hologram-float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -221,7 +208,8 @@ function onImageLoad() {
 }
 
 @keyframes hologram-flicker {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
   }
   15% {
@@ -242,7 +230,8 @@ function onImageLoad() {
 }
 
 @keyframes glow-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
   }
   50% {
@@ -260,7 +249,8 @@ function onImageLoad() {
 }
 
 @keyframes beam-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
     transform: scaleX(1);
   }

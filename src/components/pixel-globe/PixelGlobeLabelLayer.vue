@@ -50,22 +50,11 @@ function handleLabelClick(countryName: string) {
       @click="handleLabelClick(label.countryName)"
     >
       <div class="globe-label-primary">
-        <span
-          v-if="label.flagClass"
-          class="globe-flag"
-          :class="label.flagClass"
-        />
+        <span v-if="label.flagClass" class="globe-flag" :class="label.flagClass" />
         <span>{{ label.koreanName }} ({{ label.displayGroupKo }})</span>
-        <span
-          v-if="label.relationLevel === 'friendly'"
-          class="globe-label-heart"
-        >
-          ❤️
-        </span>
+        <span v-if="label.relationLevel === 'friendly'" class="globe-label-heart"> ❤️ </span>
       </div>
-      <div class="globe-label-secondary">
-        {{ label.englishName }} · {{ label.displayGroupEn }}
-      </div>
+      <div class="globe-label-secondary">{{ label.englishName }} · {{ label.displayGroupEn }}</div>
       <div
         v-if="label.countryName === selectedCountryName && activeRelation"
         class="globe-label-relation"
