@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, nextTick, ref, watch } from "vue";
 
 import { LEADERS } from "../../data/leaders";
 import {
@@ -28,6 +28,7 @@ type RelationEntry = {
   representativeLevel: RelationLevel;
   color: string;
   label: string;
+  targetIso2: string;
   targetName: string;
   targetLocalizedName: string;
   targetFlagClass: string | null;
@@ -38,6 +39,7 @@ type RelationEntry = {
 
 const props = defineProps<{
   country: CountryInfo | null;
+  focusRelationCountryName?: string | null;
   resolveCountry: (iso2: string) => {
     name: string;
     localizedName: string;
@@ -51,6 +53,12 @@ const emit = defineEmits<{
 }>();
 
 const LEVEL_ORDER: RelationLevel[] = ["allied", "friendly", "neutral", "hostile", "war"];
+const ALL_RELATIONS_FILTER = "__all__";
+
+const selectedRelationTarget = ref(ALL_RELATIONS_FILTER);
+const focusedRelationCardName = ref<string | null>(null);
+const relationCardRefs = new Map<string, HTMLDivElement>();
+let focusHighlightTimer: ReturnType<typeof setTimeout> | null = null;
 
 function checkDivergence(opinions: AiOpinion[]): boolean {
   if (opinions.length <= 1) return false;
@@ -71,6 +79,10 @@ function getMajorityLevel(opinions: AiOpinion[]): RelationLevel {
     }
   }
   return maxLevel;
+}
+
+function getFlagEmoji(iso2: string) {
+  return String.fromCodePoint(...iso2.split("").map((char) => 127397 + char.charCodeAt(0)));
 }
 
 const relations = computed<RelationEntry[]>(() => {
@@ -94,6 +106,7 @@ const relations = computed<RelationEntry[]>(() => {
       representativeLevel: level,
       color: meta.color,
       label: meta.label,
+      targetIso2: counterpartIso2,
       targetName: resolved.name,
       targetLocalizedName: resolved.localizedName,
       targetFlagClass: resolved.flagClass,
@@ -111,13 +124,88 @@ const relations = computed<RelationEntry[]>(() => {
   return entries;
 });
 
-const divergentRelations = computed(() => relations.value.filter((r) => r.hasDivergence));
-const consensusRelations = computed(() => relations.value.filter((r) => !r.hasDivergence));
+const relationOptions = computed(() =>
+  [...relations.value]
+    .sort((a, b) => a.targetLocalizedName.localeCompare(b.targetLocalizedName))
+    .map((relation) => ({
+      value: relation.targetName,
+      label: `${getFlagEmoji(relation.targetIso2)} ${relation.targetIso2} · ${relation.targetLocalizedName}`,
+    })),
+);
+
+const filteredRelations = computed(() => {
+  if (selectedRelationTarget.value === ALL_RELATIONS_FILTER) {
+    return relations.value;
+  }
+  return relations.value.filter((relation) => relation.targetName === selectedRelationTarget.value);
+});
+
+const divergentRelations = computed(() => filteredRelations.value.filter((r) => r.hasDivergence));
+const consensusRelations = computed(() => filteredRelations.value.filter((r) => !r.hasDivergence));
 
 const leader = computed(() => {
   if (!props.country) return null;
   return LEADERS[props.country.iso2 ?? ""] ?? null;
 });
+
+watch(
+  () => props.country?.iso2,
+  () => {
+    selectedRelationTarget.value = ALL_RELATIONS_FILTER;
+    focusedRelationCardName.value = null;
+  },
+);
+
+watch(
+  () => props.focusRelationCountryName,
+  async (countryName) => {
+    if (focusHighlightTimer) {
+      clearTimeout(focusHighlightTimer);
+      focusHighlightTimer = null;
+    }
+
+    if (!countryName || !relations.value.some((relation) => relation.targetName === countryName)) {
+      focusedRelationCardName.value = null;
+      return;
+    }
+
+    if (
+      selectedRelationTarget.value !== ALL_RELATIONS_FILTER &&
+      selectedRelationTarget.value !== countryName
+    ) {
+      selectedRelationTarget.value = countryName;
+    }
+
+    await nextTick();
+
+    const card = relationCardRefs.get(countryName);
+    if (!card) {
+      return;
+    }
+
+    focusedRelationCardName.value = countryName;
+    card.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+
+    focusHighlightTimer = setTimeout(() => {
+      if (focusedRelationCardName.value === countryName) {
+        focusedRelationCardName.value = null;
+      }
+      focusHighlightTimer = null;
+    }, 2200);
+  },
+);
+
+function setRelationCardRef(countryName: string, element: Element | null) {
+  if (element instanceof HTMLDivElement) {
+    relationCardRefs.set(countryName, element);
+    return;
+  }
+
+  relationCardRefs.delete(countryName);
+}
 
 function handleCountryClick(countryName: string) {
   emit("select-country", countryName);
@@ -157,6 +245,22 @@ function handleCountryClick(countryName: string) {
       </div>
 
       <div v-if="relations.length > 0" class="info-panel-relations">
+        <div class="info-panel-filter">
+          <label class="info-panel-filter-label" for="relation-country-filter"
+            >Country filter</label
+          >
+          <select
+            id="relation-country-filter"
+            v-model="selectedRelationTarget"
+            class="info-panel-filter-select"
+          >
+            <option :value="ALL_RELATIONS_FILTER">All countries ({{ relations.length }})</option>
+            <option v-for="option in relationOptions" :key="option.value" :value="option.value">
+              {{ option.label }}
+            </option>
+          </select>
+        </div>
+
         <!-- Divergent section -->
         <template v-if="divergentRelations.length > 0">
           <div class="info-panel-section-title info-panel-section-divergent">
@@ -169,6 +273,8 @@ function handleCountryClick(countryName: string) {
               v-for="item in divergentRelations"
               :key="item.targetName"
               class="info-panel-relation-card is-divergent"
+              :class="{ 'is-focused': focusedRelationCardName === item.targetName }"
+              :ref="(element) => setRelationCardRef(item.targetName, element)"
             >
               <div class="info-panel-relation-header">
                 <button
@@ -222,6 +328,8 @@ function handleCountryClick(countryName: string) {
               v-for="item in consensusRelations"
               :key="item.targetName"
               class="info-panel-relation-card is-consensus"
+              :class="{ 'is-focused': focusedRelationCardName === item.targetName }"
+              :ref="(element) => setRelationCardRef(item.targetName, element)"
             >
               <div class="info-panel-relation-header">
                 <button
@@ -426,6 +534,41 @@ function handleCountryClick(countryName: string) {
   gap: 14px;
 }
 
+.info-panel-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  background: rgba(42, 60, 42, 0.2);
+  border-radius: 6px;
+  border: 1px solid rgba(126, 240, 184, 0.08);
+}
+
+.info-panel-filter-label {
+  font-size: 10px;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: rgba(138, 171, 138, 0.7);
+  letter-spacing: 0.5px;
+}
+
+.info-panel-filter-select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(126, 240, 184, 0.12);
+  background: rgba(10, 18, 28, 0.9);
+  color: #d1efaa;
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+}
+
+.info-panel-filter-select:focus {
+  border-color: rgba(126, 240, 184, 0.35);
+  box-shadow: 0 0 0 2px rgba(126, 240, 184, 0.08);
+}
+
 .info-panel-section-title {
   font-size: 10px;
   font-family: monospace;
@@ -485,6 +628,15 @@ function handleCountryClick(countryName: string) {
 
 .info-panel-relation-card.is-consensus {
   padding: 8px 10px;
+}
+
+.info-panel-relation-card.is-focused {
+  border-color: rgba(126, 240, 184, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(126, 240, 184, 0.25),
+    0 0 18px rgba(126, 240, 184, 0.18);
+  animation: relation-card-focus 0.9s ease;
+  scroll-margin-block: 96px;
 }
 
 .info-panel-relation-header {
@@ -620,6 +772,22 @@ function handleCountryClick(countryName: string) {
   font-style: italic;
   text-align: center;
   padding: 12px 0;
+}
+
+@keyframes relation-card-focus {
+  0% {
+    transform: scale(0.985);
+    background: rgba(126, 240, 184, 0.18);
+  }
+
+  45% {
+    transform: scale(1.01);
+    background: rgba(126, 240, 184, 0.14);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Transition */

@@ -83,6 +83,7 @@ const dragStartPoint = ref<{ x: number; y: number } | null>(null);
 const visibleLabels = ref<VisibleLabel[]>([]);
 const visibleRelations = ref<VisibleRelation[]>([]);
 const selectedCountryName = ref<string | null>(null);
+const focusedInfoPanelCountryName = ref<string | null>(null);
 const countriesVersion = ref(0);
 const locale = ref("ko");
 
@@ -1138,6 +1139,7 @@ function animateViewTo(targetLon: number, targetLat: number, targetZoom: number)
 function selectCountry(countryName: string | null) {
   const isDeselect = countryName && selectedCountryName.value === countryName;
   selectedCountryName.value = isDeselect ? null : countryName;
+  focusedInfoPanelCountryName.value = null;
 
   if (!isDeselect && countryName) {
     const country = worldCountries.find((c) => c.name === countryName);
@@ -1161,8 +1163,11 @@ const focusedRelationCountries = ref<Set<string> | null>(null);
 function handleFocusRelation(countries: { source: string; target: string } | null) {
   if (countries) {
     focusedRelationCountries.value = new Set([countries.source, countries.target]);
+    focusedInfoPanelCountryName.value =
+      countries.source === selectedCountryName.value ? countries.target : countries.source;
   } else {
     focusedRelationCountries.value = null;
+    focusedInfoPanelCountryName.value = null;
   }
 
   scheduleRender();
@@ -1250,6 +1255,7 @@ function handleCanvasClick(event: MouseEvent) {
     />
     <PixelGlobeInfoPanel
       :country="selectedCountryInfo"
+      :focus-relation-country-name="focusedInfoPanelCountryName"
       :resolve-country="resolveCountryByIso2"
       @close="selectCountry(null)"
       @select-country="selectCountry"

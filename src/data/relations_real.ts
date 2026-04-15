@@ -10,7 +10,12 @@ export const RELATIONS: NationRelation[] = [
       { ai: "claude", level: "allied", comment: "트럼프발 분담금 폭풍 中", date: "2026-04-15" },
       { ai: "gpt", level: "allied", comment: "동맹 유지, 비용 갈등 지속", date: "2026-04-15" },
       { ai: "grok", level: "allied", comment: "철통 한미동맹. 돈값은 해야지.", date: "2026-04-15" },
-      { ai: "gemini", level: "allied", comment: "굳건한 한미동맹, 렛츠고! 🇰🇷🇺🇸", date: "2026-04-15" },
+      {
+        ai: "gemini",
+        level: "allied",
+        comment: "굳건한 한미동맹, 렛츠고! 🇰🇷🇺🇸",
+        date: "2026-04-15",
+      },
     ],
   },
   {
@@ -75,7 +80,12 @@ export const RELATIONS: NationRelation[] = [
       { ai: "claude", level: "friendly", comment: "쿼드 협력, 독자 노선 병행", date: "2026-04-15" },
       { ai: "gpt", level: "friendly", comment: "반중 실용 협력 강화", date: "2026-04-15" },
       { ai: "grok", level: "friendly", comment: "중국 견제용 실용 동반자.", date: "2026-04-15" },
-      { ai: "gemini", level: "friendly", comment: "민주주의로 맺어진 전략적 협력", date: "2026-04-15" },
+      {
+        ai: "gemini",
+        level: "friendly",
+        comment: "민주주의로 맺어진 전략적 협력",
+        date: "2026-04-15",
+      },
     ],
   },
 
@@ -180,17 +190,37 @@ export const RELATIONS: NationRelation[] = [
     opinions: [
       { ai: "claude", level: "friendly", comment: "단교 후에도 반도체 라이벌", date: "2026-04-15" },
       { ai: "gpt", level: "friendly", comment: "공식 없어도 경제는 돌아감", date: "2026-04-15" },
-      { ai: "grok", level: "friendly", comment: "1992 단교, 지금은 실용 협력.", date: "2026-04-15" },
+      {
+        ai: "grok",
+        level: "friendly",
+        comment: "1992 단교, 지금은 실용 협력.",
+        date: "2026-04-15",
+      },
       { ai: "gemini", level: "friendly", comment: "외교 없어도 경제는 연결", date: "2026-04-15" },
     ],
   },
   {
     nationKey: "PH_TW",
     opinions: [
-      { ai: "claude", level: "friendly", comment: "해상 갈등에도 인력 교류 활발", date: "2026-04-15" },
+      {
+        ai: "claude",
+        level: "friendly",
+        comment: "해상 갈등에도 인력 교류 활발",
+        date: "2026-04-15",
+      },
       { ai: "gpt", level: "friendly", comment: "OFW 연결, 해양 긴장 공유", date: "2026-04-15" },
-      { ai: "grok", level: "friendly", comment: "필리핀 노동자가 잇는 두 나라.", date: "2026-04-15" },
-      { ai: "gemini", level: "friendly", comment: "바다 건너 이웃, 협력과 갈등 공존", date: "2026-04-15" },
+      {
+        ai: "grok",
+        level: "friendly",
+        comment: "필리핀 노동자가 잇는 두 나라.",
+        date: "2026-04-15",
+      },
+      {
+        ai: "gemini",
+        level: "friendly",
+        comment: "바다 건너 이웃, 협력과 갈등 공존",
+        date: "2026-04-15",
+      },
     ],
   },
 
@@ -207,13 +237,13 @@ export const RELATIONS: NationRelation[] = [
     ],
   },
   {
-    "nationKey": "BR_US",
-    "opinions": [
-      { "ai": "claude", "level": "friendly", "comment": "경제 협력 중심 관계 유지", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "friendly", "comment": "거리두기 속 실용 협력 유지", "date": "2026-04-15" },
-      { "ai": "grok", "level": "friendly", "comment": "전략보다 경제 중심 파트너", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "friendly", "comment": "글로벌 남반구 핵심 협력국", "date": "2026-04-15" }
-    ]
+    nationKey: "BR_US",
+    opinions: [
+      { ai: "claude", level: "friendly", comment: "경제 협력 중심 관계 유지", date: "2026-04-15" },
+      { ai: "gpt", level: "friendly", comment: "거리두기 속 실용 협력 유지", date: "2026-04-15" },
+      { ai: "grok", level: "friendly", comment: "전략보다 경제 중심 파트너", date: "2026-04-15" },
+      { ai: "gemini", level: "friendly", comment: "글로벌 남반구 핵심 협력국", date: "2026-04-15" },
+    ],
   },
   {
     nationKey: "BR_KR",
@@ -225,40 +255,50 @@ export const RELATIONS: NationRelation[] = [
     ],
   },
   {
-    "nationKey": "CA_KR",
-    "opinions": [
-      { "ai": "claude", "level": "friendly", "comment": "경제·인적 교류 지속 확대", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "friendly", "comment": "안정적 교역·이민 협력 유지", "date": "2026-04-15" },
-      { "ai": "grok", "level": "friendly", "comment": "유학생·교민 기반 관계 탄탄", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "friendly", "comment": "가치 공유하는 우호 파트너", "date": "2026-04-15" }
-    ]
+    nationKey: "CA_KR",
+    opinions: [
+      { ai: "claude", level: "friendly", comment: "경제·인적 교류 지속 확대", date: "2026-04-15" },
+      { ai: "gpt", level: "friendly", comment: "안정적 교역·이민 협력 유지", date: "2026-04-15" },
+      { ai: "grok", level: "friendly", comment: "유학생·교민 기반 관계 탄탄", date: "2026-04-15" },
+      { ai: "gemini", level: "friendly", comment: "가치 공유하는 우호 파트너", date: "2026-04-15" },
+    ],
   },
   {
-    "nationKey": "EG_US",
-    "opinions": [
-      { "ai": "claude", "level": "friendly", "comment": "중동 안보 협력 유지", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "friendly", "comment": "군사 원조 기반 협력 지속", "date": "2026-04-15" },
-      { "ai": "grok", "level": "friendly", "comment": "지역 안정 위한 협력 관계", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "friendly", "comment": "중동 질서 유지 핵심 파트너", "date": "2026-04-15" }
-    ]
+    nationKey: "EG_US",
+    opinions: [
+      { ai: "claude", level: "friendly", comment: "중동 안보 협력 유지", date: "2026-04-15" },
+      { ai: "gpt", level: "friendly", comment: "군사 원조 기반 협력 지속", date: "2026-04-15" },
+      { ai: "grok", level: "friendly", comment: "지역 안정 위한 협력 관계", date: "2026-04-15" },
+      {
+        ai: "gemini",
+        level: "friendly",
+        comment: "중동 질서 유지 핵심 파트너",
+        date: "2026-04-15",
+      },
+    ],
   },
   {
     nationKey: "EG_KR",
     opinions: [
       { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
-      { ai: "gpt", level: "friendly", comment: "방산 및 인프라 구축 협력 지속", date: "2026-04-15" },
+      {
+        ai: "gpt",
+        level: "friendly",
+        comment: "방산 및 인프라 구축 협력 지속",
+        date: "2026-04-15",
+      },
       { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
     ],
   },
   {
-    "nationKey": "ID_US",
-    "opinions": [
-      { "ai": "claude", "level": "friendly", "comment": "동남아 전략 협력 확대", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "friendly", "comment": "대중 견제 협력 강화 중", "date": "2026-04-15" },
-      { "ai": "grok", "level": "friendly", "comment": "경제·안보 협력 균형 유지", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "friendly", "comment": "인도태평양 핵심 파트너", "date": "2026-04-15" }
-    ]
+    nationKey: "ID_US",
+    opinions: [
+      { ai: "claude", level: "friendly", comment: "동남아 전략 협력 확대", date: "2026-04-15" },
+      { ai: "gpt", level: "friendly", comment: "대중 견제 협력 강화 중", date: "2026-04-15" },
+      { ai: "grok", level: "friendly", comment: "경제·안보 협력 균형 유지", date: "2026-04-15" },
+      { ai: "gemini", level: "friendly", comment: "인도태평양 핵심 파트너", date: "2026-04-15" },
+    ],
   },
   {
     nationKey: "ID_KR",
@@ -273,19 +313,24 @@ export const RELATIONS: NationRelation[] = [
     nationKey: "IN_KR",
     opinions: [
       { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
-      { ai: "gpt", level: "friendly", comment: "공급망 및 포괄적 경제 협력 강화", date: "2026-04-15" },
+      {
+        ai: "gpt",
+        level: "friendly",
+        comment: "공급망 및 포괄적 경제 협력 강화",
+        date: "2026-04-15",
+      },
       { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
     ],
   },
   {
-    "nationKey": "KP_US",
-    "opinions": [
-      { "ai": "claude", "level": "hostile", "comment": "핵 갈등 여전히 평행선", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "hostile", "comment": "핵 협상 교착 상태 지속", "date": "2026-04-15" },
-      { "ai": "grok", "level": "hostile", "comment": "대화 없고 긴장만 유지", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "hostile", "comment": "비핵화 협상 답보 상태", "date": "2026-04-15" }
-    ]
+    nationKey: "KP_US",
+    opinions: [
+      { ai: "claude", level: "hostile", comment: "핵 갈등 여전히 평행선", date: "2026-04-15" },
+      { ai: "gpt", level: "hostile", comment: "핵 협상 교착 상태 지속", date: "2026-04-15" },
+      { ai: "grok", level: "hostile", comment: "대화 없고 긴장만 유지", date: "2026-04-15" },
+      { ai: "gemini", level: "hostile", comment: "비핵화 협상 답보 상태", date: "2026-04-15" },
+    ],
   },
   {
     nationKey: "KR_PH",
@@ -297,28 +342,33 @@ export const RELATIONS: NationRelation[] = [
     ],
   },
   {
-    "nationKey": "PL_US",
-    "opinions": [
-      { "ai": "claude", "level": "allied", "comment": "동유럽 핵심 군사 동맹", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "allied", "comment": "대러 전선 최전방 동맹", "date": "2026-04-15" },
-      { "ai": "grok", "level": "allied", "comment": "러시아 견제 최전선 파트너", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "allied", "comment": "NATO 동부 방어 핵심축", "date": "2026-04-15" }
-    ]
+    nationKey: "PL_US",
+    opinions: [
+      { ai: "claude", level: "allied", comment: "동유럽 핵심 군사 동맹", date: "2026-04-15" },
+      { ai: "gpt", level: "allied", comment: "대러 전선 최전방 동맹", date: "2026-04-15" },
+      { ai: "grok", level: "allied", comment: "러시아 견제 최전선 파트너", date: "2026-04-15" },
+      { ai: "gemini", level: "allied", comment: "NATO 동부 방어 핵심축", date: "2026-04-15" },
+    ],
   },
   {
-    "nationKey": "RU_US",
-    "opinions": [
-      { "ai": "claude", "level": "hostile", "comment": "미러링 냉전 구도 재현", "date": "2026-04-15" },
-      { "ai": "gpt", "level": "hostile", "comment": "신냉전 구도 여전히 지속", "date": "2026-04-15" },
-      { "ai": "grok", "level": "hostile", "comment": "힘겨루기 끝날 기미 없음", "date": "2026-04-15" },
-      { "ai": "gemini", "level": "hostile", "comment": "갈등 장기화, 출구 안 보임", "date": "2026-04-15" }
-    ]
+    nationKey: "RU_US",
+    opinions: [
+      { ai: "claude", level: "hostile", comment: "미러링 냉전 구도 재현", date: "2026-04-15" },
+      { ai: "gpt", level: "hostile", comment: "신냉전 구도 여전히 지속", date: "2026-04-15" },
+      { ai: "grok", level: "hostile", comment: "힘겨루기 끝날 기미 없음", date: "2026-04-15" },
+      { ai: "gemini", level: "hostile", comment: "갈등 장기화, 출구 안 보임", date: "2026-04-15" },
+    ],
   },
   {
     nationKey: "KR_SA",
     opinions: [
       { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
-      { ai: "gpt", level: "friendly", comment: "네옴시티 및 에너지 전략 파트너", date: "2026-04-15" },
+      {
+        ai: "gpt",
+        level: "friendly",
+        comment: "네옴시티 및 에너지 전략 파트너",
+        date: "2026-04-15",
+      },
       { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
     ],
@@ -327,7 +377,12 @@ export const RELATIONS: NationRelation[] = [
     nationKey: "KR_TR",
     opinions: [
       { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
-      { ai: "gpt", level: "friendly", comment: "형제의 나라, 인프라 협력 강화", date: "2026-04-15" },
+      {
+        ai: "gpt",
+        level: "friendly",
+        comment: "형제의 나라, 인프라 협력 강화",
+        date: "2026-04-15",
+      },
       { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
     ],
@@ -336,7 +391,12 @@ export const RELATIONS: NationRelation[] = [
     nationKey: "US_VN",
     opinions: [
       { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
-      { ai: "gpt", level: "friendly", comment: "포괄적 전략적 동반자 관계 강화", date: "2026-04-15" },
+      {
+        ai: "gpt",
+        level: "friendly",
+        comment: "포괄적 전략적 동반자 관계 강화",
+        date: "2026-04-15",
+      },
       { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
     ],
@@ -345,7 +405,57 @@ export const RELATIONS: NationRelation[] = [
     nationKey: "KR_VN",
     opinions: [
       { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
-      { ai: "gpt", level: "friendly", comment: "최대 투자국 및 핵심 경제 파트너", date: "2026-04-15" },
+      {
+        ai: "gpt",
+        level: "friendly",
+        comment: "최대 투자국 및 핵심 경제 파트너",
+        date: "2026-04-15",
+      },
+      { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
+      { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
+    ],
+  },
+  {
+    nationKey: "CN_KR",
+    opinions: [
+      { ai: "claude", level: "hostile", comment: "", date: "2026-04-15" },
+      { ai: "gpt", level: "hostile", comment: "", date: "2026-04-15" },
+      { ai: "grok", level: "hostile", comment: "", date: "2026-04-15" },
+      { ai: "gemini", level: "hostile", comment: "", date: "2026-04-15" },
+    ],
+  },
+  {
+    nationKey: "CN_KP",
+    opinions: [
+      { ai: "claude", level: "allied", comment: "", date: "2026-04-15" },
+      { ai: "gpt", level: "allied", comment: "", date: "2026-04-15" },
+      { ai: "grok", level: "allied", comment: "", date: "2026-04-15" },
+      { ai: "gemini", level: "allied", comment: "", date: "2026-04-15" },
+    ],
+  },
+  {
+    nationKey: "CN_RU",
+    opinions: [
+      { ai: "claude", level: "allied", comment: "", date: "2026-04-15" },
+      { ai: "gpt", level: "allied", comment: "", date: "2026-04-15" },
+      { ai: "grok", level: "allied", comment: "", date: "2026-04-15" },
+      { ai: "gemini", level: "allied", comment: "", date: "2026-04-15" },
+    ],
+  },
+  {
+    nationKey: "CN_IN",
+    opinions: [
+      { ai: "claude", level: "war", comment: "", date: "2026-04-15" },
+      { ai: "gpt", level: "war", comment: "", date: "2026-04-15" },
+      { ai: "grok", level: "war", comment: "", date: "2026-04-15" },
+      { ai: "gemini", level: "war", comment: "", date: "2026-04-15" },
+    ],
+  },
+  {
+    nationKey: "CN_NP",
+    opinions: [
+      { ai: "claude", level: "friendly", comment: "", date: "2026-04-15" },
+      { ai: "gpt", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "grok", level: "friendly", comment: "", date: "2026-04-15" },
       { ai: "gemini", level: "friendly", comment: "", date: "2026-04-15" },
     ],
