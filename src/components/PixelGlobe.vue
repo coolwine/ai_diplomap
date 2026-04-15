@@ -11,6 +11,9 @@ import {
   type CountryFeature,
 } from "../data/worldCountries";
 import { useGlobeViewStore } from "../stores/globeView";
+import PixelGlobeHologramLayer from "./pixel-globe/PixelGlobeHologramLayer.vue";
+import PixelGlobeInfoPanel from "./pixel-globe/PixelGlobeInfoPanel.vue";
+import type { CountryInfo } from "./pixel-globe/PixelGlobeInfoPanel.vue";
 import PixelGlobeLabelLayer from "./pixel-globe/PixelGlobeLabelLayer.vue";
 import PixelGlobeRelationLayer from "./pixel-globe/PixelGlobeRelationLayer.vue";
 import PixelGlobeSearchBar from "./pixel-globe/PixelGlobeSearchBar.vue";
@@ -91,6 +94,44 @@ const selectedCountry = computed(
   () => worldCountries.find((country) => country.name === selectedCountryName.value) ?? null,
 );
 const searchVisible = computed(() => zoom.value < SEARCH_HIDE_ZOOM);
+const hologramPos = computed(() => {
+  if (!selectedCountryName.value) return null;
+  const label = visibleLabels.value.find(
+    (l) => l.countryName === selectedCountryName.value,
+  );
+  if (!label) return null;
+  return { x: label.x, y: label.y };
+});
+const selectedCountryInfo = computed<CountryInfo | null>(() => {
+  void countriesVersion.value;
+  const name = selectedCountryName.value;
+  if (!name) return null;
+  const country = worldCountries.find((c) => c.name === name);
+  if (!country) return null;
+  return {
+    name: country.name,
+    koreanName: country.koreanName,
+    localizedName: localizedName(country),
+    iso2: country.iso2,
+    flagClass: country.iso2 ? `fi fi-${country.iso2.toLowerCase()}` : null,
+    continent: country.continent,
+    koreanContinent: country.koreanContinent,
+    displayGroupEn: country.displayGroupEn,
+    displayGroupKo: country.displayGroupKo,
+    localizedGroup: localizedGroup(country),
+  };
+});
+
+function resolveCountryByIso2(iso2: string) {
+  const c = worldCountries.find((w) => w.iso2 === iso2);
+  if (!c) return null;
+  return {
+    name: c.name,
+    localizedName: localizedName(c),
+    flagClass: c.iso2 ? `fi fi-${c.iso2.toLowerCase()}` : null,
+  };
+}
+
 const searchableCountries = computed<SearchableCountry[]>(() => {
   void countriesVersion.value;
   const loc = locale.value;
@@ -873,9 +914,13 @@ function render() {
       const isSelected = countryName !== null && countryName === selectedCountryName.value;
       const relationLevel = countryName !== null ? activeCountryRelationMap?.get(countryName) : null;
       const isActive = isSelected || !!relationLevel || !activeCountryRelationMap;
+      const isFocusTarget =
+        !focusedRelationCountries.value ||
+        (countryName !== null && focusedRelationCountries.value.has(countryName));
 
       const selectionBoost = isSelected ? 1.24 : isActive ? 1.04 : 1;
-      const dimFactor = isActive ? 1 : sampledColor.isBorder ? 0.38 : 0.3;
+      const focusDim = isFocusTarget ? 1 : 0.28;
+      const dimFactor = (isActive ? 1 : sampledColor.isBorder ? 0.38 : 0.3) * focusDim;
       const brightness = brightnessFactor * coastlineBoost * selectionBoost * dimFactor;
 
       let r = sampledColor.red;
@@ -1083,6 +1128,18 @@ function navigateTo(point: { lat: number; lon: number }) {
   animateViewTo(point.lon, point.lat, targetZoom);
 }
 
+const focusedRelationCountries = ref<Set<string> | null>(null);
+
+function handleFocusRelation(countries: { source: string; target: string } | null) {
+  if (countries) {
+    focusedRelationCountries.value = new Set([countries.source, countries.target]);
+  } else {
+    focusedRelationCountries.value = null;
+  }
+
+  scheduleRender();
+}
+
 function handleLocaleChange(newLocale: string) {
   locale.value = newLocale;
   scheduleRender();
@@ -1143,11 +1200,19 @@ function handleCanvasClick(event: MouseEvent) {
       :selected-country-name="selectedCountryName"
       :viewport="viewport"
       :visible-relations="visibleRelations"
+      @focus-relation="handleFocusRelation"
+    />
+    <PixelGlobeHologramLayer
+      :selected-country-name="selectedCountryName"
+      :x="hologramPos?.x ?? 0"
+      :y="hologramPos?.y ?? 0"
+      :visible="hologramPos !== null"
     />
     <PixelGlobeLabelLayer
       :selected-country-name="selectedCountryName"
       :visible-labels="visibleLabels"
       :visible-relations="visibleRelations"
+      :focused-countries="focusedRelationCountries"
       @select-country="selectCountry"
     />
     <PixelGlobeSearchBar
@@ -1157,6 +1222,12 @@ function handleCanvasClick(event: MouseEvent) {
       @select-country="selectCountry"
       @navigate-to="navigateTo"
       @change-locale="handleLocaleChange"
+    />
+    <PixelGlobeInfoPanel
+      :country="selectedCountryInfo"
+      :resolve-country="resolveCountryByIso2"
+      @close="selectCountry(null)"
+      @select-country="selectCountry"
     />
   </div>
 </template>

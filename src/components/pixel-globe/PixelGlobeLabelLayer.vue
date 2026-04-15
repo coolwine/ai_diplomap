@@ -4,6 +4,7 @@ import { computed } from "vue";
 import type { VisibleLabel, VisibleRelation } from "./types";
 
 const props = defineProps<{
+  focusedCountries: Set<string> | null;
   selectedCountryName: string | null;
   visibleLabels: VisibleLabel[];
   visibleRelations: VisibleRelation[];
@@ -22,6 +23,10 @@ const activeRelation = computed(
     ) ?? null,
 );
 
+function isRelationDimmed(countryName: string) {
+  return props.focusedCountries !== null && !props.focusedCountries.has(countryName);
+}
+
 function handleLabelClick(countryName: string) {
   emit("select-country", countryName);
 }
@@ -36,6 +41,7 @@ function handleLabelClick(countryName: string) {
       :class="{
         'is-selected': label.countryName === selectedCountryName,
         'is-dimmed': !label.isActive,
+        'is-relation-dimmed': isRelationDimmed(label.countryName),
       }"
       :style="{
         left: `${label.x}px`,

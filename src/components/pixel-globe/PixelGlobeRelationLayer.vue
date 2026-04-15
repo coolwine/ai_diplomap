@@ -13,6 +13,10 @@ const props = defineProps<{
   visibleRelations: VisibleRelation[];
 }>();
 
+const emit = defineEmits<{
+  (event: "focus-relation", countries: { source: string; target: string } | null): void;
+}>();
+
 const STAGGER_MS = 180;
 const revealKey = ref(0);
 const focusedKey = ref<string | null>(null);
@@ -24,6 +28,7 @@ watch(
   () => {
     revealKey.value += 1;
     focusedKey.value = null;
+    emit("focus-relation", null);
   },
 );
 
@@ -33,7 +38,13 @@ function relationKey(relation: VisibleRelation) {
 
 function handleRelationClick(relation: VisibleRelation) {
   const key = relationKey(relation);
-  focusedKey.value = focusedKey.value === key ? null : key;
+  const isDeselect = focusedKey.value === key;
+  focusedKey.value = isDeselect ? null : key;
+
+  emit(
+    "focus-relation",
+    isDeselect ? null : { source: relation.sourceName, target: relation.targetName },
+  );
 }
 
 function isFocused(relation: VisibleRelation) {

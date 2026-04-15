@@ -3,7 +3,12 @@
     "allow": [
       "mcp__filesystem__directory_tree",
       "Bash(npm run:*)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -E \"\\\\.\\(vue|js|ts|json\\)$\")",
+      "Bash(curl -L -o D:/dev/simple-map/public/leaders/us.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/440px-Donald_Trump_official_portrait.jpg\")",
+      "Bash(curl -L --ssl-no-revoke -o D:/dev/simple-map/public/leaders/us.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/440px-Donald_Trump_official_portrait.jpg\")",
+      "Bash(curl -L --ssl-no-revoke -A \"Mozilla/5.0\" -o D:/dev/simple-map/public/leaders/us.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/440px-Donald_Trump_official_portrait.jpg\")",
+      "Bash(curl -L --ssl-no-revoke -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" -o D:/dev/simple-map/public/leaders/us.jpg \"https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg\")"
     ]
   }
 }
