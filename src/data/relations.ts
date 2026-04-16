@@ -13,8 +13,11 @@ export type AiOpinion = {
 };
 
 export type NationRelation = {
-  nationKey: string; // "KR_US" — alphabetically ordered ISO2 codes
-  opinions: AiOpinion[];
+  countryCode: string; // ISO2 code of the source country
+  relations: {
+    countryCode: string; // ISO2 code of the target country
+    opinions: AiOpinion[];
+  }[];
 };
 
 /** Flat relation derived from NationRelation for backward compatibility */
@@ -88,14 +91,23 @@ export function buildNationKey(iso2A: string, iso2B: string): string {
 
 /** Get all relations as flat CountryRelation[] (uses representative level) */
 export function getAllRelations(): CountryRelation[] {
-  return RELATIONS.map((r) => {
-    const [source, target] = parseNationKey(r.nationKey);
-    return {
-      level: getRepresentativeLevel(r.opinions),
-      source,
-      target,
-    };
-  });
+  const flatRelations: CountryRelation[] = [];
+  const processedKeys = new Set<string>();
+
+  for (const countryEntry of RELATIONS) {
+    for (const relation of countryEntry.relations) {
+      const key = [countryEntry.countryCode, relation.countryCode].sort().join("_");
+      if (!processedKeys.has(key)) {
+        flatRelations.push({
+          level: getRepresentativeLevel(relation.opinions),
+          source: countryEntry.countryCode,
+          target: relation.countryCode,
+        });
+        processedKeys.add(key);
+      }
+    }
+  }
+  return flatRelations;
 }
 
 /** Get raw NationRelation[] with all AI opinions */
@@ -105,10 +117,41 @@ export function getAllNationRelations(): NationRelation[] {
 
 /** Get flat relations for a specific country */
 export function getRelationsForCountry(countryIso2: string): CountryRelation[] {
-  return getAllRelations().filter((r) => r.source === countryIso2 || r.target === countryIso2);
+  const countryEntry = RELATIONS.find((r) => r.countryCode === countryIso2);
+  if (!countryEntry) {
+    // Also check if this country is a target in other entries
+    return getAllRelations().filter((r) => r.source === countryIso2 || r.target === countryIso2);
+  }
+
+  return countryEntry.relations.map((rel) => ({
+    level: getRepresentativeLevel(rel.opinions),
+    source: countryIso2,
+    target: rel.countryCode,
+  }));
 }
 
-/** Get NationRelation entries involving a specific country */
-export function getNationRelationsForCountry(countryIso2: string): NationRelation[] {
-  return RELATIONS.filter((r) => r.nationKey.includes(countryIso2));
+/** Get NationRelation-like entries involving a specific country */
+export function getNationRelationsForCountry(countryIso2: string): { nationKey: string; opinions: AiOpinion[] }[] {
+  const results: { nationKey: string; opinions: AiOpinion[] }[] = [];
+
+  for (const countryEntry of RELATIONS) {
+    if (countryEntry.countryCode === countryIso2) {
+      for (const rel of countryEntry.relations) {
+        results.push({
+          nationKey: buildNationKey(countryIso2, rel.countryCode),
+          opinions: rel.opinions,
+        });
+      }
+    } else {
+      for (const rel of countryEntry.relations) {
+        if (rel.countryCode === countryIso2) {
+          results.push({
+            nationKey: buildNationKey(countryEntry.countryCode, countryIso2),
+            opinions: rel.opinions,
+          });
+        }
+      }
+    }
+  }
+  return results;
 }

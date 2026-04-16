@@ -55,7 +55,7 @@ const LABEL_OVERRIDES: Record<
     priority?: number;
   }
 > = {
-  Israel: { minZoom: 1.55, priority: 12 },
+  Israel: { minZoom: 1.1, priority: 20 },
   Russia: { label: { lat: 61, lon: 95 } },
   "South Korea": { minZoom: 1.55, priority: 10 },
   Taiwan: { minZoom: 1.6, priority: 9 },

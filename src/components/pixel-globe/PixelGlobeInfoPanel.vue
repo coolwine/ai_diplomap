@@ -4,7 +4,7 @@ import { computed, nextTick, ref, watch } from "vue";
 import { LEADERS } from "../../data/leaders";
 import {
   RELATION_LEVELS,
-  getAllNationRelations,
+  getNationRelationsForCountry,
   getRepresentativeLevel,
   parseNationKey,
   type AiOpinion,
@@ -88,12 +88,12 @@ function getFlagEmoji(iso2: string) {
 const relations = computed<RelationEntry[]>(() => {
   if (!props.country?.iso2) return [];
   const iso2 = props.country.iso2;
-  const all = getAllNationRelations();
+  const all = getNationRelationsForCountry(iso2);
   const entries: RelationEntry[] = [];
 
   for (const rel of all) {
     const [a, b] = parseNationKey(rel.nationKey);
-    const counterpartIso2 = a === iso2 ? b : b === iso2 ? a : null;
+    const counterpartIso2 = a === iso2 ? b : a;
     if (!counterpartIso2) continue;
 
     const resolved = props.resolveCountry(counterpartIso2);
