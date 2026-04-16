@@ -1,0 +1,59 @@
+{
+  "countryCode": "MN",
+  "relations": [
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "전통 우방, 경제·에너지 협력 확대", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "우크라·북러이슈로 거리감", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "전통적 우호, 에너지 협력 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "영원한 북쪽 이웃, 든든함 🇷🇺🤝", "date": "2026-04-16" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "최대 교역국, 경제 의존도 높음", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대교역국, 실리협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "최대 무역국, 경제 의존 균형.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "경제 파트너, 떼려야 땔 수 없음 🇨🇳💰", "date": "2026-04-16" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "제3이웃 외교, 경제협력 확대 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "인적교류 활발한 우호관계", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "전략적 파트너, 경제·문화 교류 활발.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "무지개 너머 소중한 형제의 나라 🇰🇷🌈", "date": "2026-04-16" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "제3이웃 파트너, 안보협력 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "제3이웃, 전략협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "제3의 이웃, 전략적 파트너십.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "태평양 건너온 든든한 제3의 이웃 🇺🇸✨", "date": "2026-04-16" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ODA 주요 공여국, 경제협력 양호", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제지원·협력 안정적", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "제3의 이웃, 우호 협력 강화.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "민주주의 가치를 공유하는 친구 🇯🇵🤝", "date": "2026-04-16" }
+      ]
+    },
+    {
+      "countryCode": "KP",
+      "opinions": [
+        { "ai": "claude", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "전통관계 유지, 중재역할", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "오랜 관계, 중립적 평화 중재.", "date": "2026" },
+        { "ai": "gemini", "level": "", "comment": "", "date": "2026" }
+      ]
+    }
+  ]
+}
