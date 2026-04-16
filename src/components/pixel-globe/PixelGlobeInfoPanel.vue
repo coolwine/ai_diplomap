@@ -61,16 +61,20 @@ const relationCardRefs = new Map<string, HTMLDivElement>();
 let focusHighlightTimer: ReturnType<typeof setTimeout> | null = null;
 
 function checkDivergence(opinions: AiOpinion[]): boolean {
-  if (opinions.length <= 1) return false;
-  return !opinions.every((o) => o.level === opinions[0].level);
+  const valid = opinions.filter((o) => o.level);
+  if (valid.length <= 1) return false;
+  return !valid.every((o) => o.level === valid[0].level);
 }
 
 function getMajorityLevel(opinions: AiOpinion[]): RelationLevel {
+  const valid = opinions.filter((o) => o.level);
+  if (valid.length === 0) return "neutral";
+
   const counts = new Map<RelationLevel, number>();
-  for (const o of opinions) {
+  for (const o of valid) {
     counts.set(o.level, (counts.get(o.level) ?? 0) + 1);
   }
-  let maxLevel = opinions[0].level;
+  let maxLevel = valid[0].level;
   let maxCount = 0;
   for (const [level, count] of counts) {
     if (count > maxCount) {
@@ -110,7 +114,7 @@ const relations = computed<RelationEntry[]>(() => {
       targetName: resolved.name,
       targetLocalizedName: resolved.localizedName,
       targetFlagClass: resolved.flagClass,
-      opinions: rel.opinions,
+      opinions: rel.opinions.filter((o) => o.level),
       hasDivergence,
       majorityLevel: getMajorityLevel(rel.opinions),
     });

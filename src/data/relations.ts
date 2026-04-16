@@ -70,11 +70,14 @@ export const RELATION_LEVELS: Record<RelationLevel, RelationLevelMeta> = {
 
 /** Get the most common level among opinions (majority vote) */
 export function getRepresentativeLevel(opinions: AiOpinion[]): RelationLevel {
+  const valid = opinions.filter((o) => o.level);
+  if (valid.length === 0) return "neutral";
+
   const counts = new Map<RelationLevel, number>();
-  for (const o of opinions) {
+  for (const o of valid) {
     counts.set(o.level, (counts.get(o.level) ?? 0) + 1);
   }
-  let maxLevel = opinions[0].level;
+  let maxLevel = valid[0].level;
   let maxCount = 0;
   for (const [level, count] of counts) {
     if (count > maxCount) {
@@ -139,26 +142,11 @@ export function getRelationsForCountry(countryIso2: string): CountryRelation[] {
 
 /** Get NationRelation-like entries involving a specific country */
 export function getNationRelationsForCountry(countryIso2: string): { nationKey: string; opinions: AiOpinion[] }[] {
-  const results: { nationKey: string; opinions: AiOpinion[] }[] = [];
+  const countryEntry = RELATIONS.find((r) => r.countryCode === countryIso2);
+  if (!countryEntry) return [];
 
-  for (const countryEntry of RELATIONS) {
-    if (countryEntry.countryCode === countryIso2) {
-      for (const rel of countryEntry.relations) {
-        results.push({
-          nationKey: buildNationKey(countryIso2, rel.countryCode),
-          opinions: rel.opinions,
-        });
-      }
-    } else {
-      for (const rel of countryEntry.relations) {
-        if (rel.countryCode === countryIso2) {
-          results.push({
-            nationKey: buildNationKey(countryEntry.countryCode, countryIso2),
-            opinions: rel.opinions,
-          });
-        }
-      }
-    }
-  }
-  return results;
+  return countryEntry.relations.map((rel) => ({
+    nationKey: buildNationKey(countryIso2, rel.countryCode),
+    opinions: rel.opinions,
+  }));
 }
