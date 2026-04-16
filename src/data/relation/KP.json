@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "오물 풍선에 핵 위협까지", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "군사 긴장 상시 유지", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "적대국 확정.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "전화 좀 받아라.. 📞❌", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "핵 갈등 여전히 평행선", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "핵 협상 교착 상태 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "대화 없고 긴장만 유지", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "비핵화 협상 답보 상태", "date": "2026" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "특별한 관계, 여전히 유효", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "특별한 관계 균열남", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "특별한 관계? 아직은.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "영원한 '특별한 관계' 🇬🇧🇺🇸", "date": "2026" }
+      ]
+    }
+  ]
+}

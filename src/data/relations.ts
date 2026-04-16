@@ -1,5 +1,12 @@
 // import { RELATIONS } from "./relations_test"
-import { RELATIONS } from "./relations_real";
+const RELATION_FILES = import.meta.glob("./relation/*.json", { eager: true });
+const RELATIONS: NationRelation[] = Object.entries(RELATION_FILES).map(([path, content]: [string, any]) => {
+  const countryCode = path.split("/").pop()?.split(".")[0] || "";
+  return {
+    countryCode,
+    relations: content.relations || content.default?.relations || [],
+  };
+});
 
 export type RelationLevel = "war" | "hostile" | "neutral" | "friendly" | "allied";
 

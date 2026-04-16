@@ -1,0 +1,76 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "가자 전쟁으로 동맹 공고화", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "중동 군사 공조 지속", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "중동 최강 태그팀.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "중동 안보의 가장 강력한 축", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IR",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "직접 충돌 직전 긴장", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "사실상 그림자 전쟁 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "서로 핵심 적대 세력.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "중동 최대 라이벌 구도", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PS",
+      "opinions": [
+        { "ai": "claude", "level": "war", "comment": "가자 전쟁 지속 중", "date": "2026" },
+        { "ai": "gpt", "level": "war", "comment": "가자 전쟁 장기화 상태", "date": "2026" },
+        { "ai": "grok", "level": "war", "comment": "휴전 없이 충돌 계속.", "date": "2026" },
+        { "ai": "gemini", "level": "war", "comment": "끝 보이지 않는 전쟁", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "LB",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "헤즈볼라와 교전 반복", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "북부 전선 충돌 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "헤즈볼라 변수 계속.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "국경 긴장 상시 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SY",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "시리아 내 공습 지속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "이란 견제 공습 계속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "시리아는 공습 타겟.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "간접 충돌 전장 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SA",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "관계 정상화 논의 중단", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "수교 논의 사실상 정지", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "정상화 아직 멀었다.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "이해관계 속 거리 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "EG",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "휴전 중재 역할 유지", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "가자 문제 중재 지속", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "중재자 포지션 유지.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "현실적 협력과 긴장 공존", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JO",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "평화협정 유지, 긴장 존재", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "공식 평화지만 민심 악화", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "협정 있지만 불편함.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "안정 속 불안한 균형", "date": "2026" }
+      ]
+    }
+  ]
+}

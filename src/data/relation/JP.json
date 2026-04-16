@@ -1,0 +1,31 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "방위비 올리며 더 친해짐", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "대중 견제 핵심 축", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "태평양 최강 콤비.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "인태 전략의 핵심 파트너", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "탄핵 이후에도 협력 지속", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보 협력 빠르게 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "실용적 협력 확대 중.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "가깝고도 가까워지는 중", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TW",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "대만 유사시 일본도 긴장", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "비공식 우호 관계 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "지리적 운명 공동체.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "역사와 지리가 만든 유대감", "date": "2026" }
+      ]
+    }
+  ]
+}

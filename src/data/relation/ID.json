@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "동남아 전략 협력 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "대중 견제 협력 강화 중", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "경제·안보 협력 균형 유지", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "인도태평양 핵심 파트너", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "방산 및 신수도 건설 파트너십", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "방산·신수도 건설 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "전투기부터 신도시까지 함께!", "date": "2026" }
+      ]
+    }
+  ]
+}

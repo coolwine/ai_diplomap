@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "남중국해서 군사결속 강화", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "남중국해 전진기지", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "남중국해 전초기지.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "남중국해 수호의 핵심 고리", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TW",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "해상 갈등에도 인력 교류 활발", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "OFW 연결, 해양 긴장 공유", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "필리핀 노동자가 잇는 두 나라.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "바다 건너 이웃, 협력과 갈등 공존", "date": "2026" }
+      ]
+    }
+  ]
+}

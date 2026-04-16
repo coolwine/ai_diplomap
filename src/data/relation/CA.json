@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "51번째 주 드립에 뿔남", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "동맹인데 거리감 생김", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "이웃인데 좀 비싸게 군다.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "이웃 그 이상의 방위 동맹", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "경제·인적 교류 지속 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안정적 교역·이민 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "유학생·교민 기반 관계 탄탄", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "가치 공유하는 우호 파트너", "date": "2026" }
+      ]
+    }
+  ]
+}

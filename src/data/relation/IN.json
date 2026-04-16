@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "쿼드 협력, 독자 노선 병행", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "반중 실용 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "중국 견제용 실용 동반자.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "민주주의로 맺어진 전략적 협력", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "공급망 및 포괄적 경제 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "공급망 경제 협력 강화.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "포괄적 경제 파트너십 강화 중", "date": "2026" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "경제 협력 중심 관계 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "거리두기 속 실용 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "전략보다 경제 중심 파트너", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "글로벌 남반구 핵심 협력국", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "중남미 최대 경제 파트너십", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "경제 중심 실용 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "지구 반대편 핵심 경제 동반자", "date": "2026" }
+      ]
+    }
+  ]
+}

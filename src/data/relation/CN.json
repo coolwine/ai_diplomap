@@ -1,0 +1,67 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "관세 전쟁 현재진행형", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "패권 경쟁 정면충돌", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "패권 경쟁은 피할 수 없음.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "피할 수 없는 패권 경쟁", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TW",
+      "opinions": [
+        { "ai": "claude", "level": "war", "comment": "통일 압박, 군사 도발 일상화", "date": "2026" },
+        { "ai": "gpt", "level": "war", "comment": "군사 긴장 최고조 달함", "date": "2026" },
+        { "ai": "grok", "level": "war", "comment": "시진핑의 타이완 집착.", "date": "2026" },
+        { "ai": "gemini", "level": "war", "comment": "평화의 해협이 위기의 해협으로", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "안보 갈등 경제 의존.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "안보 갈등 속 경제 협력 줄타기", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KP",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "혈맹 복원, 전략 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "북중 혈맹 철통.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "전략적 가치로 묶인 순망치한", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "반서방 전략 공조 지속", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "중러 반미 밀착.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "반서방 전선의 전략적 밀착 🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "war", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "war", "comment": "국경 긴장 상시 고조", "date": "2026" },
+        { "ai": "grok", "level": "war", "comment": "국경 분쟁 대치 중.", "date": "2026" },
+        { "ai": "gemini", "level": "war", "comment": "국경 분쟁으로 인한 긴장 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "NP",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "인프라 외교 영향력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "인프라 협력 실크로드.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "일대일로 중심의 인프라 협력", "date": "2026" }
+      ]
+    }
+  ]
+}

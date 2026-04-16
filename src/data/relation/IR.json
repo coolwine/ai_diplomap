@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "최대압박 2.0 재가동", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "전쟁 직후 긴장 최고", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "핵 문제 해결 전엔 불가.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "평행선만 달리는 중 🛤️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SA",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "재개 시도, 불신은 여전", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "겉화해 속경쟁 상태", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "전쟁 후에도 긴장 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "일단은 악수, 속은 글쎄?", "date": "2026" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "동유럽 핵심 군사 동맹", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "대러 전선 최전방 동맹", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "러시아 견제 최전선 파트너", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "NATO 동부 방어 핵심축", "date": "2026" }
+      ]
+    }
+  ]
+}

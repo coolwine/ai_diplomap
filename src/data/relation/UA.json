@@ -1,0 +1,31 @@
+{
+  "relations": [
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "war", "comment": "침공에 맞서 항전 지속", "date": "2026" },
+        { "ai": "gpt", "level": "war", "comment": "전쟁 장기화, 영토 수복 노력", "date": "2026" },
+        { "ai": "grok", "level": "war", "comment": "평화 협상 난항, 격전 지속", "date": "2026" },
+        { "ai": "gemini", "level": "war", "comment": "평화를 염원하며 항전 중", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "군사 및 경제 지원 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "인프라 협력 및 재건 지원", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안보 동맹 관계 심화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "서방 가치 동맹의 핵심 파트너", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "가장 긴밀한 전략적 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보 및 물류 협력의 허브", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "동유럽 안보의 공동 전선", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "인도적 지원 및 재건 협력", "date": "2026" }
+      ]
+    }
+  ]
+}

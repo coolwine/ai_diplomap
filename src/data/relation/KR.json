@@ -1,0 +1,67 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "트럼프발 분담금 폭풍 中", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "동맹 유지, 비용 갈등 지속", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "철통 한미동맹. 돈값은 해야지.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "굳건한 한미동맹, 렛츠고! 🇰🇷🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "북러 밀착에 외교 냉각", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "북러 협력으로 급냉각", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "북러 군사협력 때문에.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "선 제대로 넘으셨네요.. ⚠️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TW",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "단교 후에도 반도체 라이벌", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "공식 없어도 경제는 돌아감", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "1992 단교, 지금은 실용 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "외교 없어도 경제는 연결", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "방산 및 인프라 파트너십 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "방산·인프라 파트너십.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "70년 우정, 방산 협력으로 결실", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "네옴시티 및 에너지 전략 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "네옴·에너지 전략 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "네옴시티와 에너지로 여는 미래", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "형제의 나라, 인프라 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "형제 나라 인프라 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "피로 맺은 형제, 인프라로 연결", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "VN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대 투자국 및 핵심 경제 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "최대 투자 경제 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "최대 투자국, 핵심 경제 공동체", "date": "2026" }
+      ]
+    }
+  ]
+}

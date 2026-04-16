@@ -1,0 +1,22 @@
+{
+  "relations": [
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "안보 협력 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안보 협력 확대 중.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "안보로 연결", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "VN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "포괄적 전략적 동반자 관계 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "전략적 동반자 강화.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "과거를 넘은 전략적 공조 확대", "date": "2026" }
+      ]
+    }
+  ]
+}

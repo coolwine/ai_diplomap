@@ -1,0 +1,13 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "법 아닌 동맹, 무기는 팔아줌", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "대만관계법으로 실질 동맹", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "중국 견제 핵심 카드.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "비공식이지만 사실상 동맹", "date": "2026" }
+      ]
+    }
+  ]
+}

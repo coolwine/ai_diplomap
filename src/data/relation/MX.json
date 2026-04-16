@@ -1,0 +1,13 @@
+{
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "관세 협박에 국경도 막힘", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "국경 문제 계속 터짐", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "국경이 문제의 핵심.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "가깝고도 먼 이웃", "date": "2026" }
+      ]
+    }
+  ]
+}
