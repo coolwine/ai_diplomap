@@ -5,18 +5,83 @@
       "countryCode": "US",
       "opinions": [
         { "ai": "claude", "level": "friendly", "comment": "경제 협력 중심 관계 유지", "date": "2026" },
-        { "ai": "gpt", "level": "friendly", "comment": "거리두기 속 실용 협력 유지", "date": "2026" },
-        { "ai": "grok", "level": "friendly", "comment": "전략보다 경제 중심 파트너", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "글로벌 남반구 핵심 협력국", "date": "2026" }
+        { "ai": "gpt", "level": "friendly", "comment": "관세 압박 속, 협력은 계속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "관세 갈등 속 실용 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "", "comment": "", "date": "2026" }
       ]
     },
     {
       "countryCode": "KR",
       "opinions": [
         { "ai": "claude", "level": "friendly", "comment": "", "date": "2026" },
-        { "ai": "gpt", "level": "friendly", "comment": "중남미 최대 경제 파트너십", "date": "2026" },
-        { "ai": "grok", "level": "friendly", "comment": "경제 중심 실용 파트너.", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "지구 반대편 핵심 경제 동반자", "date": "2026" }
+        { "ai": "gpt", "level": "friendly", "comment": "방산·배터리 협력 확대 중", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "방산·배터리 전략 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "", "comment": "", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "정상급 충돌로 관계 경색", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "정치 갈등 여파로 냉각", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "메르코수르는 묶고, 환율은 흔들", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "Milei와 이념 충돌 지속.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "ICJ 제소로 외교 긴장", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "가자 사태로 관계 급랭", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "가자전 여파로 외교 냉각", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "가자 사태로 외교 급랭.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "최대 무역국, 실리 공조", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "경제 버팀목인 핵심 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "무역은 찐우정, 디리스킹 견제", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "최대 무역국, 실리 중심.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "VE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "대화 복원했지만 긴장 공존", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "대사 복귀했지만 신뢰는 얇다", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "미국 압박 속 중재 역할.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "BRICS 공조, 전쟁엔 거리", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "BRICS 공조, 우크라선 거리두기", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "BRICS 협력, 우크라엔 중립.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PY",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "이타이푸 수익 배분 갈등", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "이타이푸 전력단가 줄다리기", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "이타이푸 댐 수익 갈등.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "opinions": [
+        { "ai": "gpt", "level": "hostile", "comment": "EU협정 걸림돌, 농업 신경전", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "EU-Mercosur 농업 갈등.", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GY",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "에세키보 불똥에 국경 공조", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "에세키보 사태 국경 협력.", "date": "2026" }
       ]
     }
   ]
