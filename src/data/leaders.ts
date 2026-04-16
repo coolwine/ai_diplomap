@@ -125,4 +125,64 @@ export const LEADERS: Record<string, LeaderInfo> = {
     title: "General Secretary (2024–present)",
     image: "/leaders/vn.jpg",
   },
+  AR: {
+    name: "Javier Milei",
+    title: "59th President (2023–present)",
+    image: "/leaders/ar.jpg",
+  },
+  CO: {
+    name: "Gustavo Petro",
+    title: "President (2022–present)",
+    image: "/leaders/co.jpg",
+  },
+  FR: {
+    name: "Emmanuel Macron",
+    title: "President (2017–present)",
+    image: "/leaders/fr.jpg",
+  },
+  GY: {
+    name: "Irfaan Ali",
+    title: "President (2020–present)",
+    image: "/leaders/gy.jpg",
+  },
+  JO: {
+    name: "عبدالله الثاني (Abdullah II)",
+    title: "King (1999–present)",
+    image: "/leaders/jo.jpg",
+  },
+  LB: {
+    name: "جوزيف عون (Joseph Aoun)",
+    title: "President (2025–present)",
+    image: "/leaders/lb.jpg",
+  },
+  MN: {
+    name: "Ухнаагийн Хүрэлсүх (Ukhnaagiin Khürelsükh)",
+    title: "President (2021–present)",
+    image: "/leaders/mn.jpg",
+  },
+  PE: {
+    name: "José María Balcázar",
+    title: "President (2024–present)",
+    image: "/leaders/pe.jpg",
+  },
+  PS: {
+    name: "محمود عباس (Mahmoud Abbas)",
+    title: "President (2005–present)",
+    image: "/leaders/ps.jpg",
+  },
+  PY: {
+    name: "Santiago Peña",
+    title: "President (2023–present)",
+    image: "/leaders/py.jpg",
+  },
+  SY: {
+    name: "أحمد الشرع (Ahmed al-Sharaa)",
+    title: "President (2025–present)",
+    image: "/leaders/sy.jpg",
+  },
+  VE: {
+    name: "Delcy Rodríguez",
+    title: "President (Acting) (2026–present)",
+    image: "/leaders/ve.jpg",
+  },
 };

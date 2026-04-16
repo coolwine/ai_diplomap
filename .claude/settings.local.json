@@ -50,7 +50,32 @@
       "Bash(curl --ssl-no-revoke -L -o \"D:/dev/simple-map/public/leaders/ao.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/President_of_Angola_Jo%C3%A3o_Louren%C3%A7o_during_a_bilateral_exchange_at_the_Angola_presidential_palace_in_Luanda%2C_Angola%2C_September_27%2C_2023_-_230927-D-PM193-1914_%28cropped%29.jpg/500px-thumbnail.jpg\")",
       "Bash(curl --ssl-no-revoke -L -o \"D:/dev/simple-map/public/leaders/ar.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Javier_Milei_in_pull-aside_meeting_at_the_United_Nations_Headquarters_%283x4_cropped%29.jpg/500px-Javier_Milei_in_pull-aside_meeting_at_the_United_Nations_Headquarters_%283x4_cropped%29.jpg\")",
       "Bash(curl --ssl-no-revoke -L -o \"D:/dev/simple-map/public/leaders/az.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ilham_Aliyev%2C_December_2025_%28cropped%29.jpg/500px-Ilham_Aliyev%2C_December_2025_%28cropped%29.jpg\")",
-      "Bash(curl --ssl-no-revoke -L -o \"D:/dev/simple-map/public/leaders/at.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Christian_Stocker_EuCo_2026.jpg/500px-Christian_Stocker_EuCo_2026.jpg\")"
+      "Bash(curl --ssl-no-revoke -L -o \"D:/dev/simple-map/public/leaders/at.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Christian_Stocker_EuCo_2026.jpg/500px-Christian_Stocker_EuCo_2026.jpg\")",
+      "Bash(grep -ohP '\"countryCode\":\\\\s*\"[A-Z]{2,3}\"' src/data/relation/*.json)",
+      "Bash(grep -oP '[A-Z]{2,3}')",
+      "Bash(grep -oE '\"countryCode\":\\\\s*\"[A-Z]{2,3}\"' src/data/relation/*.json)",
+      "Bash(grep -oE '\"[A-Z]{2,3}\"$')",
+      "Bash(grep -oE '[A-Z]{2}$')",
+      "Bash(curl -sL -o co.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg/250px-Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg\")",
+      "Bash(curl -sL -o fr.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Emmanuel_Macron_2025_%28cropped%29.jpg/250px-Emmanuel_Macron_2025_%28cropped%29.jpg\")",
+      "Bash(curl -sL -o gy.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/2026_Irfaan_Ali_%28cropped%29.jpg/250px-2026_Irfaan_Ali_%28cropped%29.jpg\")",
+      "Bash(curl -sL -o jo.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Abdullah_II_portrait_crop_2_at_10_Downing_Street_June_2025.jpg/250px-Abdullah_II_portrait_crop_2_at_10_Downing_Street_June_2025.jpg\")",
+      "Bash(curl -sL --user-agent \"Mozilla/5.0\" -o co.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg/250px-Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg\")",
+      "Bash(wget -q --user-agent=\"Mozilla/5.0\" -O co.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg/250px-Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg\")",
+      "Bash(curl --version)",
+      "Bash(curl -v -L --user-agent \"Mozilla/5.0\" -o co.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg/250px-Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o co.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg/250px-Foto_Oficial_Presidente_Gustavo_Petro_%283x4_cropped%29.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o fr.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Emmanuel_Macron_2025_%28cropped%29.jpg/250px-Emmanuel_Macron_2025_%28cropped%29.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o gy.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/2026_Irfaan_Ali_%28cropped%29.jpg/250px-2026_Irfaan_Ali_%28cropped%29.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o jo.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Abdullah_II_portrait_crop_2_at_10_Downing_Street_June_2025.jpg/250px-Abdullah_II_portrait_crop_2_at_10_Downing_Street_June_2025.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o lb.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Official_Portrait_of_the_President_of_the_Republic_of_Lebanon.jpg/250px-Official_Portrait_of_the_President_of_the_Republic_of_Lebanon.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o mn.jpg \"https://upload.wikimedia.org/wikipedia/commons/f/fe/Official_presidential_portrait_of_Ukhnaagiin_Khurelsukh.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o pe.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jos%C3%A9_Mar%C3%ADa_Balc%C3%A1zar_2026.jpg/250px-Jos%C3%A9_Mar%C3%ADa_Balc%C3%A1zar_2026.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o ps.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Mahmoud_Abbas_2024.jpg/250px-Mahmoud_Abbas_2024.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o py.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Santiago_Pe%C3%B1a_dic_2025_%282%29.jpg/250px-Santiago_Pe%C3%B1a_dic_2025_%282%29.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o sy.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ahmed_al-Sharaa_in_November_2025.jpg/250px-Ahmed_al-Sharaa_in_November_2025.jpg\")",
+      "Bash(curl -sL --ssl-no-revoke --user-agent \"Mozilla/5.0\" -o ve.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Delcy_Rodr%C3%ADguez_%2826-01-2026%29_%28cropped%29.jpg/250px-Delcy_Rodr%C3%ADguez_%2826-01-2026%29_%28cropped%29.jpg\")",
+      "Bash(node -e ':*)"
     ]
   }
 }
