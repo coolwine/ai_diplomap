@@ -1,0 +1,77 @@
+{
+  "countryCode": "EC",
+  "relations": [
+    {
+      "countryCode": "MX",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "대사관 강제 진입, ICJ 소송 중", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "대사관 습격으로 외교 단절", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "대사관 사태 여파, 소송전 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "치안 위기 속 미국에 올인", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "치안·경제 협력 강화 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "치안 공조·이민 협력 강화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FTA 발효, 차이나머니와 더 엮임", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "FTA 발효 등 경제 밀착", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FTA 이후 투자·무역 밀착", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TW",
+      "opinions": [
+        { "ai": "grok", "level": "neutral", "comment": "대만 비인정, 중국 압력 속 중립", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "무역·투자 협력 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "무역 협정 추진 중", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "gemini", "level": "friendly", "comment": "SECA 협상 등으로 거리 좁히기", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "SECA 협상으로 실무 밀착", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "무역·투자 확대 기대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CO",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "게릴라 국경 침범으로 안보 긴장", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "국경 안보 이슈로 긴장 관리", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "관세 전쟁으로 관계 악화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "VE",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "마두로의 눈엣가시, 이념 전쟁 중", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "난민·치안 이슈로 경계 심화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PE",
+      "opinions": [
+        { "ai": "gpt", "level": "neutral", "comment": "치안·통상 협력, 긴장은 낮음", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안데스 협력 강화", "date": "2026" }
+      ]
+    }
+  ]
+}

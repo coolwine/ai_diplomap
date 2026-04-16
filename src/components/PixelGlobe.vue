@@ -11,6 +11,7 @@ import {
   type CountryFeature,
 } from "../data/worldCountries";
 import { useGlobeViewStore } from "../stores/globeView";
+import PixelGlobeCloudLayer from "./pixel-globe/PixelGlobeCloudLayer.vue";
 import PixelGlobeHologramLayer from "./pixel-globe/PixelGlobeHologramLayer.vue";
 import PixelGlobeInfoPanel from "./pixel-globe/PixelGlobeInfoPanel.vue";
 import type { CountryInfo } from "./pixel-globe/PixelGlobeInfoPanel.vue";
@@ -75,6 +76,7 @@ let isInteracting = false;
 let offscreenCanvas: HTMLCanvasElement | null = null;
 let offscreenContext: CanvasRenderingContext2D | null = null;
 let offscreenImageData: ImageData | null = null;
+const globeRadius = ref(0);
 let lastRenderRadius = 0;
 let lastRenderWidth = 0;
 let lastRenderHeight = 0;
@@ -890,6 +892,7 @@ function render() {
   const radiusInPixels = radius * pixelSize;
   const activeCountryRelationMap = getActiveCountryRelationMap();
   lastRenderRadius = radiusInPixels;
+  globeRadius.value = radiusInPixels;
   lastRenderWidth = width;
   lastRenderHeight = height;
 
@@ -1225,6 +1228,12 @@ function handleCanvasClick(event: MouseEvent) {
       @pointercancel="handlePointerUp"
       @pointerleave="handlePointerUp"
       @wheel="handleWheel"
+    />
+    <PixelGlobeCloudLayer
+      :viewport="viewport"
+      :globe-radius="globeRadius"
+      :center-lon="centerLongitude"
+      :center-lat="centerLatitude"
     />
     <PixelGlobeRelationLayer
       :selected-country-name="selectedCountryName"

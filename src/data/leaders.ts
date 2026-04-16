@@ -40,6 +40,11 @@ export const LEADERS: Record<string, LeaderInfo> = {
     title: "Prime Minister (2022–present)",
     image: "/leaders/il.jpg",
   },
+  EC: {
+    name: "Daniel Roy Gilchrist Noboa Azín",
+    title: "48th President (2025–present)",
+    image: "/leaders/ec.jpg",
+  },
   IN: {
     name: "नरेन्द्र मोदी (Narendra Modi)",
     title: "Prime Minister (2014–present)",
