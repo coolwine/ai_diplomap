@@ -282,6 +282,11 @@ select {
   line-height: 1;
 }
 
+.globe-label-group {
+  color: #c7d2ad;
+  font-size: 10px
+}
+
 .globe-label-secondary {
   color: #d6e3ff;
   font-family: "Courier New", monospace;

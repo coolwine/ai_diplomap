@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { storeToRefs } from "pinia";
 
@@ -90,6 +90,7 @@ const countriesVersion = ref(0);
 const locale = ref("ko");
 
 const SEARCH_HIDE_ZOOM = 2.2;
+const FORCE_LABEL_AT_MAX_ZOOM = 3.95;
 
 const devicePixelRatioValue = computed(() => window.devicePixelRatio || 1);
 const selectedCountry = computed(
@@ -580,6 +581,7 @@ function buildVisibleLabels(
   radiusInPixels: number,
   activeCountryRelationMap: Map<string, string> | null,
 ) {
+  const forceShowNames = zoom.value >= FORCE_LABEL_AT_MAX_ZOOM;
   const secondaryFontFamily = '"Courier New", monospace';
   const primaryFontSize = Math.round(clamp(9 + zoom.value * 2, 9, 15));
   const secondaryFontSize = Math.max(8, primaryFontSize - 2);
@@ -587,7 +589,7 @@ function buildVisibleLabels(
   const placedRects: DOMRect[] = [];
   const zoomBoost = isInteracting ? 0.25 : 0;
   const labelCandidates = worldCountries
-    .filter((country) => zoom.value >= country.minZoom + zoomBoost)
+    .filter((country) => forceShowNames || zoom.value >= country.minZoom + zoomBoost)
     .map((country) => {
       const projected = projectGeoToScreen(country.label, radiusInPixels, width, height);
 
@@ -612,6 +614,7 @@ function buildVisibleLabels(
         koreanContinent: country.koreanContinent,
         koreanName: localizedName(country),
         labelPriority: country.labelPriority,
+        smallCountryBoost: clamp(180 / Math.max(country.areaScore, 18), 0, 8),
         isActive,
         relationLevel,
         x: projected.x,
@@ -622,6 +625,10 @@ function buildVisibleLabels(
     .sort((left, right) => {
       if (right.labelPriority !== left.labelPriority) {
         return right.labelPriority - left.labelPriority;
+      }
+
+      if (right.smallCountryBoost !== left.smallCountryBoost) {
+        return right.smallCountryBoost - left.smallCountryBoost;
       }
 
       if (right.areaScore !== left.areaScore) {
@@ -641,12 +648,18 @@ function buildVisibleLabels(
     const primaryText = `${candidate.koreanName} (${candidate.displayGroupKo})`;
     context.font = `700 ${primaryFontSize}px ${secondaryFontFamily}`;
     const primaryWidth = context.measureText(primaryText).width;
-    context.font = `600 ${secondaryFontSize}px ${secondaryFontFamily}`;
-    const secondaryWidth = context.measureText(
-      `${candidate.englishName} · ${candidate.displayGroupEn}`,
-    ).width;
+    let secondaryWidth = 0;
+    let textHeight = primaryFontSize;
+
+    if (!forceShowNames) {
+      context.font = `600 ${secondaryFontSize}px ${secondaryFontFamily}`;
+      secondaryWidth = context.measureText(
+        `${candidate.englishName} 쨌 ${candidate.displayGroupEn}`,
+      ).width;
+      textHeight = primaryFontSize + secondaryFontSize + lineGap;
+    }
+
     const textWidth = Math.max(primaryWidth + iconPadding, secondaryWidth);
-    const textHeight = primaryFontSize + secondaryFontSize + lineGap;
     const rect = new DOMRect(
       candidate.x - textWidth / 2 - 5,
       candidate.y - textHeight / 2 - 4,
@@ -655,16 +668,20 @@ function buildVisibleLabels(
     );
 
     if (
-      rect.x < 0 ||
-      rect.y < 0 ||
-      rect.x + rect.width > width ||
-      rect.y + rect.height > height ||
-      placedRects.some((placedRect) => overlaps(rect, placedRect))
+      (!forceShowNames &&
+        (rect.x < 0 ||
+          rect.y < 0 ||
+          rect.x + rect.width > width ||
+          rect.y + rect.height > height)) ||
+      (!forceShowNames && placedRects.some((placedRect) => overlaps(rect, placedRect)))
     ) {
       continue;
     }
 
-    placedRects.push(rect);
+    if (!forceShowNames) {
+      placedRects.push(rect);
+    }
+
     nextLabels.push({
       continent: candidate.continent,
       countryName: candidate.countryName,
@@ -672,6 +689,7 @@ function buildVisibleLabels(
       displayGroupKo: candidate.displayGroupKo,
       englishName: candidate.englishName,
       flagClass: candidate.flagClass,
+      forceShowNameOnly: forceShowNames,
       key: candidate.key,
       koreanContinent: candidate.koreanContinent,
       koreanName: candidate.koreanName,
@@ -1271,3 +1289,4 @@ function handleCanvasClick(event: MouseEvent) {
     />
   </div>
 </template>
+

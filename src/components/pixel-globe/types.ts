@@ -5,6 +5,7 @@ export type VisibleLabel = {
   displayGroupKo: string;
   englishName: string;
   flagClass: string | null;
+  forceShowNameOnly?: boolean;
   key: string;
   koreanContinent: string;
   koreanName: string;

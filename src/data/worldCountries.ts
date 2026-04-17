@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export type Coordinate = {
   lat: number;
   lon: number;
@@ -56,6 +58,7 @@ const LABEL_OVERRIDES: Record<
   }
 > = {
   Israel: { minZoom: 1.1, priority: 20 },
+  Nigeria: { minZoom: 1.3, priority: 15, label: { lat: 9.5, lon: 8.0 } },
   Russia: { label: { lat: 61, lon: 95 } },
   "South Korea": { minZoom: 1.55, priority: 10 },
   Taiwan: { minZoom: 1.6, priority: 9 },
@@ -377,25 +380,18 @@ type RawFeatureIndexEntry = {
 };
 
 let worldCountriesPromise: Promise<CountryFeature[]> | null = null;
+const http = axios.create({
+  baseURL: import.meta.env.BASE_URL,
+});
 
 export function loadWorldCountries() {
   if (!worldCountriesPromise) {
-    worldCountriesPromise = fetch("/data/countries-index.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to load countries index: ${response.status}`);
-        }
-
-        return response.json() as Promise<RawFeatureIndexEntry[]>;
-      })
+    worldCountriesPromise = http
+      .get<RawFeatureIndexEntry[]>("data/countries-index.json")
+      .then((response) => response.data)
       .then((indexEntries) => {
         const fetchPromises = indexEntries.map((entry) =>
-          fetch(`/data/${entry.filename}`).then((res) => {
-            if (!res.ok) {
-              throw new Error(`Failed to load country data for ${entry.id}: ${res.status}`);
-            }
-            return res.json() as Promise<RawFeature>;
-          }),
+          http.get<RawFeature>(`data/${entry.filename}`).then((res) => res.data),
         );
         return Promise.all(fetchPromises);
       })

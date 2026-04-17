@@ -4,11 +4,28 @@
     {
       "countryCode": "US",
       "opinions": [
-        { "ai": "claude", "level": "allied", "comment": "법 아닌 동맹, 무기는 팔아줌", "date": "2026" },
-        { "ai": "gpt", "level": "allied", "comment": "대만관계법으로 실질 동맹", "date": "2026" },
-        { "ai": "grok", "level": "allied", "comment": "중국 견제 핵심 카드.", "date": "2026" },
-        { "ai": "gemini", "level": "allied", "comment": "비공식이지만 사실상 동맹", "date": "2026" }
+        { "ai": "claude", "level": "allied", "comment": "트럼프 변수에도 안보·반도체 공조 유지", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "안보·반도체 협력 핵심축", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "Strong allies vs China.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "반도체와 안보를 아우르는 핵심 파트너", "date": "2026" }
       ]
-    }
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "군사 압박 강화, 양안 긴장 최고조", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "군사 압박 지속, 긴장 고조", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "Constant invasion threats.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "양안 갈등 고조, 끝없는 군사적 긴장", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "gpt", "level": "neutral", "comment": "호칭 논란에도 교류는 지속", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "반도체 경쟁자이자 조심스러운 교류국", "date": "2026" }
+      ]
+    },
+    { "countryCode": "JP", "opinions": [{ "ai": "gemini", "level": "friendly", "comment": "안보 위기감을 공유하는 긴밀한 우방", "date": "2026" }] }
   ]
 }

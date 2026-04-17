@@ -1,0 +1,61 @@
+{
+  "countryCode": "UG",
+  "countryName": "Uganda",
+  "relations": [
+    {
+      "countryCode": "BE",
+      "opinions": [
+        { "ai": "claude", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "인권 이슈로 EU 압박 받는 중", "date": "2026" },
+        { "ai": "grok", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "인권법 갈등으로 관계 긴장", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CD",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "동부 DRC 군사개입으로 긴장 지속", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "ADF 공조와 M23 의혹이 공존", "date": "2026" },
+        { "ai": "grok", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "ADF 소탕 협력과 반군 지원 의혹", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RW",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "DRC 대리전 후 관계 정상화 중", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "동부콩고 개입 의혹으로 신경전", "date": "2026" },
+        { "ai": "grok", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "국경 개방 후 관계 정상화 중", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "반동성애법으로 원조 축소 및 제재", "date": "2026" },
+        { "ai": "gpt", "level": "", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "성소수자법 제재로 갈등 심화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SS",
+      "opinions": [
+        { "ai": "claude", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "난민·치안 협력이 핵심 현안", "date": "2026" },
+        { "ai": "grok", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "난민 및 역내 안보 핵심 파트너", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SD",
+      "opinions": [
+        { "ai": "claude", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "수단 내전 난민 유입 부담", "date": "2026" },
+        { "ai": "grok", "level": "", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "내전 난민 유입에 따른 협력", "date": "2026" }
+      ]
+    },
+    { "countryCode": "CN", "opinions": [{ "ai": "gemini", "level": "friendly", "comment": "대규모 차관과 인프라 중심 협력", "date": "2026" }] }
+  ]
+}

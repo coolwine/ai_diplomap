@@ -1,12 +1,14 @@
 // import { RELATIONS } from "./relations_test"
 const RELATION_FILES = import.meta.glob("./relation/*.json", { eager: true });
-const RELATIONS: NationRelation[] = Object.entries(RELATION_FILES).map(([path, content]: [string, any]) => {
-  const countryCode = path.split("/").pop()?.split(".")[0] || "";
-  return {
-    countryCode,
-    relations: content.relations || content.default?.relations || [],
-  };
-});
+const RELATIONS: NationRelation[] = Object.entries(RELATION_FILES).map(
+  ([path, content]: [string, any]) => {
+    const countryCode = path.split("/").pop()?.split(".")[0] || "";
+    return {
+      countryCode,
+      relations: content.relations || content.default?.relations || [],
+    };
+  },
+);
 
 export type RelationLevel = "war" | "hostile" | "neutral" | "friendly" | "allied";
 
@@ -120,28 +122,10 @@ export function getAllRelations(): CountryRelation[] {
   return flatRelations;
 }
 
-/** Get raw NationRelation[] with all AI opinions */
-export function getAllNationRelations(): NationRelation[] {
-  return RELATIONS;
-}
-
-/** Get flat relations for a specific country */
-export function getRelationsForCountry(countryIso2: string): CountryRelation[] {
-  const countryEntry = RELATIONS.find((r) => r.countryCode === countryIso2);
-  if (!countryEntry) {
-    // Also check if this country is a target in other entries
-    return getAllRelations().filter((r) => r.source === countryIso2 || r.target === countryIso2);
-  }
-
-  return countryEntry.relations.map((rel) => ({
-    level: getRepresentativeLevel(rel.opinions),
-    source: countryIso2,
-    target: rel.countryCode,
-  }));
-}
-
 /** Get NationRelation-like entries involving a specific country */
-export function getNationRelationsForCountry(countryIso2: string): { nationKey: string; opinions: AiOpinion[] }[] {
+export function getNationRelationsForCountry(
+  countryIso2: string,
+): { nationKey: string; opinions: AiOpinion[] }[] {
   const countryEntry = RELATIONS.find((r) => r.countryCode === countryIso2);
   if (!countryEntry) return [];
 
