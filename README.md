@@ -3,6 +3,8 @@
 AI DIPLOMAP은 심플한 세계지도를 기반으로,
 각 국가 사이의 관계도를 시각화하는 프로젝트입니다.
 
+![AI DIPLOMAP 소개](public/pic1.png)
+
 ## 데모
 [AI DIPLOMAP 데모](https://ai-diplomap.vercel.app/)
 
