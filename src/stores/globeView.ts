@@ -2,7 +2,7 @@ import { ref } from "vue";
 import { defineStore } from "pinia";
 
 const MIN_ZOOM = 0.85;
-const MAX_ZOOM = 4.0;
+const MAX_ZOOM = 18.0;
 const MIN_LAT = -72;
 const MAX_LAT = 72;
 
