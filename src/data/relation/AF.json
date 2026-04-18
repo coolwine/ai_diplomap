@@ -1,0 +1,77 @@
+{
+  "countryCode": "AF",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "철군 후 단절, 제재 지속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "탈레반 정권 승인 거부 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "20년 전쟁 끝나도 증오 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "제재와 불신의 벽, 여전히 높다", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PK",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "국경 충돌과 난민 갈등 격화", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "TTP 문제로 군사 긴장 고조", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "듀랜드 라인은 영원한 상처.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "이웃이지만 원수처럼 지내는 중", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "자원 외교 접근, 승인은 유보", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "광물 투자 탐색, 정치 거리두기", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "희토류 노리며 실리 접근.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "자원은 탐나고, 승인은 부담", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "수자원 갈등 속 실용 대화", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "헬만드 물 분쟁 지속 중", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "수자원 분쟁으로 긴장 고조.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "물 한 방울이 외교를 흔든다", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "탈레반과 실용적 접촉 유지", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "안보 대화 채널 유지 중", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "테러 방지 위한 냉정한 파트너십.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "테러 차단 위한 실용 대화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "인도적 지원 중심 제한적 관여", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "인도적 지원은 하되 거리두기", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "파키스탄 견제 차원 관여.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "전략적 계산 속 조심스런 관여", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "QA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "탈레반 외교 창구 역할 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "중재 외교 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "탈레반의 외교적 거울.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "탈레반의 유일한 외교 로비", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "대사관 철수 후 관계 사실상 중단", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "인도적 지원 외 접점 미미", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "외교 공백, 인도적 지원만.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "접점 거의 없는 먼 나라", "date": "2026" }
+      ]
+    }
+  ]
+}

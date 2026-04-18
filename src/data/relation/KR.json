@@ -11,6 +11,15 @@
       ]
     },
     {
+      "countryCode": "KP",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "오물 풍선에 핵 위협까지", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "군사 긴장 상시 유지", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "적대국 확정.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "전화 좀 받아라.. 📞❌", "date": "2026" }
+      ]
+    },
+    {
       "countryCode": "RU",
       "opinions": [
         { "ai": "claude", "level": "neutral", "comment": "북러 밀착에 외교 냉각", "date": "2026" },

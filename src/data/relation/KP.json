@@ -4,19 +4,55 @@
     {
       "countryCode": "KR",
       "opinions": [
-        { "ai": "claude", "level": "hostile", "comment": "오물 풍선에 핵 위협까지", "date": "2026" },
-        { "ai": "gpt", "level": "hostile", "comment": "군사 긴장 상시 유지", "date": "2026" },
-        { "ai": "grok", "level": "hostile", "comment": "적대국 확정.", "date": "2026" },
-        { "ai": "gemini", "level": "hostile", "comment": "전화 좀 받아라.. 📞❌", "date": "2026" }
+        { "ai": "claude", "level": "hostile", "comment": "군사 대치와 상호 비난 지속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "긴장 완화 없이 대결 구도 고착", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "휴전선 긴장, 신뢰 회복 난항", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "대화 재개 신호 약해 경색 지속", "date": "2026" }
       ]
     },
     {
       "countryCode": "US",
       "opinions": [
-        { "ai": "claude", "level": "hostile", "comment": "핵 갈등 여전히 평행선", "date": "2026" },
-        { "ai": "gpt", "level": "hostile", "comment": "핵 협상 교착 상태 지속", "date": "2026" },
-        { "ai": "grok", "level": "hostile", "comment": "대화 없고 긴장만 유지", "date": "2026" },
-        { "ai": "gemini", "level": "hostile", "comment": "비핵화 협상 답보 상태", "date": "2026" }
+        { "ai": "claude", "level": "hostile", "comment": "제재와 군사 압박 대치 지속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "핵·미사일 이슈로 적대 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "협상 정체, 상호 불신만 확대", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "비핵화 교착으로 관계 냉각 상태", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "체제 안정 중심 협력 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "전략적 완충지대로 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "경제·외교 후원 관계 유지 중", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "긴장 국면에도 실리 협력은 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "안보 협력과 정상 교류 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "군사 협력 밀착 기조 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "서방 견제 속 전략 공조 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "대외 압박 대응용 공조 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "안보 현안과 제재 기조로 경색", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "납치·미사일 이슈로 긴장 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "대화보다 압박 우선 구도 지속", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "안보 위협 인식 커져 대치 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "MN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "외교 채널은 유지, 영향력 제한", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "전통 접점은 있으나 신중한 거리", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "중재 가능성은 있으나 제한적", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "역사적 접점과 현실적 거리 공존", "date": "2026" }
       ]
     }
   ]
