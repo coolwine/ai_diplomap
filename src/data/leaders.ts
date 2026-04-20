@@ -4,7 +4,15 @@ export type LeaderInfo = {
   image: string;
 };
 
-export const LEADERS: Record<string, LeaderInfo> = {
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+function withBaseUrl(path: string) {
+  return `${baseUrl}${path.replace(/^\/+/, "")}`;
+}
+
+const rawLeaders: Record<string, LeaderInfo> = {
   US: {
     name: "Donald Trump",
     title: "47th President (2025–present)",
@@ -536,3 +544,13 @@ export const LEADERS: Record<string, LeaderInfo> = {
     image: "/leaders/tm.jpg",
   },
 };
+
+export const LEADERS: Record<string, LeaderInfo> = Object.fromEntries(
+  Object.entries(rawLeaders).map(([iso2, leader]) => [
+    iso2,
+    {
+      ...leader,
+      image: withBaseUrl(leader.image),
+    },
+  ]),
+);

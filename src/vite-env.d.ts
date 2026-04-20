@@ -11,3 +11,8 @@ declare module "*.geojson" {
   const value: unknown;
   export default value;
 }
+
+interface Window {
+  dataLayer?: unknown[][];
+  gtag?: (...args: unknown[]) => void;
+}

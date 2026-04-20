@@ -52,5 +52,13 @@ bun run build
 - 관계 국가는 `relations[].countryCode`에 ISO2 코드로 추가한다.
 - 기존 데이터는 삭제하지 않고 유지한다.
 - 현재 작업 AI에 해당하는 `opinion`만 수정한다.
-- `comment`는 한 문장, 30자 이내로 작성한다.
-- 특이사항이 없으면 `comment`를 빈 문자열로 둘 수 있다.
+
+## level
+다음 값 중 하나만 사용:
+- "war" | "hostile" | "neutral" | "friendly" | "allied"
+
+## comment
+- 현재 국제 정세를 반영한 한 문장
+- 30자 이내, 짧고 간결하게 작성
+- 필요 시 밈 표현 가능
+- 특이사항 없으면 "" 유지
