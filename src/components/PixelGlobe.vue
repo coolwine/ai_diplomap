@@ -4,6 +4,7 @@ import { storeToRefs } from "pinia";
 
 import { getLocalizedCountryName, getLocalizedGroup } from "../data/locale";
 import { RELATION_LEVELS, getAllRelations } from "../data/relations";
+import { syncSeoMetadata } from "../lib/seo";
 import {
   countryContainsPoint,
   loadWorldCountries,
@@ -84,6 +85,7 @@ let suppressCanvasClick = false;
 const dragStartPoint = ref<{ x: number; y: number } | null>(null);
 const visibleLabels = ref<VisibleLabel[]>([]);
 const visibleRelations = ref<VisibleRelation[]>([]);
+const selectedCountryPos = ref<{ x: number; y: number } | null>(null);
 const selectedCountryName = ref<string | null>(null);
 const focusedInfoPanelCountryName = ref<string | null>(null);
 const countriesVersion = ref(0);
@@ -99,9 +101,7 @@ const selectedCountry = computed(
 const searchVisible = computed(() => zoom.value < SEARCH_HIDE_ZOOM);
 const hologramPos = computed(() => {
   if (!selectedCountryName.value) return null;
-  const label = visibleLabels.value.find((l) => l.countryName === selectedCountryName.value);
-  if (!label) return null;
-  return { x: label.x, y: label.y };
+  return selectedCountryPos.value;
 });
 const selectedCountryInfo = computed<CountryInfo | null>(() => {
   void countriesVersion.value;
@@ -161,10 +161,16 @@ watch(selectedCountryName, () => {
   scheduleRender();
 });
 
+watch([selectedCountryInfo, locale], ([country, currentLocale]) => {
+  syncSeoMetadata(currentLocale, country);
+});
+
 onMounted(async () => {
   if (!stageRef.value) {
     return;
   }
+
+  syncSeoMetadata(locale.value, selectedCountryInfo.value);
 
   worldCountries = await loadWorldCountries();
   worldTexture = createWorldTexture(worldCountries);
@@ -588,6 +594,18 @@ function buildVisibleLabels(
   const lineGap = 2;
   const placedRects: DOMRect[] = [];
   const zoomBoost = isInteracting ? 0.25 : 0;
+  if (selectedCountryName.value) {
+    const selected = worldCountries.find((c) => c.name === selectedCountryName.value);
+    if (selected) {
+      const projected = projectGeoToScreen(selected.label, radiusInPixels, width, height);
+      selectedCountryPos.value = projected ? { x: projected.x, y: projected.y } : null;
+    } else {
+      selectedCountryPos.value = null;
+    }
+  } else {
+    selectedCountryPos.value = null;
+  }
+
   const labelCandidates = worldCountries
     .filter((country) => forceShowNames || zoom.value >= country.minZoom + zoomBoost)
     .map((country) => {
@@ -667,14 +685,18 @@ function buildVisibleLabels(
       textHeight + 8,
     );
 
+    const edgeMargin = Math.min(Math.max(0, (zoom.value - 1.5) * 40), 100);
+
     if (
-      (!forceShowNames &&
-        (rect.x < 0 ||
-          rect.y < 0 ||
-          rect.x + rect.width > width ||
-          rect.y + rect.height > height)) ||
-      (!forceShowNames && placedRects.some((placedRect) => overlaps(rect, placedRect)))
+      rect.x < edgeMargin ||
+      rect.y < edgeMargin ||
+      rect.x + rect.width > width - edgeMargin ||
+      rect.y + rect.height > height - edgeMargin
     ) {
+      continue;
+    }
+
+    if (!forceShowNames && placedRects.some((placedRect) => overlaps(rect, placedRect))) {
       continue;
     }
 
@@ -1239,6 +1261,7 @@ function handleCanvasClick(event: MouseEvent) {
     <canvas
       ref="canvasRef"
       class="globe-canvas"
+      aria-label="Interactive world map showing diplomatic relations"
       @click="handleCanvasClick"
       @pointerdown="handlePointerDown"
       @pointermove="handlePointerMove"
@@ -1289,4 +1312,3 @@ function handleCanvasClick(event: MouseEvent) {
     />
   </div>
 </template>
-

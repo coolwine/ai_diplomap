@@ -13,3 +13,4 @@ yarn-error.log*
 .vscode/*
 .claude/
 .env*.local
+.DS_Store

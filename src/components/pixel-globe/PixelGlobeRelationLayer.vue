@@ -122,9 +122,9 @@ const getRelationComponent = (level: string) => {
             height="24"
           />
           <text class="relation-center-tag-text" text-anchor="middle" dominant-baseline="middle">
-            <tspan>[{{ relation.sourceKoreanName }}]</tspan>
+            <!--            <tspan>[{{ relation.sourceKoreanName }}]</tspan>-->
+            <tspan>{{ relation.targetKoreanName }}</tspan>
             <tspan :fill="relation.color" font-weight="900">({{ relation.label }})</tspan>
-            <tspan>[{{ relation.targetKoreanName }}]</tspan>
           </text>
         </g>
       </g>

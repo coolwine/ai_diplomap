@@ -5,27 +5,45 @@
       "countryCode": "US",
       "opinions": [
         { "ai": "claude", "level": "allied", "comment": "방위비 올리며 더 친해짐", "date": "2026" },
-        { "ai": "gpt", "level": "allied", "comment": "대중 견제 핵심 축", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "안보·경제 동맹 더 강화", "date": "2026" },
         { "ai": "grok", "level": "allied", "comment": "태평양 최강 콤비.", "date": "2026" },
-        { "ai": "gemini", "level": "allied", "comment": "인태 전략의 핵심 파트너", "date": "2026" }
+        { "ai": "gemini", "level": "allied", "comment": "태평양을 지키는 굳건한 방패 🇯🇵🇺🇸", "date": "2026-04-21" }
       ]
     },
     {
       "countryCode": "KR",
       "opinions": [
         { "ai": "claude", "level": "friendly", "comment": "탄핵 이후에도 협력 지속", "date": "2026" },
-        { "ai": "gpt", "level": "friendly", "comment": "안보 협력 빠르게 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보 협력은 계속 확대중", "date": "2026" },
         { "ai": "grok", "level": "friendly", "comment": "실용적 협력 확대 중.", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "가깝고도 가까워지는 중", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "과거보다 미래로, 셔틀외교 가즈아 🤝", "date": "2026-04-21" }
       ]
     },
     {
       "countryCode": "TW",
       "opinions": [
         { "ai": "claude", "level": "friendly", "comment": "대만 유사시 일본도 긴장", "date": "2026" },
-        { "ai": "gpt", "level": "friendly", "comment": "비공식 우호 관계 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보 리스크로 긴밀 협력", "date": "2026" },
         { "ai": "grok", "level": "friendly", "comment": "지리적 운명 공동체.", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "역사와 지리가 만든 유대감", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "민주주의와 반도체로 이어진 운명 💻", "date": "2026-04-21" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "센카쿠·대만 이슈로 안보 긴장 고조", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "경제는 협력, 안보는 긴장", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "중국 위협에 안보 긴장.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "정치는 냉랭, 경제는 뜨겁게 갈등 중 🇨🇳", "date": "2026-04-21" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "쿠릴 영토분쟁·대러제재로 경색", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "영토·제재로 관계 냉각", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "쿠릴 열도+제재로 최악.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "쿠릴 열도와 우크라 제재로 갈등 🇷🇺", "date": "2026-04-21" }
       ]
     }
   ]

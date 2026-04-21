@@ -130,6 +130,7 @@ function getFlagClass(iso2: string | null) {
             v-model="query"
             class="search-input"
             type="text"
+            aria-label="Search country"
             :placeholder="placeholder"
             spellcheck="false"
             autocomplete="off"

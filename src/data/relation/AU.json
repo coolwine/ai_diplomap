@@ -1,0 +1,77 @@
+{
+  "countryCode": "AU",
+  "countryName": "Australia",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "AUKUS·ANZUS 기반 핵심 동맹", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "AUKUS로 군사동맹 강화", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "AUKUS·ANZUS 철통 동맹.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "AUKUS로 맺어진 무적의 해상 동맹 🇦🇺🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "무역 회복세지만 안보 불신 여전", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "무역은 회복, 안보는 긴장", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "무역은 실리, 안보는 강경.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "장사는 해야겠고, 안보는 불안하고.. 🇨🇳🤔", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "Quad·방산 협력, 준동맹 수준", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "안보·방산 협력 심화", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "Quad·AUKUS 핵심 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "인도-태평양을 지키는 두 기둥 🇯🇵💪", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "방산·자원 협력 확대 추세", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "방산·자원 협력 확대중", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안보·방산 협력 확대 중.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "K-방산과 호주 자원의 만남 🇰🇷⛏️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "영연방+AUKUS, 흔들림 없는 동맹", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "AUKUS·영연방 동맹 강화", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "AUKUS로 더 돈독한 관계.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "전통의 영연방, 다시 뭉치는 영미권 🇬🇧🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "Quad 기반 인태 전략 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "Quad 기반 전략 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "Quad 통해 전략 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "", "comment": "", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "남중국해 안보 공조 강화 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "남중국해 안보 공조 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "남중국해 공동 대응.", "date": "2026" },
+        { "ai": "gemini", "level": "", "comment": "", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "NZ",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "ANZUS 형제국, 설명 불필요", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "ANZUS 기반 형제 동맹", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "설명이 필요 없는 영혼의 단짝 🇳🇿🇦🇺", "date": "2026-04-21" }
+      ]
+    }
+  ]
+}

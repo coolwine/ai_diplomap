@@ -1,12 +1,24 @@
 <template>
-  <PixelGlobe />
-  <footer class="app-footer">
+  <main class="app-shell" aria-label="AI DIPLOMAP main content">
+    <section class="sr-only" aria-label="AI DIPLOMAP overview">
+      <h1>AI DIPLOMAP</h1>
+      <p>
+        AI DIPLOMAP is an interactive web app for exploring diplomatic relations on a world map.
+      </p>
+      <p>
+        Compare country relationships, inspect regional groupings, and review how multiple AI
+        models interpret global affairs.
+      </p>
+    </section>
+    <PixelGlobe />
+  </main>
+  <footer class="app-footer" aria-label="External links">
     <a href="https://github.com/coolwine/ai_diplomap" target="_blank" rel="noopener noreferrer">
       GitHub
     </a>
-    <span class="app-footer-separator">·</span>
+    <span class="app-footer-separator">|</span>
     <a href="https://buymeacoffee.com/coolwinekio" target="_blank" rel="noopener noreferrer">
-      ☕ Buy me a coffee
+      Buy me a coffee
     </a>
   </footer>
 </template>
@@ -16,6 +28,22 @@ import PixelGlobe from "./components/PixelGlobe.vue";
 </script>
 
 <style scoped>
+.app-shell {
+  min-height: 100vh;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .app-footer {
   position: fixed;
   bottom: 0;
