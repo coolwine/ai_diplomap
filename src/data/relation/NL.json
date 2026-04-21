@@ -1,0 +1,60 @@
+{
+  "countryCode": "NL",
+  "countryName": "Netherlands",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "NATO 동맹, ASML 반도체 공조 핵심", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "반도체·안보 협력 핵심 동맹", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "NATO·ASML 반도체 철통 동맹.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "반도체와 안보로 묶인 슈퍼 동맹 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "ASML 수출통제로 갈등 심화", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "반도체 규제로 갈등 심화", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "ASML 수출 통제로 강경 대치.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "장비 안 팔아요, 반도체로 멱살잡이 중 🇨🇳🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "DE",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "EU 최대 교역 파트너, 경제 밀착", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "EU 경제 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "EU 최대 교역국, 경제 혈맹.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "경제 혈맹, 같이 벌고 같이 사는 사이 🇩🇪", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "MH17·우크라 전쟁으로 관계 단절급", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "전쟁·MH17로 관계 단절급", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "MH17+우크라로 관계 단절.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "MH17의 기억, 돌아올 수 없는 강 🇷🇺🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "UA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "F-16 공여 등 적극적 군사 지원", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "F-16 등 군사 지원 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "F-16 지원 등 적극 군사 지원.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "하늘 위 든든한 F-16 셔틀 🇺🇦✈️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "BE",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "베네룩스 형제국, 경제·정치 일체", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "베네룩스 핵심 동맹", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "베네룩스 형제국, 경제·정치 일체.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "베네룩스 찐형제, 한 몸이나 다름없음 🇧🇪", "date": "2026" }
+      ]
+    }
+  ]
+}

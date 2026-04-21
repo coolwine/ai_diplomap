@@ -1,0 +1,69 @@
+{
+  "countryCode": "DE",
+  "countryName": "Germany",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "NATO 동맹이나 관세갈등 부상", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "NATO 핵심 동맹 유지", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "NATO 철통, 관세는 밀당.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "안보 동맹은 굳건, 경제는 밀당 중 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "EU 쌍두마차, 유럽통합 핵심축", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "EU 통합 공동 리더", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "EU 쌍두마차, 통합 리더십.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "EU를 이끄는 영혼의 투톱 🇫🇷🇪🇺", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "우크라 전쟁 후 에너지 탈러 가속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "전쟁 이후 관계 급격 악화", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "우크라 전쟁 후 완전 냉각.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "가스 밸브 잠기고 관계도 꽁꽁 🇷🇺", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "최대 교역국이나 디리스킹 추진", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "교역 유지 속 전략적 자립 모색", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "교역 유지, 디리스킹 추진.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "장사는 계속하지만 리스크 관리는 필수 🇨🇳", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "UA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "유럽 최대 군사·재정 지원국", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "군사·재정 지원 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "우크라 최대 지원국 철통.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "유럽의 방패, 아낌없이 주는 나무 🇺🇦", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "유럽 안보 공조, 경제 협력 긴밀", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·경제 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "동유럽 안보 공조 강화.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "과거는 뒤로, 안보 위해 뭉치는 중 🇵🇱", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "역사적 책임감 속 가자 사태 균형", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "인도적 우려 속 전략적 파트너십", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "역사 책임과 현실 균형.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "역사적 부채와 현실적 비판 사이 🇮🇱", "date": "2026" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "countryCode": "ES",
+  "countryName": "Spain",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "NATO 동맹, 로타 해군기지 주둔", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "NATO 기반 군사 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "NATO 핵심, 로타 기지 든든.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "NATO 핵심 기지 제공하는 든든한 우방 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "EU 남유럽 공조, 긴밀한 이웃", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "EU 내 긴밀한 협력 관계", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EU 남유럽 공조, 가까운 이웃.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "EU 남쪽 라인 이끄는 친한 이웃 🇫🇷🇪🇺", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "MA",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "세우타·이민 갈등, 관계 회복 중", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "이민 및 영토 이슈로 조심스러운 관계", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "세우타·이민 문제로 긴장.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "이민자 문제는 골치 아파도 잘 지내보자 🇲🇦", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "EU 대러제재 동참, 우크라 지원", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "제재 동참으로 관계 경색", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "대러 제재 동참, 관계 냉각.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "EU 제재 대열 합류, 관계는 최악 🇷🇺🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "팔레스타인 국가 승인, 대사 소환", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "팔레스타인 문제로 갈등 심화", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "팔레스타인 승인으로 갈등.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "팔레스타인 국가 인정으로 관계 파탄 🇮🇱🔥", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "중남미 스페인어권 문화·경제 유대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "언어·경제 기반 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "스페인어권 문화·경제 유대.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "말 통하는 형제 국가, 경제는 원팀 🇦🇷", "date": "2026" }
+      ]
+    }
+  ]
+}

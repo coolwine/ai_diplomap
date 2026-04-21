@@ -1,0 +1,60 @@
+{
+  "countryCode": "SE",
+  "countryName": "Sweden",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "NATO 신규 가입, 안보 협력 급진전", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "NATO 가입으로 동맹 전환", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "NATO 가입으로 안보 동맹 강화.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "NATO 입성 완료, 미국과 안보 깐부 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "NATO 가입으로 관계 결정적 악화", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "NATO 가입으로 긴장 극대화", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "NATO 가입으로 러시아 적대.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "중립은 끝, 이제는 북해의 방패 🇷🇺🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "FI",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "북유럽 쌍둥이, 동반 NATO 가입", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "동반 NATO 가입 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "북유럽 쌍둥이, NATO 공동 가입.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "함께 가입한 영혼의 나토 듀오 🇫🇮🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "NO",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "노르딕 형제국, 안보·복지 공조", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "노르딕 안보 협력 핵심", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "노르딕 형제, 안보 협력 강화.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "노르딕 패밀리, 안보까지 원팀 완성 🇳🇴", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "NATO 가입 승인 후 관계 안정화", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "가입 승인 이후 실무 협력 재개", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "NATO 가입 승인 후 실무 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "도장 받았으니 이제는 비즈니스 파트너 🇹🇷", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "인권·홍콩 문제로 외교 냉각", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "교역 유지 속 가치 기반 외교 긴장", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "인권 문제로 외교 냉각.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "할 말은 하는 사이, 관계는 서늘 🇨🇳🧊", "date": "2026" }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import {
 } from "../data/worldCountries";
 import { useGlobeViewStore } from "../stores/globeView";
 import PixelGlobeCloudLayer from "./pixel-globe/PixelGlobeCloudLayer.vue";
+import PixelGlobeBootOverlay from "./pixel-globe/PixelGlobeBootOverlay.vue";
 import PixelGlobeHologramLayer from "./pixel-globe/PixelGlobeHologramLayer.vue";
 import PixelGlobeInfoPanel from "./pixel-globe/PixelGlobeInfoPanel.vue";
 import type { CountryInfo } from "./pixel-globe/PixelGlobeInfoPanel.vue";
@@ -77,6 +78,7 @@ let isInteracting = false;
 let offscreenCanvas: HTMLCanvasElement | null = null;
 let offscreenContext: CanvasRenderingContext2D | null = null;
 let offscreenImageData: ImageData | null = null;
+let bootProgressFrameId: number | null = null;
 const globeRadius = ref(0);
 let lastRenderRadius = 0;
 let lastRenderWidth = 0;
@@ -90,9 +92,14 @@ const selectedCountryName = ref<string | null>(null);
 const focusedInfoPanelCountryName = ref<string | null>(null);
 const countriesVersion = ref(0);
 const locale = ref("ko");
+const isBooting = ref(true);
+const loadingProgress = ref(0);
 
 const SEARCH_HIDE_ZOOM = 2.2;
 const FORCE_LABEL_AT_MAX_ZOOM = 3.95;
+const BOOT_MIN_DURATION_MS = 2500;
+const BOOT_COMPLETE_HOLD_MS = 180;
+const BOOT_PROGRESS_CAP = 0.94;
 
 const devicePixelRatioValue = computed(() => window.devicePixelRatio || 1);
 const selectedCountry = computed(
@@ -171,22 +178,53 @@ onMounted(async () => {
   }
 
   syncSeoMetadata(locale.value, selectedCountryInfo.value);
+  const bootStartedAt = performance.now();
+  startBootProgress();
 
-  worldCountries = await loadWorldCountries();
-  worldTexture = createWorldTexture(worldCountries);
-  countriesVersion.value += 1;
+  try {
+    // Warm relation data alongside country geometry so the loading UI tracks real boot work.
+    void getAllRelations().length;
 
-  resizeObserver = new ResizeObserver((entries) => {
-    const entry = entries[0];
-    const width = Math.max(1, Math.floor(entry.contentRect.width));
-    const height = Math.max(1, Math.floor(entry.contentRect.height));
+    const countries = await loadWorldCountries();
+    const remainingBootTime = Math.max(
+      0,
+      BOOT_MIN_DURATION_MS - (performance.now() - bootStartedAt),
+    );
 
-    viewport.value = { width, height };
+    if (remainingBootTime > 0) {
+      await wait(remainingBootTime);
+    }
+
+    loadingProgress.value = Math.max(loadingProgress.value, 0.97);
+    worldCountries = countries;
+    worldTexture = createWorldTexture(worldCountries);
+    countriesVersion.value += 1;
+
+    resizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      const width = Math.max(1, Math.floor(entry.contentRect.width));
+      const height = Math.max(1, Math.floor(entry.contentRect.height));
+
+      viewport.value = { width, height };
+      scheduleRender();
+    });
+
+    const initialBounds = stageRef.value.getBoundingClientRect();
+    viewport.value = {
+      width: Math.max(1, Math.floor(initialBounds.width)),
+      height: Math.max(1, Math.floor(initialBounds.height)),
+    };
+
+    resizeObserver.observe(stageRef.value);
     scheduleRender();
-  });
+    loadingProgress.value = 1;
 
-  resizeObserver.observe(stageRef.value);
-  scheduleRender();
+    await wait(BOOT_COMPLETE_HOLD_MS);
+    isBooting.value = false;
+  } catch (error) {
+    console.error("[AI DIPLOMAP] Failed to initialize globe data.", error);
+    isBooting.value = false;
+  }
 });
 
 onBeforeUnmount(() => {
@@ -204,7 +242,36 @@ onBeforeUnmount(() => {
   if (animationFrameId !== null) {
     cancelAnimationFrame(animationFrameId);
   }
+
+  if (bootProgressFrameId !== null) {
+    cancelAnimationFrame(bootProgressFrameId);
+  }
 });
+
+function wait(durationMs: number) {
+  return new Promise<void>((resolve) => {
+    window.setTimeout(resolve, durationMs);
+  });
+}
+
+function startBootProgress() {
+  const startedAt = performance.now();
+
+  const step = (now: number) => {
+    const elapsedRatio = Math.min((now - startedAt) / BOOT_MIN_DURATION_MS, 1);
+    const targetProgress = Math.min(elapsedRatio * BOOT_PROGRESS_CAP, BOOT_PROGRESS_CAP);
+    loadingProgress.value = Math.max(loadingProgress.value, targetProgress);
+
+    if (isBooting.value && loadingProgress.value < BOOT_PROGRESS_CAP) {
+      bootProgressFrameId = requestAnimationFrame(step);
+      return;
+    }
+
+    bootProgressFrameId = null;
+  };
+
+  bootProgressFrameId = requestAnimationFrame(step);
+}
 
 function normalizeVector(vector: { x: number; y: number; z: number }) {
   const length = Math.hypot(vector.x, vector.y, vector.z) || 1;
@@ -1257,7 +1324,7 @@ function handleCanvasClick(event: MouseEvent) {
 </script>
 
 <template>
-  <div ref="stageRef" class="globe-stage">
+  <div ref="stageRef" class="globe-stage" :class="{ 'is-booting': isBooting }">
     <canvas
       ref="canvasRef"
       class="globe-canvas"
@@ -1270,45 +1337,48 @@ function handleCanvasClick(event: MouseEvent) {
       @pointerleave="handlePointerUp"
       @wheel="handleWheel"
     />
-    <PixelGlobeCloudLayer
-      :viewport="viewport"
-      :globe-radius="globeRadius"
-      :center-lon="centerLongitude"
-      :center-lat="centerLatitude"
-    />
-    <PixelGlobeRelationLayer
-      :selected-country-name="selectedCountryName"
-      :viewport="viewport"
-      :visible-relations="visibleRelations"
-      @focus-relation="handleFocusRelation"
-    />
-    <PixelGlobeHologramLayer
-      :selected-country-iso2="selectedCountryInfo?.iso2 ?? null"
-      :x="hologramPos?.x ?? 0"
-      :y="hologramPos?.y ?? 0"
-      :visible="hologramPos !== null"
-    />
-    <PixelGlobeLabelLayer
-      :selected-country-name="selectedCountryName"
-      :visible-labels="visibleLabels"
-      :visible-relations="visibleRelations"
-      :focused-countries="focusedRelationCountries"
-      @select-country="selectCountry"
-    />
-    <PixelGlobeSearchBar
-      :countries="searchableCountries"
-      :visible="searchVisible"
-      :locale="locale"
-      @select-country="selectCountry"
-      @navigate-to="navigateTo"
-      @change-locale="handleLocaleChange"
-    />
-    <PixelGlobeInfoPanel
-      :country="selectedCountryInfo"
-      :focus-relation-country-name="focusedInfoPanelCountryName"
-      :resolve-country="resolveCountryByIso2"
-      @close="selectCountry(null)"
-      @select-country="selectCountry"
-    />
+    <PixelGlobeBootOverlay :visible="isBooting" :progress="loadingProgress" />
+    <template v-if="!isBooting">
+      <PixelGlobeCloudLayer
+        :viewport="viewport"
+        :globe-radius="globeRadius"
+        :center-lon="centerLongitude"
+        :center-lat="centerLatitude"
+      />
+      <PixelGlobeRelationLayer
+        :selected-country-name="selectedCountryName"
+        :viewport="viewport"
+        :visible-relations="visibleRelations"
+        @focus-relation="handleFocusRelation"
+      />
+      <PixelGlobeHologramLayer
+        :selected-country-iso2="selectedCountryInfo?.iso2 ?? null"
+        :x="hologramPos?.x ?? 0"
+        :y="hologramPos?.y ?? 0"
+        :visible="hologramPos !== null"
+      />
+      <PixelGlobeLabelLayer
+        :selected-country-name="selectedCountryName"
+        :visible-labels="visibleLabels"
+        :visible-relations="visibleRelations"
+        :focused-countries="focusedRelationCountries"
+        @select-country="selectCountry"
+      />
+      <PixelGlobeSearchBar
+        :countries="searchableCountries"
+        :visible="searchVisible"
+        :locale="locale"
+        @select-country="selectCountry"
+        @navigate-to="navigateTo"
+        @change-locale="handleLocaleChange"
+      />
+      <PixelGlobeInfoPanel
+        :country="selectedCountryInfo"
+        :focus-relation-country-name="focusedInfoPanelCountryName"
+        :resolve-country="resolveCountryByIso2"
+        @close="selectCountry(null)"
+        @select-country="selectCountry"
+      />
+    </template>
   </div>
 </template>

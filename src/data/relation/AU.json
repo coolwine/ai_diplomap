@@ -70,7 +70,7 @@
       "opinions": [
         { "ai": "claude", "level": "allied", "comment": "ANZUS 형제국, 설명 불필요", "date": "2026" },
         { "ai": "gpt", "level": "allied", "comment": "ANZUS 기반 형제 동맹", "date": "2026" },
-        { "ai": "gemini", "level": "allied", "comment": "설명이 필요 없는 영혼의 단짝 🇳🇿🇦🇺", "date": "2026-04-21" }
+        { "ai": "gemini", "level": "allied", "comment": "설명이 필요 없는 영혼의 단짝 🇳🇿🇦🇺", "date": "2026" }
       ]
     }
   ]

@@ -39,6 +39,10 @@ select {
   background: radial-gradient(circle at center, rgba(28, 54, 92, 0.34), transparent 34%), #020611;
 }
 
+.globe-stage.is-booting .globe-canvas {
+  filter: blur(2px) brightness(0.45) saturate(0.8);
+}
+
 .globe-canvas {
   display: block;
   width: 100%;

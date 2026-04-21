@@ -1,0 +1,58 @@
+{
+  "countryCode": "KZ",
+  "countryName": "Kazakhstan",
+  "relations": [
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "경제·안보 밀접하나 거리두기 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "전통 동맹이나 거리두기 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "러시아 영향력 아래 균형외교.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "동맹은 유지, 눈치는 적당히 🇷🇺", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "일대일로 핵심 거점, 투자 급증", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "일대일로 핵심, 투자 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "중국 투자·인프라 핵심 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "중국 자본 수혈로 인프라 팍팍 🇨🇳", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "에너지·안보 협력, 균형외교 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "에너지 중심 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "에너지·안보 균형외교 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "미국과도 깐부 맺는 균형외교 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "투르크 형제국, 문화·경제 연대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "투르크권 연대 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "투르크 형제국 문화·경제 연대.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "투르크 형제들, 우리끼리 가즈아 🇹🇷", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "UA",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "러 눈치 속 우크라 주권 지지 시사", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "러시아 눈치 보며 중립 유지.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "영토 보전 지지하지만 몸 사리기 🇺🇦", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "DE",
+      "opinions": [
+        { "ai": "gemini", "level": "friendly", "comment": "독일에 에너지 쏴주는 주요 파트너 🇩🇪", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "에너지 공급 주요 파트너.", "date": "2026" }
+      ]
+    }
+  ]
+}

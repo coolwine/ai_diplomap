@@ -1,0 +1,69 @@
+{
+  "countryCode": "IT",
+  "countryName": "Italy",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "NATO 핵심, 멜로니-트럼프 밀착", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "NATO 기반 동맹 유지", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "NATO 철통, 멜로니-트럼프 케미.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "찰떡궁합 보수 연대, NATO는 덤 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "EU 주축이나 이민정책 온도차", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "EU 협력 속 정책 이견", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EU 협력, 이민 정책 온도차.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "EU 동료지만 이민 문제는 선 넘지 마 🇫🇷", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "DE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "EU 경제 공조, 재정규율 이견", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제 협력 속 재정 갈등", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EU 경제 공조, 재정 이견.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "돈 문제는 깐깐해도 경제는 원팀 🇩🇪", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "대러제재 동참, 에너지 탈의존 전환", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "제재 동참으로 관계 악화", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "대러 제재 동참, 관계 냉각.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "에너지 끊고 제재 빔 발사 중 🇷🇺🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "일대일로 탈퇴 후 실리 외교 전환", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "교역 유지 속 안보 경계 강화", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "일대일로 탈퇴 후 실리 외교.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "일대일로는 끝, 이제는 각자도생 🇨🇳", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "LY",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "이민 차단 협력, 지중해 관리 핵심", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "이민 억제 및 에너지 협력 조율", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "지중해 이민·에너지 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "지중해 길목 지키는 까다로운 파트너 🇱🇾", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "이민자 수용소 위탁 등 밀착 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "이민 협력 중심 관계 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "이민 협력 밀착 관계.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "이민자 대신 받아주는 고마운 이웃 🇦🇱", "date": "2026" }
+      ]
+    }
+  ]
+}

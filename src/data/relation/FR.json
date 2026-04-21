@@ -1,0 +1,69 @@
+{
+  "countryCode": "FR",
+  "countryName": "France",
+  "relations": [
+    {
+      "countryCode": "DE",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "EU 쌍두마차, 유럽 방위 공동 주도", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "EU 통합 공동 리더", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "EU 쌍두마차, 통합 리더십.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "미우나 고우나 함께 가는 EU 엔진 🇩🇪🇪🇺", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "NATO 동맹이나 전략적 자율 추구", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "동맹 유지 속 독자노선 강조", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "NATO 동맹, 전략적 자율 강조.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "동맹은 맞는데 우리 색깔은 지킨다 🇺🇸🇫🇷", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "우크라 지원 강경, 외교채널은 유지", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "전쟁 이후 강경 대응 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "우크라 지원으로 강경 대응.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "말보단 행동, 강경 대응 모드 🇷🇺🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "경제 실리 추구, 인태 견제 병행", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "디리스킹 속 경제 협력 조율", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "경제 실리 vs 인태 견제.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "실리는 챙기되 안보는 철저히 🇨🇳⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "UA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "지상군 파견 언급까지, 적극 지원", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "군사 지원 적극 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "우크라 적극 군사 지원국.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "필요하다면 끝까지 돕는다 🇺🇦💪", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "브렉시트 후에도 안보 협력 견고", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보 협력 지속 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "브렉시트 후 안보 협력 견고.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "가까운 이웃, 안보는 원팀 🇬🇧🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "DZ",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "식민 역사 갈등, 관계 정상화 난항", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "과거사 문제로 긴장 유지", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "식민 역사로 여전한 갈등.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "풀리지 않는 역사, 아직은 먼 나라 🇩🇿", "date": "2026" }
+      ]
+    }
+  ]
+}

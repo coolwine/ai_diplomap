@@ -128,7 +128,7 @@
   {
     "id": "578",
     "name": "Norway",
-    "iso2": "-99",
+    "iso2": "NO",
     "filename": "countries/578.json"
   },
   {
@@ -260,7 +260,7 @@
   {
     "id": "250",
     "name": "France",
-    "iso2": "-99",
+    "iso2": "FR",
     "filename": "countries/250.json"
   },
   {
