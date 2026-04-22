@@ -1,0 +1,150 @@
+{
+  "countryCode": "MY",
+  "countryName": "Malaysia",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "CSP 격상 후 무역협정 파기, 롤러코스터", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "안보 협력과 무역 갈등 공존", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "안보는 OK, 무역은 복잡한 썸 관계 🇺🇸", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "안보 협력·무역 긴장 공존", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "무역 $1,916억, 포괄적 전략동반자", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "무역 규모 세계적 중국 최우선", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "경제의 혈맥, 떼려야 뗄 수 없는 사이 🇨🇳", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대 교역국, 실리 협력 중심", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SG",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "RTS 개통·SEZ·수교 60주년 밀착", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "RTS·SEZ로 경제 밀착 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "철도로 연결된 끈끈한 이웃 경제권 🇸🇬", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제 통합 수준 협력 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "ID",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "이란 위기 공동대응, 방산 협력 심화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "이란 위기 공동대응 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "함께 위기 넘는 말레이 형제 국가 🇮🇩", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "해협·안보 협력 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "CSP 기반 방산·교육 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "방산·교육 협력 확대", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "방산부터 교육까지 꼼꼼한 파트너 🇯🇵", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "방산·교육 협력 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "모디 방말, 11건 협정·BRICS 연대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "BRICS 연대 속 전략 협력", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "BRICS 올라타고 협력도 레벨업 🇮🇳", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제·전략 협력 강화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "에너지 공급망·FPDA 안보 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FPDA 안보·에너지 파트너", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "에너지 든든하고 안보도 든든 🇦🇺", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FPDA 기반 안보 협력", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "전략적 파트너십+FTA 체결 완료", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FTA 완료 기술 협력 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "FTA 체결로 고속도로 뚫린 경제 협력 🇰🇷", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FTA 기반 협력 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FPDA 핵심축, 방산 협력 새 시대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FPDA 방산 협력 심화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "안보 동맹의 클래스는 영원하다 🇬🇧", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FPDA·방산 협력 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "고위급 전략협력회의 출범, 7건 서명", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "전략협력회의 출범 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "형제 나라와 전략적 하이파이브 🇹🇷🤝", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "전략 협력 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "방산 협정 체결, 이슬람 연대 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "방산·이슬람 연대 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "이슬람 형제의 방산 협력 🇸🇦", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "이슬람·방산 협력 강화", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "석유 공급 협상, 이란 중재에 활용", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "석유 협상과 이란 중재 활용", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "에너지 실리와 외교적 카드 활용 중 🇷🇺", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "에너지 협력 중심 관계", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "호르무즈 통행권 확보, 독자 외교력", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "호르무즈 안보 독자 외교", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "호르무즈 통행증 가진 실력파 외교 🇮🇷", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "에너지·외교 협력 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "국교 없음, 정착촌 강력 규탄 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "팔레스타인 지지 강경 비판", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "우리는 안 봐요, 강력 규탄 모드 🇮🇱🚫", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "국교 없고 강경 비판 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ASEAN 의장국 지지, 안정적 우호", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "ASEAN 안정적 우호 유지", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "의장국 역할 든든히 지지해 주는 사이 🇵🇭", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "ASEAN 협력 안정적 유지", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "무역 $300억 목표, 할랄·고무 협력", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "할랄·고무 무역 확대 목표", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "할랄과 고무로 뭉친 300억 달러 우정 🇹🇭", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·산업 협력 확대", "date": "2026" }
+      ]
+    }
+  ]
+}

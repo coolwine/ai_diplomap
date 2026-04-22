@@ -55,7 +55,7 @@ function handleLabelClick(countryName: string) {
         <span class="globe-label-group">({{ label.displayGroupKo }})</span>
         <span v-if="label.relationLevel === 'friendly'" class="globe-label-heart"> ❤️ </span>
       </div>
-      <div v-if="!label.forceShowNameOnly" class="globe-label-secondary">
+      <div class="globe-label-secondary">
         {{ label.englishName }} · {{ label.displayGroupEn }}
       </div>
       <div

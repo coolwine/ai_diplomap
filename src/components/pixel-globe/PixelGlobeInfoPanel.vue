@@ -50,6 +50,7 @@ const props = defineProps<{
 const emit = defineEmits<{
   (event: "close"): void;
   (event: "select-country", countryName: string): void;
+  (event: "focus-relation", countries: { source: string; target: string } | null): void;
 }>();
 
 const LEVEL_ORDER: RelationLevel[] = ["allied", "friendly", "neutral", "hostile", "war"];
@@ -212,7 +213,10 @@ function setRelationCardRef(countryName: string, element: Element | null) {
 }
 
 function handleCountryClick(countryName: string) {
-  emit("select-country", countryName);
+  console.log(123);
+  if (!props.country) return;
+  const isDeselect = props.focusRelationCountryName === countryName;
+  emit("focus-relation", isDeselect ? null : { source: props.country.name, target: countryName });
 }
 </script>
 
@@ -279,12 +283,10 @@ function handleCountryClick(countryName: string) {
               class="info-panel-relation-card is-divergent"
               :class="{ 'is-focused': focusedRelationCardName === item.targetName }"
               :ref="(element) => setRelationCardRef(item.targetName, element)"
+              @click="handleCountryClick(item.targetName)"
             >
               <div class="info-panel-relation-header">
-                <button
-                  class="info-panel-relation-item"
-                  @click="handleCountryClick(item.targetName)"
-                >
+                <button class="info-panel-relation-item">
                   <span
                     v-if="item.targetFlagClass"
                     class="info-panel-relation-flag"

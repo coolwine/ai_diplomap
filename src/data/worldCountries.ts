@@ -315,27 +315,12 @@ function getPrimaryRing(polygons: Coordinate[][][]) {
 }
 
 function getMinZoom(areaScore: number) {
-  if (areaScore > 2400) {
-    return 1;
-  }
-
-  if (areaScore > 1200) {
-    return 1.1;
-  }
-
-  if (areaScore > 600) {
-    return 1.25;
-  }
-
-  if (areaScore > 250) {
-    return 1.45;
-  }
-
-  if (areaScore > 120) {
-    return 1.7;
-  }
-
-  return clamp(2.05 - areaScore / 400, 1.75, 2.35);
+  if (areaScore > 2400) return 0.9;
+  if (areaScore > 1200) return 1.05;
+  if (areaScore > 600) return 1.2;
+  if (areaScore > 250) return 1.4;
+  if (areaScore > 120) return 1.6;
+  return 1.9;
 }
 
 function mapCountries(rawCollection: RawFeatureCollection) {

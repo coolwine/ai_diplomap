@@ -96,7 +96,6 @@ const isBooting = ref(true);
 const loadingProgress = ref(0);
 
 const SEARCH_HIDE_ZOOM = 2.2;
-const FORCE_LABEL_AT_MAX_ZOOM = 3.95;
 const BOOT_MIN_DURATION_MS = 2500;
 const BOOT_COMPLETE_HOLD_MS = 180;
 const BOOT_PROGRESS_CAP = 0.94;
@@ -648,148 +647,88 @@ function overlaps(a: DOMRect, b: DOMRect) {
 }
 
 function buildVisibleLabels(
-  context: CanvasRenderingContext2D,
   width: number,
   height: number,
   radiusInPixels: number,
   activeCountryRelationMap: Map<string, string> | null,
 ) {
-  const forceShowNames = zoom.value >= FORCE_LABEL_AT_MAX_ZOOM;
-  const secondaryFontFamily = '"Courier New", monospace';
-  const primaryFontSize = Math.round(clamp(9 + zoom.value * 2, 9, 15));
-  const secondaryFontSize = Math.max(8, primaryFontSize - 2);
-  const lineGap = 2;
-  const placedRects: DOMRect[] = [];
-  const zoomBoost = isInteracting ? 0.25 : 0;
   if (selectedCountryName.value) {
     const selected = worldCountries.find((c) => c.name === selectedCountryName.value);
-    if (selected) {
-      const projected = projectGeoToScreen(selected.label, radiusInPixels, width, height);
-      selectedCountryPos.value = projected ? { x: projected.x, y: projected.y } : null;
-    } else {
-      selectedCountryPos.value = null;
-    }
+    const projected = selected
+      ? projectGeoToScreen(selected.label, radiusInPixels, width, height)
+      : null;
+    selectedCountryPos.value = projected ? { x: projected.x, y: projected.y } : null;
   } else {
     selectedCountryPos.value = null;
   }
 
-  const labelCandidates = worldCountries
-    .filter((country) => forceShowNames || zoom.value >= country.minZoom + zoomBoost)
+  const estimatedLabelHeight = 28;
+  const placedRects: DOMRect[] = [];
+  const nextLabels: VisibleLabel[] = [];
+
+  const candidates = worldCountries
+    .filter((country) => zoom.value >= country.minZoom)
     .map((country) => {
       const projected = projectGeoToScreen(country.label, radiusInPixels, width, height);
-
-      if (!projected) {
-        return null;
-      }
+      if (!projected) return null;
 
       const isSelected = country.name === selectedCountryName.value;
       const relationLevel = activeCountryRelationMap?.get(country.name);
       const isActive = isSelected || !!relationLevel || !activeCountryRelationMap;
 
       return {
-        areaScore: country.areaScore,
-        continent: country.continent,
-        countryName: country.name,
-        displayGroupEn: country.displayGroupEn,
-        displayGroupKo: localizedGroup(country),
-        depth: projected.depth,
-        englishName: country.shortName,
-        flagClass: country.iso2 ? `fi fi-${country.iso2.toLowerCase()}` : null,
-        key: `${country.iso2 ?? country.name}-${country.shortName}`,
-        koreanContinent: country.koreanContinent,
-        koreanName: localizedName(country),
-        labelPriority: country.labelPriority,
-        smallCountryBoost: clamp(180 / Math.max(country.areaScore, 18), 0, 8),
-        isActive,
-        relationLevel,
+        country,
         x: projected.x,
         y: projected.y,
+        isActive,
+        relationLevel,
       };
     })
-    .filter((country): country is NonNullable<typeof country> => country !== null)
-    .sort((left, right) => {
-      if (right.labelPriority !== left.labelPriority) {
-        return right.labelPriority - left.labelPriority;
+    .filter((c): c is NonNullable<typeof c> => c !== null)
+    .sort((a, b) => {
+      if (b.country.labelPriority !== a.country.labelPriority) {
+        return b.country.labelPriority - a.country.labelPriority;
       }
-
-      if (right.smallCountryBoost !== left.smallCountryBoost) {
-        return right.smallCountryBoost - left.smallCountryBoost;
-      }
-
-      if (right.areaScore !== left.areaScore) {
-        return right.areaScore - left.areaScore;
-      }
-
-      return right.depth - left.depth;
+      return b.country.areaScore - a.country.areaScore;
     });
 
-  context.save();
-  context.textAlign = "center";
-  context.textBaseline = "middle";
-  const nextLabels: VisibleLabel[] = [];
-
-  for (const candidate of labelCandidates) {
-    const iconPadding = candidate.flagClass ? primaryFontSize + 6 : 0;
-    const primaryText = `${candidate.koreanName} (${candidate.displayGroupKo})`;
-    context.font = `700 ${primaryFontSize}px ${secondaryFontFamily}`;
-    const primaryWidth = context.measureText(primaryText).width;
-    let secondaryWidth = 0;
-    let textHeight = primaryFontSize;
-
-    if (!forceShowNames) {
-      context.font = `600 ${secondaryFontSize}px ${secondaryFontFamily}`;
-      secondaryWidth = context.measureText(
-        `${candidate.englishName} 쨌 ${candidate.displayGroupEn}`,
-      ).width;
-      textHeight = primaryFontSize + secondaryFontSize + lineGap;
-    }
-
-    const textWidth = Math.max(primaryWidth + iconPadding, secondaryWidth);
+  for (const candidate of candidates) {
+    const { country, x, y } = candidate;
+    const koreanName = localizedName(country);
+    const displayGroupKo = localizedGroup(country);
+    const estimatedWidth = Math.max(80, koreanName.length * 12 + 40);
     const rect = new DOMRect(
-      candidate.x - textWidth / 2 - 5,
-      candidate.y - textHeight / 2 - 4,
-      textWidth + 10,
-      textHeight + 8,
+      x - estimatedWidth / 2,
+      y - estimatedLabelHeight / 2,
+      estimatedWidth,
+      estimatedLabelHeight,
     );
 
-    const edgeMargin = Math.min(Math.max(0, (zoom.value - 1.5) * 40), 100);
-
-    if (
-      rect.x < edgeMargin ||
-      rect.y < edgeMargin ||
-      rect.x + rect.width > width - edgeMargin ||
-      rect.y + rect.height > height - edgeMargin
-    ) {
+    if (rect.x < 0 || rect.y < 0 || rect.right > width || rect.bottom > height) {
       continue;
     }
 
-    if (!forceShowNames && placedRects.some((placedRect) => overlaps(rect, placedRect))) {
+    if (placedRects.some((placed) => overlaps(rect, placed))) {
       continue;
     }
 
-    if (!forceShowNames) {
-      placedRects.push(rect);
-    }
+    placedRects.push(rect);
 
     nextLabels.push({
-      continent: candidate.continent,
-      countryName: candidate.countryName,
-      displayGroupEn: candidate.displayGroupEn,
-      displayGroupKo: candidate.displayGroupKo,
-      englishName: candidate.englishName,
-      flagClass: candidate.flagClass,
-      forceShowNameOnly: forceShowNames,
-      key: candidate.key,
-      koreanContinent: candidate.koreanContinent,
-      koreanName: candidate.koreanName,
+      countryName: country.name,
+      displayGroupEn: country.displayGroupEn,
+      displayGroupKo,
+      englishName: country.shortName,
+      flagClass: country.iso2 ? `fi fi-${country.iso2.toLowerCase()}` : null,
+      key: `${country.iso2 ?? country.name}-${country.shortName}`,
+      koreanName,
       isActive: candidate.isActive,
       relationLevel: candidate.relationLevel,
-      x: candidate.x,
-      y: candidate.y,
+      x,
+      y,
     });
   }
 
-  context.restore();
   visibleLabels.value = nextLabels;
 }
 
@@ -1095,7 +1034,7 @@ function render() {
   outputContext.arc(width / 2, height / 2, radiusInPixels - 0.5, 0, Math.PI * 2);
   outputContext.stroke();
 
-  buildVisibleLabels(outputContext, width, height, radiusInPixels, activeCountryRelationMap);
+  buildVisibleLabels(width, height, radiusInPixels, activeCountryRelationMap);
   buildVisibleRelations(width, height, radiusInPixels);
 }
 
@@ -1378,6 +1317,7 @@ function handleCanvasClick(event: MouseEvent) {
         :resolve-country="resolveCountryByIso2"
         @close="selectCountry(null)"
         @select-country="selectCountry"
+        @focus-relation="handleFocusRelation"
       />
     </template>
   </div>

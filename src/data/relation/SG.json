@@ -1,0 +1,85 @@
+{
+  "countryCode": "SG",
+  "countryName": "Singapore",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "grok", "level": "allied", "comment": "미중 헤징의 핵심 동맹", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "60주년, 관세 압박 속 동맹 유지", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "안보 동맹 60년, 변함없는 깐부 🇺🇸", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "핵심 파트너지만 동맹 아님", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "경제 최우선 미중 헤징", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "27건 신규협정, 실리 외교 극대화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "실리는 챙기고 갈등은 피하는 고수 🇨🇳⚖️", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제 중심 협력 지속", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "MY",
+      "opinions": [
+        { "ai": "grok", "level": "neutral", "comment": "실용적 긴장 관리 중", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "RTS 개통·리더스 리트릿 밀착", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "RTS로 더 가까워진 이웃 사촌 🇲🇾", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제·인프라 협력 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "ID",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "해협 안보 공동 대응", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "수교 60년, 방산·그린 협력 가속", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "해협 안보와 그린 에너지 파트너 🇮🇩", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "해협 안보 협력 핵심 파트너", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "일본과 전략 업그레이드", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "전략적 파트너십 격상 완료", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "전략적 파트너십 격상, 협력 풀가동 🇯🇵", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "전략 협력 강화된 파트너", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "방산·경제 협력 확대", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "포괄적 전략동반자, 로드맵 가동", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "디지털·방산 로드맵 가속 페달 🇮🇳", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "기술·경제 협력 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AU",
+      "opinions": [
+        { "ai": "grok", "level": "friendly", "comment": "FPDA 안보 핵심 축", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "CSP 격상+에너지 공급 협정 체결", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "에너지 공급망까지 꽉 잡은 동맹 🇦🇺", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FPDA 기반 안보 협력", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "전략적 파트너십+FTA 업그레이드", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "FTA 업그레이드, 경제 협력 맑음 🇰🇷", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FTA·기술 협력 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FPDA·무역 £23.4B 안정 협력", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "전통의 안보 파트너, 무역도 탄탄 🇬🇧", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FPDA·무역 협력 유지", "date": "2026" }
+      ]
+    }
+  ]
+}

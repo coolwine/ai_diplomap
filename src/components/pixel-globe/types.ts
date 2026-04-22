@@ -1,13 +1,10 @@
 export type VisibleLabel = {
-  continent: string;
   countryName: string;
   displayGroupEn: string;
   displayGroupKo: string;
   englishName: string;
   flagClass: string | null;
-  forceShowNameOnly?: boolean;
   key: string;
-  koreanContinent: string;
   koreanName: string;
   isActive: boolean;
   relationLevel?: string;

@@ -1,0 +1,69 @@
+{
+  "countryCode": "SA",
+  "countryName": "Saudi Arabia",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "석유·무기 거래 핵심, 동맹 재조정 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·에너지 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "석유·무기 거래 핵심 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "밀당은 해도 결국 안보는 미국 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "중국 중재 수교 후 신중한 해빙", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "냉전은 끝, 이제는 관리 모드", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "중국 중재 후 신중한 해빙.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "일단 악수는 했지만 속은 모름 🇮🇷🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "원유·인프라 협력, 전략적 다변화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "원유·투자 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "원유·인프라 중국 협력 확대.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "오일 머니와 중국 자본의 만남 🇨🇳💰", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "가자 사태로 수교 정상화 보류", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "국제 정세 따라 수교 속도 조절", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "가자 사태로 수교 보류 중.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "수교는 잠시 멈춤, 분위기 파악 중 🇮🇱", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "YE",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "후티 반군 교전, 종전 협상 난항", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "후티 교전 지속, 긴장 유지", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "후티 반군과 지속 교전.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "후티는 여전히 골칫거리 🇾🇪🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "카슈끄지 봉합 후 실리적 관계 복원", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "실리 중심의 관계 정상화 진행", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "카슈끄지 후 실리 협력 복원.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "과거는 잊고 돈 되는 일에 집중 🇹🇷", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "OPEC+ 공조, 정치적 거리 유지", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "석유 시장 주도권 위한 협력", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "OPEC+ 석유 협력, 정치 거리.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "OPEC+ 동맹, 감산은 우리 맘 🇷🇺🛢️", "date": "2026" }
+      ]
+    }
+  ]
+}
