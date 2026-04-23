@@ -5,50 +5,64 @@
     {
       "countryCode": "US",
       "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "최장기 동맹, 비자 동결로 신뢰에 금 가는 중", "date": "2026" },
         { "ai": "gpt", "level": "friendly", "comment": "전통 동맹이나 영향력 약화", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "오랜 동맹, 그래도 예전 같진 않네 🇺🇸", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "오랜 동맹, 그래도 예전 같진 않네 🇺🇸", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "최고령 조약동맹, 중국 기울기에 금 간 신뢰", "date": "2026" }
       ]
     },
     {
       "countryCode": "CN",
       "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "황금 50년, 중국 쪽으로 기울기 가속", "date": "2026" },
         { "ai": "gpt", "level": "friendly", "comment": "경제·군사 협력 확대 중", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "돈과 무기 모두 중국이 대세 🇨🇳", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "돈과 무기 모두 중국이 대세 🇨🇳", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "황금 50년, 중국으로 급속 기울기", "date": "2026" }
       ]
     },
     {
       "countryCode": "JP",
       "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "자동차·제조업 투자 기반의 안정적 파트너", "date": "2026" },
         { "ai": "gpt", "level": "friendly", "comment": "투자·산업 협력 핵심 파트너", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "자동차 산업은 역시 일본이 꽉 잡음 🇯🇵", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "자동차 산업은 역시 일본이 꽉 잡음 🇯🇵", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "투자·산업 가장 안정적 파트너", "date": "2026" }
       ]
     },
     {
       "countryCode": "MY",
       "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ASEAN 내 안정적 우방", "date": "2026" },
         { "ai": "gpt", "level": "friendly", "comment": "ASEAN 협력 안정적 유지", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "국경은 맞대고 협력은 사이좋게 🇲🇾", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "국경은 맞대고 협력은 사이좋게 🇲🇾", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "ASEAN 내 가장 안정적 우방", "date": "2026" }
       ]
     },
     {
       "countryCode": "VN",
       "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ASEAN 협력 유지, 경쟁도 공존도 동시에", "date": "2026" },
         { "ai": "gpt", "level": "friendly", "comment": "ASEAN 내 협력 관계 유지", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "ASEAN 투톱 경쟁 속에서도 협력 중 🇻🇳", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "ASEAN 투톱 경쟁 속에서도 협력 중 🇻🇳", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "2026 종합전략동반자 격상", "date": "2026" }
       ]
     },
     {
       "countryCode": "MM",
       "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "내전 속 ASEAN 복귀 중재자로 나서는 중", "date": "2026" },
         { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
-        { "ai": "gemini", "level": "neutral", "comment": "복잡한 내부 사정, 적당히 거리두기 🇲🇲", "date": "2026" }
+        { "ai": "gemini", "level": "neutral", "comment": "복잡한 내부 사정, 적당히 거리두기 🇲🇲", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "미얀마 ASEAN 복귀 중재 주도", "date": "2026" }
       ]
     },
     {
       "countryCode": "AU",
       "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "안보·경제 협력 안정적 유지", "date": "2026" },
         { "ai": "gpt", "level": "friendly", "comment": "안보·경제 협력 확대", "date": "2026" },
-        { "ai": "gemini", "level": "friendly", "comment": "안보도 경제도 든든한 남방 파트너 🇦🇺", "date": "2026" }
+        { "ai": "gemini", "level": "friendly", "comment": "안보도 경제도 든든한 남방 파트너 🇦🇺", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안보·경제 든든한 남방 파트너", "date": "2026" }
       ]
     }
   ]

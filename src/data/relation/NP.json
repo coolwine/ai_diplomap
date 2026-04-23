@@ -1,0 +1,54 @@
+{
+  "countryCode": "NP",
+  "countryName": "Nepal",
+  "relations": [
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "경제·문화 밀접하나 갈등 존재", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "뗄 수 없는 이웃이지만 국경·정치적 간섭엔 예민 🇮🇳⚖️", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "발렌 샤 신정부, 관계 리셋 전략적 창", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "투자·인프라 협력 확대", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "인프라로 히말라야를 넘는 중국의 거센 영향력 🇨🇳🏔️", "date": "2026" },
+        { "ai": "claude", "level": "neutral", "comment": "BRI 산업단지 백지화, 올리 시대 사업 감사", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "개발·경제 협력 파트너", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "개발 원조와 민주주의 가치를 앞세운 전략적 파트너 🇺🇸🤝", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "MCC $5.5억 컴팩트 연장, FY26 적격국", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PK",
+      "opinions": [
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "SAARC 틀 안에서 유지되는 완만한 외교 관계 🇵🇰", "date": "2026" },
+        { "ai": "claude", "level": "neutral", "comment": "PKO·방산교류 우호적, 실질 협력은 제한적", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "BD",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "남아시아 협력 관계 유지", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "수력 발전 전력 수출로 엮이는 새로운 경제 통로 🇧🇩⚡", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "수력전력 60MW 수출, 에너지 통로 확대", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "BT",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "히말라야 협력 파트너", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "히말라야의 불교적 유대와 생태 협력을 공유하는 사이 🇧🇹🏔️", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "관광·인적교류 중심 우호 관계 유지", "date": "2026" }
+      ]
+    }
+  ]
+}

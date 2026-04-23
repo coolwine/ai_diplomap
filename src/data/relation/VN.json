@@ -1,0 +1,96 @@
+{
+  "countryCode": "VN",
+  "countryName": "Vietnam",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "수출통제 해제로 전략 신뢰 상승, 내부엔 경계심 여전", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·경제 협력 빠르게 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "중국 견제용 안보 파트너십 급성장", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "안보와 경제, 두 마리 토끼를 잡는 전략적 밀착 🇺🇸", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "남중국해 갈등에도 안정 우선, 줄타기 외교", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "남중국해 분쟁으로 긴장 지속", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "경제 의존 vs 남중국해 강경 대립", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "경제는 가깝게, 영토는 단호하게... 아슬아슬한 줄타기 🇨🇳⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "푸틴 방문 예정, 에너지·군사 협력 꾸준히 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "전통적 군사 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "무기·에너지 공급원으로 여전히 중요", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "변치 않는 의리, 무기와 에너지의 전통적 파트너 🇷🇺", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "투자·인프라 협력 안정적 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "투자·인프라 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "인프라·기술 투자 최선호국", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "믿고 맡기는 인프라, 든든한 투자 파트너 🇯🇵", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "삼성·LG 공장 품은 제조업 핵심 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "제조·투자 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "삼성 투자 규모 세계 최대, 제조 허브", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "우리 집 안방 같은 제조 허브, 삼성과 LG의 나라 🇰🇷", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "해양 안보 공조, 대중 견제 공동 이해", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·해양 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "대중 견제 해양안보 공동전선", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "바다를 지키는 든든한 동료, 대중 견제 공동전선 🇮🇳", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "남중국해 같은 편, 공동 대응 연대 강화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "남중국해 공조 가능성 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "남중국해 공동 대응 연대 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "남중국해 파고를 함께 넘는 든든한 동맹 🇵🇭", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ASEAN 내 안정적 협력 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "ASEAN 내 협력 관계 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "메콩·ASEAN 안정적 협력 파트너", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "ASEAN의 경쟁자이자 동반자, 안정적인 협력 🇹🇭", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "LA",
+      "opinions": [
+        { "ai": "claude", "level": "allied", "comment": "사회주의 형제국, 3국 공조 기반 심화", "date": "2026" },
+        { "ai": "gpt", "level": "allied", "comment": "사회주의 형제국, 영향력 우위", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "사회주의 형제, 중국 견제 3국 공조", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "피를 나눈 사회주의 형제, 영원한 우방 🇱🇦", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "KH",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "3국 정상 회동으로 메콩 협력 재확인", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "메콩 지역 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "메콩 협력 vs 중국 영향력 경쟁", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "메콩강을 공유하는 이웃, 협력과 견제 사이 🇰🇭", "date": "2026" }
+      ]
+    }
+  ]
+}

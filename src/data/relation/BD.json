@@ -1,0 +1,78 @@
+{
+  "countryCode": "BD",
+  "countryName": "Bangladesh",
+  "relations": [
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "하시나 축출 후 관계 냉각, 조심스러운 해빙 시도 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "협력 속 정치·수자원 갈등", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "테스타 강 분쟁 속 실리 협력", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "정권 교체 후 관계 재설정 중, 실리와 경계 사이 아슬아슬한 줄타기 🇮🇳", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "반인도 정서 속 중국 영향력 급속 확대 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대 교역·군사 협력 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "BRI 최대 수혜, 군사 협력 확대", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "일대일로의 단맛, 인프라와 자본을 쥔 든든한 물주 🇨🇳💰", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "의류 수출 1위국, 민주주의·인권 압박은 계속", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "수출·투자 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "의류 수출 1위, 민주주의 압박", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "최대 의류 수출국이지만 민주주의 잔소리는 덤 🇺🇸👕", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "PK",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "15년 만에 외교 재개, 방산 협력도 조심스럽게 모색", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "이슬람 연대 속 제한적 교류", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "역사적 앙금은 있어도 종교로 묶인 적당한 거리두기 🇵🇰", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "MM",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "100만 로힝야 난민 수용, 송환 막힌 채 갈등 고착", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "로힝야 사태로 갈등 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "로힝야 난민 문제로 적대 지속", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "로힝야 난민 문제로 꽉 막힌, 풀리지 않는 영원한 숙제 🇲🇲🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ODA 최대 지원국, 인프라 협력 안정적 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대 ODA·인프라 협력국", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "인프라 ODA 최대 지원국", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "조용히 다리 놓고 길 뚫어주는 가장 든든한 ODA 스폰서 🇯🇵", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "루푸르 원전으로 연결된 실용 에너지 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "에너지·원전 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "루푸르 원전 협력 안정적", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "에너지와 원전으로 엮인 실용주의적 파트너십 🇷🇺⚡", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "해외 노동자 송금 1위국, 이슬람 외교 핵심 축", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "노동·이슬람 협력 핵심", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "송금 의존, 종교 협력 강화", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "오일머니 송금줄이자 종교로 맺어진 든든한 형님 🇸🇦💰", "date": "2026" }
+      ]
+    }
+  ]
+}
