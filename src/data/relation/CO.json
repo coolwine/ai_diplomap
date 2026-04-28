@@ -1,0 +1,117 @@
+{
+  "countryCode": "CO",
+  "countryName": "Colombia",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "페트로 좌파 노선으로 동맹 흔들림", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "전통 동맹이나 최근 갈등 증가", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "전통 동맹, 페트로 노선으로 흔들림.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "트럼프-페트로의 2월 백악관 회동으로 극적인 화해 기류, 베네수엘라 가스 수입을 매개로 한 실무적 밀착 🇺🇸🤝",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "인프라·에너지 투자 급확대 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "투자·인프라 협력 빠르게 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "인프라·에너지 투자 급확대.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "5G·광섬유 등 디지털 인프라 동맹 강화, 다만 일부 광산 투자 철회 등 리스크 관리 병행 🇨🇳📡",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "BR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "좌파 정부 간 이념 공조, 아마존 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "남미 지역 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "좌파 정부 이념 공조, 아마존 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "아마존 보존과 남미 통합을 외치는 보이스 파트너, 룰라와 페트로의 '그린 동맹' 가속화 🇧🇷🌳",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "VE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "페트로 취임 후 국교 정상화 진행", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "관계 정상화·안보 협력 재개", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "페트로 취임 후 국교 정상화.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "에너지 위기 돌파를 위한 가스관 재가동 협의 중, 국경 치안 공조로 이어지는 실용적 복원 🇻🇪⛽",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EC",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "국경 치안·난민 문제 공동 대응", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "국경·안보 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "국경 치안·난민 공동 대응.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "마약 카르텔 소탕을 위한 긴밀한 안보 공조, 국경을 맞댄 형제국으로서의 공동 운명체 🇪🇨🛡️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "PE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "안데스 이웃, 통상·지역 협력 안정", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안데스 지역 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안데스 이웃, 통상·지역 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "정치적 소란 속에서도 안데스 공동체(CAN)을 통한 경제 실리 협력은 요지부동 🇵🇪⚖️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "통상협정·환경·평화 프로세스 지원", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·환경 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "통상협정·환경·평화 프로세스 지원.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "녹색 전환과 에너지 전환의 핵심 파트너, 콜롬비아 평화 구축의 든든한 재정적 후원자 🇪🇺🌿",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "가자 사태 후 외교 단절 선언", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "hostile",
+          "comment": "단절된 외교 관계와 무기 수출 중단, 라틴아메리카 내 반이스라엘 여론의 선봉장 🇮🇱🚫",
+          "date": "2026"
+        },
+        { "ai": "grok", "level": "hostile", "comment": "가자 사태로 외교 단절.", "date": "2026" }
+      ]
+    }
+  ]
+}

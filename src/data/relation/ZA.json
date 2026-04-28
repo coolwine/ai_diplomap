@@ -1,0 +1,121 @@
+{
+  "countryCode": "ZA",
+  "countryName": "South Africa",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "AGOA 위기·BRICS 행보로 마찰", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "협력 속 정치적 긴장 존재", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "AGOA 위기와 BRICS 행보로 마찰.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "neutral",
+          "comment": "AGOA 연명으로 실리는 챙기되, 외교적으론 '마이웨이'를 걷는 복잡한 동거 🇺🇸⚖️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "BRICS 핵심, 인프라·광물 협력 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "BRICS 기반 경제 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "BRICS 핵심, 광물·인프라 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "광물과 인프라로 엮인 BRICS의 가장 든든한 물주이자 전략적 파트너 🇨🇳⛏️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "BRICS 공조, 서방 제재 불참 고수", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "BRICS·외교 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "BRICS 공조, 서방 제재 불참.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "서방의 압박에도 흔들리지 않는 '브릭스 의리', 역사적 유대가 이어지는 사이 🇷🇺🤝",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "최대 교역 블록, 투자 관계 견고", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·투자 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EU 최대 교역 블록, 투자 견고.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "최대 교역 상대국이라는 현실 앞에선 정치적 소신도 잠시 내려놓는 비즈니스 파트너 🇪🇺🏭",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "영연방 유대, 교역·교민 연결 지속", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제·외교 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "영연방 유대, 경제 협력 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "영연방의 오랜 유대와 경제적 실리가 맞물린 안정적인 관계 🇬🇧🦁", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "IBSA·BRICS 글로벌사우스 공조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "IBSA·BRICS 협력 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "IBSA·BRICS 글로벌사우스 공조.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "글로벌 사우스의 목소리를 함께 키우는 개도국 리더들의 의기투합 🇮🇳🌍", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "BR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "BRICS 동반자, 다자외교 공동보조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "BRICS 핵심 협력국", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "BRICS 동반자, 다자외교 공조.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "다극화된 세상을 꿈꾸는 남반구의 찰떡궁합 동반자 🇧🇷⚽", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "NG",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "아프리카 양대 경제대국, 경쟁적 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "아프리카 리더 경쟁·협력 병존", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "아프리카 양대 강국, 경쟁적 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "대륙의 자존심을 건 리더십 경쟁 속에서도 경제 통합을 위해 손잡는 라이벌 🇳🇬🥊",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "ZW",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "이웃 우방, 전력·경제 지원 지속", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "지역 안보·경제 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "이웃 우방, 전력·경제 지원.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "전기까지 나눠주는 든든한 뒷배이자, 결코 외면할 수 없는 '아픈 손가락' 같은 이웃 🇿🇼⚡",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "ICJ 제소, 대사 소환 등 전면 대립", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "가자 문제로 외교 갈등 심화", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "ICJ 제소·가자 문제로 적대.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "법정 싸움으로 번진 최악의 관계, 인권과 정의를 내건 정면 충돌 🇮🇱🚫", "date": "2026" }
+      ]
+    }
+  ]
+}

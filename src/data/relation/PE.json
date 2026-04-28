@@ -1,0 +1,132 @@
+{
+  "countryCode": "PE",
+  "countryName": "Peru",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FTA 기반 교역, 마약 대테러 공조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·경제 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FTA 교역, 마약·대테러 공조.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "neutral",
+          "comment": "F-16 전투기 도입 무산 위기와 장관들의 사퇴로 안보 협력에 급브레이크가 걸린 미묘한 기류 🇺🇸🛡️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "찬카이항 개항, 광물·인프라 밀착", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대 교역·투자 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "찬카이항·광물 인프라 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "찬카이 메가포트가 여는 '남미-아시아 직항로', 중국 자본이 설계한 새로운 물류 지도의 중심 🇨🇳⚓",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "BR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "아마존 공유, 경제·환경 공조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "남미 경제 협력 핵심 국가", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "아마존 공유, 경제·환경 공조.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "아마존 범죄 소탕을 위한 초국경 정보 공유와 환경 보호라는 두 토끼를 함께 잡는 중 🇧🇷🌳",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "태평양동맹 파트너, 교역 안정적", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "태평양 동맹 협력 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "태평양동맹 파트너, 교역 안정적.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "태평양 동맹(PA) 안에서 경제 통합의 속도를 높이는 중, 국경 문제는 실리 앞에서 잠시 뒷전 🇨🇱🚢",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EC",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "국경 안정, 안보·통상 협력 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "국경 안정·경제 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "국경 안정, 안보·통상 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "과거의 총성 대신 안보 협의체와 경제 교류가 흐르는 평화로운 국경 지대 🇪🇨🤝",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "BO",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "가스·광물 교역, 이웃 협력 안정", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "에너지·지역 협력 관계", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "가스·광물 교역, 이웃 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "티티카카 호수와 광물 자원을 매개로 엮인 운명 공동체, 내륙국 볼리비아의 소중한 통로 🇧🇴⛰️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "통상협정 기반, 투자·개발 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·투자 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "통상협정 기반 투자·개발 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "까다로운 유럽의 환경 기준도 통과하는 '지속 가능한' 원자재 공급처로서의 가치 입증 🇪🇺♻️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "광업·인프라 투자, 닛케이 교민 유대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "투자·인프라 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "광업·인프라 투자, 교민 유대.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "강력한 닛케이(Nikkei) 커뮤니티를 바탕으로 한 인적·경제적 신뢰의 깊이 🇯🇵🌸",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FTA 체결국, 광물·에너지 교역 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "자원·산업 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FTA 체결국, 광물·에너지 교역.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "한국의 스마트 팜과 방산 기술이 페루의 풍부한 자원과 만나는 융합형 협력의 정석 🇰🇷🛠️",
+          "date": "2026"
+        }
+      ]
+    }
+  ]
+}

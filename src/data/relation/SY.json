@@ -1,0 +1,87 @@
+{
+  "countryCode": "SY",
+  "countryName": "Syria",
+  "relations": [
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "정권교체 최대 후원국, 재건 주도", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "관계 정상화·재건 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "재건 최대 후원국, 트루키 주도.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "새 정부의 일등 공신, 본격적인 재건 특수를 노리는 중 🇹🇷🛠️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "아랍연맹 복귀, 재건 자금 지원", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "재건 지원·외교 관계 회복", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "아랍연맹 복귀, 재건 자금 지원.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "돈 보따리 풀고 아랍의 품으로 다시 거두어주는 큰형님 🇸🇦💰", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "QA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "반아사드 지원 이후 재건 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "외교 재개, 협력 관계 복원", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "반아사드 후 재건 협력 복원.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "한결같은 지지자이자 재건 자금의 든든한 젖줄 🇶🇦🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "아사드 축출 후 영향력 급감", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "아사드 축출 후 영향력 급감.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "전 정권의 깐부... 지금은 서로 눈치 보며 어색한 악수 중 🇮🇷👀", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "기지 유지 협상 중, 영향력 축소", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "기지 유지 협상 중, 영향력 축소.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "아사드는 품었지만, 새 정부와는 철저히 비즈니스적 거리 유지 중 🇷🇺⚓", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "제재 완화 논의 시작, 신중한 접근", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "제재 완화 논의 시작.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "독재자 사라지니 대화 시작, 제재 완화 카드 만지작 🇺🇸🤔", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "제재 완화·인도적 지원 재개", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "제재 완화·재건 협력 논의", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "제재 완화·인도적 지원 재개.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "돈은 줄 수 있지만 민주화와 인권 조건이 까다로운 스폰서 🇪🇺🏥", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "골란고원 점령 확대, 영공 침범 지속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "골란·공습 문제로 긴장 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "골란고원·영공 침범 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "주인이 바뀌어도 골란고원과 안보 위협은 변함없는 평행선 🇮🇱🔥", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IQ",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "국경 안정화·IS 잔당 공동 소탕", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "국경·안보 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "국경 안정·IS 잔당 공동 소탕.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "IS 잔당 소탕과 국경 수비를 위해 뭉친 운명공동체 🇮🇶🛡️", "date": "2026" }
+      ]
+    }
+  ]
+}

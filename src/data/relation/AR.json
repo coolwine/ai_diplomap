@@ -1,0 +1,131 @@
+{
+  "countryCode": "AR",
+  "countryName": "Argentina",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "밀레이 친미 노선, 경제·안보 밀착", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제·정치 협력 강화 추세", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "밀레이 친미 노선, 경제·안보 밀착.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "자유주의의 기치 아래 미국과 한 배를 탄 밀레이, 경제 위기 돌파를 위한 무조건적 구애 중 🇺🇸🦁",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "밀레이 탈중국 기조, 경제 현실은 의존", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "투자·무역 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "밀레이 탈중국 기조 속 경제 의존.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "neutral",
+          "comment": "말로는 '공산당과 거래 안 한다' 했지만, 리튬과 대두 수출을 위해선 고개를 숙일 수밖에 없는 현실 🇨🇳⛓️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "BR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "최대 교역국이나 밀레이-룰라 이념 충돌", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "핵심 교역국, 정치 갈등 존재", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "최대 교역국, 밀레이-룰라 이념 충돌.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "neutral",
+          "comment": "룰라와 밀레이, 물과 기름 같은 정상이 만났지만 메르코수르라는 밥그릇은 같이 챙겨야 할 운명 🇧🇷🥊",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "메르코수르-EU FTA 타결 추진 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·투자 협력 주요 축", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "메르코수르-EU FTA 추진 중.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "오랜 협상의 끝이 보일 듯 말 듯, 유럽의 자본을 끌어들이기 위한 아르헨티나의 구애가 계속되는 중 🇪🇺📜",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "밀레이 강력 친이스라엘 외교 선회", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "친이스라엘 외교 노선 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "밀레이 친이스라엘 외교 강화.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "예루살렘 방문과 종교적 공감대까지, 역대 어느 정부보다 뜨거운 핑크빛 외교 로드 🇮🇱🕍",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "BRICS 가입 철회, 관계 냉각", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "BRICS 가입 철회로 관계 냉각.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "hostile",
+          "comment": "BRICS 거절로 대놓고 등을 돌린 관계, 서방 편에 서겠다는 밀레이의 확고한 메시지 🇷🇺🧊",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "남미 이웃, 광물·에너지 협력 안정", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "남미 협력 관계 안정적", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "남미 이웃, 광물·에너지 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "안데스 산맥을 사이에 둔 자원 부국들, 공급망 재편 속에서 협력의 중요성이 커지는 사이 🇨🇱🏔️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "UY",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "메르코수르 동반자, 긴밀한 이웃", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "메르코수르 협력 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "메르코수르 동반자, 긴밀한 이웃.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "메르코수르 개혁을 외치는 동병상련의 이웃, 개방형 경제를 향한 목소리를 합치는 중 🇺🇾🤝",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "포클랜드 영유권 갈등 여전", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "포클랜드 영유권 갈등 지속.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "neutral",
+          "comment": "포클랜드(말비나스)는 건드리지 않는 선에서 실용적 관계를 모색하려 하지만, 가슴 속 불씨는 여전함 🇬🇧🔥",
+          "date": "2026"
+        }
+      ]
+    }
+  ]
+}

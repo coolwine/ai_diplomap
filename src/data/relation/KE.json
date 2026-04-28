@@ -1,0 +1,146 @@
+{
+  "countryCode": "KE",
+  "countryName": "Kenya",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "동아프리카 안보 거점, 주요 비NATO 동맹", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·군사 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "동아프리카 안보 거점, MNNA 동맹.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "주요 비NATO 동맹(MNNA)으로서 하이티 파병부터 대테러까지, 미국의 동아프리카 최우선 대리인 🇺🇸🛡️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "SGR 철도 등 인프라 투자, 채무 부담", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "인프라·투자 핵심 협력국", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "SGR 철도 등 인프라 투자 확대.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "부채 압박에도 멈출 수 없는 철도 연장 사업, 실리와 빚 사이의 아슬아슬한 줄타기 🇨🇳🛤️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "UG",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "EAC 핵심 파트너, 교역·물류 연결", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "EAC 기반 협력 핵심 이웃", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EAC 핵심, 물류·교역 연결.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "유류 수입권을 둔 가끔의 투정은 있어도, 결국 몸바사 항구를 공유하는 피보다 진한 물류 동맹 🇺🇬⛽",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "TZ",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "EAC 경쟁적 협력, 항구 주도권 경합", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "동아프리카 경제 협력 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EAC 경쟁적 협력, 항구 주도권.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "동아프리카의 주도권을 놓고 다투는 영원한 라이벌이자, 무역 장벽을 허물어야 할 파트너 🇹🇿🥊",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "ET",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "지역 안보 공조, 경제회랑 구축 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "지역 안보·외교 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "지역 안보·LAPSSET 회랑 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "LAPSSET 복합 회랑으로 묶인 경제 공동체, 에티오피아의 바다 갈증을 풀어줄 대안 🇪🇹🚚",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "SO",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "알샤바브 대테러 군사작전 주도", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "대테러 군사 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "알샤바브 대테러 공동 작전.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "국경의 평화가 곧 케냐의 평화, 알샤바브 소탕을 위해 끝까지 함께 가야 할 운명 🇸🇴⚔️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "영연방 유대, 군사훈련·교역 지속", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제·외교 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "영연방 유대, 군사·교역 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "과거의 그림자는 지우고 새로운 경제 동반자 협정으로 다지는 끈끈한 영연방 의리 🇬🇧🤝",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "EPA 체결, 개발원조 주요 수혜국", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·개발 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "EPA 체결, 개발원조 주요 수혜국.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "경제 파트너십 협정(EPA)의 조기 비준으로 유럽 시장에 꽃과 채소를 실어 나르는 동아프리카의 허브 🇪🇺🌹",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "교민·IT·제약 분야 협력 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·투자 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "IT·제약·교민 협력 확대.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "인도양을 사이에 둔 오랜 이웃, 의료 관광과 IT 인력 교류로 맺어진 실용적 관계 🇮🇳🏥",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "AE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "몸바사 항만·물류 투자 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "투자·물류 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "몸바사 항만·물류 투자 확대.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "포괄적 경제 동반자 협정(CEPA)과 항만 투자를 통해 케냐의 인프라를 쇼핑 중인 신흥 큰손 🇦🇪💰",
+          "date": "2026"
+        }
+      ]
+    }
+  ]
+}

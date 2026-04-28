@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from "vue";
 
-import { LEADERS } from "../../data/leaders";
+import { UNKNOWN_LEADER_IMAGE, getLeaderInfo } from "../../data/leaders";
 
 const props = defineProps<{
   selectedCountryIso2: string | null;
@@ -15,7 +15,7 @@ const imageLoaded = ref(false);
 
 const leaderImage = computed(() => {
   if (!props.selectedCountryIso2) return null;
-  return LEADERS[props.selectedCountryIso2]?.image ?? null;
+  return getLeaderInfo(props.selectedCountryIso2)?.image ?? null;
 });
 
 watch(
@@ -23,7 +23,7 @@ watch(
   (iso2) => {
     show.value = false;
     imageLoaded.value = false;
-    if (iso2 && LEADERS[iso2]) {
+    if (iso2) {
       show.value = true;
     }
   },
@@ -31,6 +31,13 @@ watch(
 
 function onImageLoad() {
   imageLoaded.value = true;
+}
+
+function onImageError(event: Event) {
+  const image = event.target as HTMLImageElement;
+  if (image.src !== UNKNOWN_LEADER_IMAGE) {
+    image.src = UNKNOWN_LEADER_IMAGE;
+  }
 }
 </script>
 
@@ -47,7 +54,13 @@ function onImageLoad() {
     <div class="hologram-body">
       <div class="hologram-glow" />
       <div class="hologram-image-wrapper">
-        <img :src="leaderImage" class="hologram-image" alt="Leader" @load="onImageLoad" />
+        <img
+          :src="leaderImage"
+          class="hologram-image"
+          alt="Leader"
+          @load="onImageLoad"
+          @error="onImageError"
+        />
       </div>
       <div class="hologram-scanlines" />
       <div class="hologram-flicker" />

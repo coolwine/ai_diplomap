@@ -1,0 +1,85 @@
+{
+  "countryCode": "AZ",
+  "countryName": "Azerbaijan",
+  "relations": [
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "gpt", "level": "allied", "comment": "형제국, 군사·정치 핵심 동맹", "date": "2026" },
+        { "ai": "grok", "level": "allied", "comment": "원 투 원 형제국, 군사·에너지 완전 동맹", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "1민족 2국가, TRIPP·나흐치반 철도 공동추진", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "일민족 이국가, 떼려야 뗄 수 없는 피보다 진한 형제 🇹🇷🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AM",
+      "opinions": [
+        { "ai": "gpt", "level": "hostile", "comment": "나고르노 분쟁, 구조적 적대", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "나고르노-카라바흐 완전 장악 후 지속 적대", "date": "2026" },
+        { "ai": "claude", "level": "neutral", "comment": "평화협정 이니셜링, TRIPP 착공 임박", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "평화 협정 도장은 찍어도, 마음의 앙금은 여전 🇦🇲⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "협력과 견제 병존 관계", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "전통 영향력 vs 투르크·서방 균형", "date": "2026" },
+        { "ai": "claude", "level": "neutral", "comment": "여객기 피격 배상 합의, 신뢰는 여전히 불안", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "러시아의 빈틈을 타서 실리는 챙기고 체면은 세워주고 🇷🇺⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IR",
+      "opinions": [
+        { "ai": "gpt", "level": "hostile", "comment": "안보·민족 문제로 긴장 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "아제리 민족 문제·이스라엘 협력으로 긴장", "date": "2026" },
+        { "ai": "claude", "level": "hostile", "comment": "이란전쟁 여파 속 대결 회피하나 구조적 긴장", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "민족 문제와 이스라엘 밀월로 삐딱해진 사이 🇮🇷🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "에너지·안보 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "에너지 다각화·이란 견제 협력", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "밴스 방문·전략동반자 헌장, 관계 정점", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "에너지 안보와 이란 견제의 완벽한 파트너 🇺🇸🛰️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "에너지 수출 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "유럽 가스 공급 핵심 국가", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "가스 수출 56%↑, 호르무즈 위기로 전략적 가치 급등", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "가스 밸브 쥔 아제르바이잔, 유럽 내 몸값은 상한가 🇪🇺🔥", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "인프라·경제 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "BRI·인프라 투자 확대", "date": "2026" },
+        { "ai": "claude", "level": "friendly", "comment": "중간회랑 핵심 거점, BRI 물류 허브 부상", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "동서를 잇는 물류의 중심, 중간회랑의 핵심 거점 🇨🇳🛤️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GE",
+      "opinions": [
+        { "ai": "gpt", "level": "friendly", "comment": "에너지·물류 협력 핵심 축", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "남코카서스 물류·에너지 허브 협력", "date": "2026" },
+        { "ai": "claude", "level": "allied", "comment": "알리예프 트빌리시 방문, 무역 $8억+ 전략동반자", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "에너지가 흐르는 길목을 함께 지키는 끈끈한 동행 🇬🇪🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "방산·AI 협력 심화, 이란 변수로 딜레마", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "드론과 인텔리로 다진 실리 위주의 강력한 연대 🇮🇱🛰️", "date": "2026" }
+      ]
+    }
+  ]
+}

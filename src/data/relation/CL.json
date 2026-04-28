@@ -1,0 +1,118 @@
+{
+  "countryCode": "CL",
+  "countryName": "Chile",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "리튬·구리 핵심광물 공급망 파트너", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·광물 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "리튬·구리 공급망 핵심 파트너.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "인플레이션 감축법(IRA) 국면 속 핵심 광물 파트너이자, 미-중 갈등 사이에서 기술 안보를 저울질하는 전략적 요충지 🇺🇸🔋",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "최대 수출시장, 광물 의존도 심화", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "최대 수출시장, 경제 핵심 축", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "최대 수출시장, 광물 의존 심화.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "칠레 구리의 절반을 사가는 큰손, 인프라와 디지털 전환까지 깊숙이 침투한 거대 자본의 힘 🇨🇳🏗️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "BR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "남미 주요 교역국, 다자 공조 안정", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "남미 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "남미 주요 교역국, 다자 공조.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "브라질 시장을 향한 수출길이자 남미 통합의 핵심축, 보리치와 룰라의 정책 공감대가 더해진 안정기 🇧🇷🤝",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "AR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "에너지·국경 협력, 이념차 불구 안정", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "경제·에너지 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "에너지·국경 협력, 이념차 불구 안정.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "밀레이와 보리치의 이념은 양극단이지만, 천연가스 공급과 리튬 삼각지대 협력이라는 실리는 포기 못 할 사이 🇦🇷⚖️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "PE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "태평양동맹 파트너, 교역 안정적", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "태평양 동맹 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "태평양동맹 파트너, 교역 안정적.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "이민자 문제로 국경이 시끄러워도 태평양 동맹(PA)을 통해 경제적 활로를 함께 찾는 비즈니스 동료 🇵🇪⚓",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "BO",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "볼리비아 해양출구 요구, 외교 단절급", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "해양 접근권 갈등 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "볼리비아 해양출구 요구로 갈등.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "hostile",
+          "comment": "국제사법재판소 판결 이후에도 멈추지 않는 바다 향한 외침, 100년 넘게 풀리지 않는 평행선 🇧🇴🚫",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "EU",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FTA 업그레이드, 투자·통상 확대", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "무역·투자 협력 주요 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FTA 업그레이드, 투자·통상 확대.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "현대화된 선진기술 협력 협정(AFA) 비준으로 그린 수소와 지속 가능한 광물 개발을 향한 유럽과의 밀월 🇪🇺🌿",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "FTA 체결국, 리튬·수산 교역 활발", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "FTA 기반 자원·경제 협력", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "FTA 체결국, 리튬·수산 교역 활발.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "한국의 배터리 기술과 칠레의 하얀 석유(리튬)가 만나 탄생한 'K-배터리 공급망'의 핵심 연결고리 🇰🇷🔋",
+          "date": "2026"
+        }
+      ]
+    }
+  ]
+}

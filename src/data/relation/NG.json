@@ -1,0 +1,111 @@
+{
+  "countryCode": "NG",
+  "countryName": "Nigeria",
+  "relations": [
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "안보·에너지 협력, 관세마찰 부상", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·원조 협력 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안보·원조 협력 핵심 파트너.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "미국의 '원조보다 무역(Trade, not Aid)' 정책과 관세 장벽 속에서 실익을 따지는 중 🇺🇸📈",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "인프라·디지털 투자 급증, 채무 우려", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "인프라·투자 협력 핵심 축", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "인프라·투자 대규모 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "allied",
+          "comment": "수교 55주년, 인프라를 넘어 디지털 경제와 에너지까지 뻗친 철통 파트너십 🇨🇳🏗️",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "군사 협력 유지, 서방 압박 속 균형", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "군사·에너지 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "군사·에너지 협력 확대.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "단순 무기 구매를 넘어 공동 연구·개발로 진화하는 군사 기술 협력 🇷🇺🛡️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "GB",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "영연방 유대, 교역·교민 연결 견고", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "식민 역사 후 경제 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "식민 후 경제 협력 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "영연방의 자부심과 실질적 경제 이익 사이의 안정적인 균형 🇬🇧🤝", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "서아프리카 주도권 미묘한 경쟁", "date": "2026" },
+        { "ai": "gpt", "level": "neutral", "comment": "", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "프랑스 영향력 경쟁 속 중립.", "date": "2026" },
+        { "ai": "gemini", "level": "neutral", "comment": "서아프리카 주도권을 둔 미묘한 견제와 사헬 안보를 위한 협력이 공존 🇫🇷⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "원유 수출·IT 협력 확대 중", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "에너지·무역 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "에너지·무역 협력 확대.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "에너지 안보를 위해 뭉친 거대 시장들의 전략적 거래 🇮🇳🛢️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "ZA",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "아프리카 양대 강국, 경쟁적 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "아프리카 리더십 경쟁·협력 병존", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "아프리카 리더십 경쟁 속 협력.", "date": "2026" },
+        {
+          "ai": "gemini",
+          "level": "friendly",
+          "comment": "아프리카 '빅 2'의 자존심 대결, 하지만 AfCFTA 성공을 위해선 손잡아야 할 운명 🇿🇦🏅",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "countryCode": "NE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "ECOWAS 갈등 봉합, 국경 안보 공조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "사헬 안보 협력 핵심 이웃", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "사헬 안보 협력 핵심 이웃.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "ECOWAS 갈등을 뒤로하고 국경 획정과 안보를 위해 다시 밀착하는 이웃 🇳🇪🛡️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TD",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "차드호 대테러 다국적군 공조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "국경·안보 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "국경·안보 협력 유지.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "차드 호 주변의 안정과 대테러 공조를 위한 필수적인 안보 파트너 🇹🇩⚔️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CM",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "보코하람 공동 대응, 국경 실용 협력", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "보코하람 대응 공동 협력", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "보코하람 공동 대응 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "국경 분쟁보다는 공동의 적을 막는 것이 급선무인 실용적 관계 🇨🇲🛡️", "date": "2026" }
+      ]
+    }
+  ]
+}

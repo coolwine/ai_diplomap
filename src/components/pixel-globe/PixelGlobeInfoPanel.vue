@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref, watch } from "vue";
 
-import { LEADERS } from "../../data/leaders";
+import { UNKNOWN_LEADER_IMAGE, getLeaderInfo } from "../../data/leaders";
 import {
   RELATION_LEVELS,
   getNationRelationsForCountry,
@@ -150,8 +150,15 @@ const consensusRelations = computed(() => filteredRelations.value.filter((r) => 
 
 const leader = computed(() => {
   if (!props.country) return null;
-  return LEADERS[props.country.iso2 ?? ""] ?? null;
+  return getLeaderInfo(props.country.iso2);
 });
+
+function onLeaderImageError(event: Event) {
+  const image = event.target as HTMLImageElement;
+  if (image.src !== UNKNOWN_LEADER_IMAGE) {
+    image.src = UNKNOWN_LEADER_IMAGE;
+  }
+}
 
 watch(
   () => props.country?.iso2,
@@ -234,7 +241,12 @@ function handleCountryClick(countryName: string) {
       </div>
 
       <div v-if="leader" class="info-panel-leader">
-        <img :src="leader.image" :alt="leader.name" class="info-panel-leader-photo" />
+        <img
+          :src="leader.image"
+          :alt="leader.name"
+          class="info-panel-leader-photo"
+          @error="onLeaderImageError"
+        />
         <div class="info-panel-leader-info">
           <div class="info-panel-leader-name">{{ leader.name }}</div>
           <div class="info-panel-leader-title">{{ leader.title }}</div>

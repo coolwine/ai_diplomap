@@ -1,0 +1,96 @@
+{
+  "countryCode": "ET",
+  "countryName": "Ethiopia",
+  "relations": [
+    {
+      "countryCode": "ER",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "티그라이 전후 재긴장, 국경 불안", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "국경·군사 긴장 재상승", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "국경 불안과 군사 긴장 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "평화 협정은 종잇조약일 뿐, 국경에서의 전운은 다시 짙어지는 중 🇪🇷⚔️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "EG",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "GERD 담수 갈등, 타협점 못 찾는 중", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "나일강 댐 갈등 지속", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "GERD 댐으로 나일강 갈등 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "댐 담수는 완료됐지만, 나일강 물줄기를 둔 이집트와의 갈등은 최고조 🇪🇬💧", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SD",
+      "opinions": [
+        { "ai": "claude", "level": "hostile", "comment": "알파시가 분쟁·댐 이해 충돌 지속", "date": "2026" },
+        { "ai": "gpt", "level": "hostile", "comment": "국경·댐 문제로 긴장", "date": "2026" },
+        { "ai": "grok", "level": "hostile", "comment": "국경 분쟁과 GERD 갈등 지속.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "내전으로 정신없는 틈에도 댐과 국경 문제는 결코 양보할 수 없는 숙제 🇸🇩⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "DJ",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "해상 물류 생명줄, 항구 의존 절대적", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "항구 의존, 경제 협력 핵심", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "지부티 항구 의존, 경제 생명줄.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "에티오피아의 숨구멍, 바다로 나가는 유일한 길목을 쥔 절대적 동반자 🇩🇯🛳️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "SO",
+      "opinions": [
+        { "ai": "claude", "level": "neutral", "comment": "소말릴란드 항구 MOU로 관계 복잡", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·군사 개입 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "neutral", "comment": "소말릴란드 문제로 복잡한 관계.", "date": "2026" },
+        { "ai": "gemini", "level": "hostile", "comment": "바다를 향한 욕망과 소말릴란드 MOU가 부른 '가시 돋친' 관계 🇸🇴🚫", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "US",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "원조·안보 협력, 인권 이슈 마찰", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·개발 협력 지속", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "원조·안보 협력, 인권 마찰.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "안보 협력은 절실하지만, 인권과 민주주의 잣대는 늘 껄끄러운 장애물 🇺🇸⚖️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "AU 본부·철도 등 인프라 최대 투자국", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "인프라·투자 핵심 파트너", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "인프라·투자 최대 파트너.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "AU 본부부터 철도까지, 에티오피아 성장의 거대한 중국 자본 그림자 🇨🇳🏗️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "TR",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "드론·방산 협력, 소말리아 중재 역할", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "군사·방산 협력 확대", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "드론·방산 협력 확대.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "하늘에선 드론, 땅에선 중재... 에티오피아의 전략적 우방으로 급부상 🇹🇷🛰️", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "AE",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "투자·중재 역할, 홍해 안보 공조", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·투자 협력 강화", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "투자·홍해 안보 협력.", "date": "2026" },
+        { "ai": "gemini", "level": "allied", "comment": "전방위 투자와 외교 중재로 뿔 지역의 판을 짜는 핵심 스폰서 🇦🇪💰", "date": "2026" }
+      ]
+    },
+    {
+      "countryCode": "IL",
+      "opinions": [
+        { "ai": "claude", "level": "friendly", "comment": "안보·농업기술 협력 꾸준히 유지", "date": "2026" },
+        { "ai": "gpt", "level": "friendly", "comment": "안보·외교 협력 유지", "date": "2026" },
+        { "ai": "grok", "level": "friendly", "comment": "안보·농업기술 협력 유지.", "date": "2026" },
+        { "ai": "gemini", "level": "friendly", "comment": "안보 기술과 농업 혁신을 매개로 조용히 이어가는 실리 위주의 연대 🇮🇱🌾", "date": "2026" }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,12 @@ export type LeaderInfo = {
   image: string;
 };
 
+type RawLeaderInfo = Omit<LeaderInfo, "image"> & {
+  image?: string | null;
+};
+
+const UNKNOWN_LEADER_IMAGE_PATH = "/leaders/unknown.png";
+
 const baseUrl = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
@@ -12,7 +18,9 @@ function withBaseUrl(path: string) {
   return `${baseUrl}${path.replace(/^\/+/, "")}`;
 }
 
-const rawLeaders: Record<string, LeaderInfo> = {
+export const UNKNOWN_LEADER_IMAGE = withBaseUrl(UNKNOWN_LEADER_IMAGE_PATH);
+
+const rawLeaders: Record<string, RawLeaderInfo> = {
   US: {
     name: "Donald Trump",
     title: "47th President (2025–present)",
@@ -550,7 +558,18 @@ export const LEADERS: Record<string, LeaderInfo> = Object.fromEntries(
     iso2,
     {
       ...leader,
-      image: withBaseUrl(leader.image),
+      image: withBaseUrl(leader.image?.trim() || UNKNOWN_LEADER_IMAGE_PATH),
     },
   ]),
 );
+
+export function getLeaderInfo(iso2: string | null | undefined): LeaderInfo | null {
+  if (!iso2) return null;
+  return (
+    LEADERS[iso2] ?? {
+      name: "Unknown",
+      title: "Leader information unavailable",
+      image: UNKNOWN_LEADER_IMAGE,
+    }
+  );
+}
